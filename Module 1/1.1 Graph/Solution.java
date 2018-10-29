@@ -48,24 +48,19 @@ class GraphClass implements Graph {
     	return false;
     }
 
-    // public String toString() {
-    //     StringBuilder s = new StringBuilder();
-    //     s.append(V + " vertices, " + E + " edges " +"\n");
-    //     if(E == 0) {
-    //         s.append("No edges")
-    //     }
-    //     else {
-    //         for (int v = 0; v < V; v++) {
-    //         s.append(v + ": ");
-    //         for (int w : adj[v]) {
-    //             s.append(w + " ");
-    //         }
-    //         s.append(NEWLINE);
-    //     }
-    //     }
+    public String printList(String[] cities) {
+        StringBuilder s = new StringBuilder();
+        // s.append(V + " vertices, " + E + " edges " +"\n");
 
-    //     return s.toString();
-    // }
+            for (int v = 0; v < V; v++) {
+            s.append(cities[v] + ": ");
+            for (int w : adj[v]) {
+                s.append(cities[w] + " ");
+            }
+            s.append("\n");
+        }
+        return s.toString();
+    }
 
 
 }
@@ -91,8 +86,6 @@ class Solution {
 			System.out.println("No edges");
 			return;
 		}
-
-
 		switch(api) {
 			case "Matrix":
 			for(int i = 0; i<vertex; i++) {
@@ -108,6 +101,9 @@ class Solution {
 				System.out.println();
 			}
 			break;
+			case "List":
+		    System.out.println(gc.printList(cities));
+
 
 		}
 	}
