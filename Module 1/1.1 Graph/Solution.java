@@ -87,7 +87,7 @@ class Solution {
 		}
 		System.out.println(vertex+" vertices, "+gc.getE()+" edges");
 
-		if (edge == 0 || edge == vertex) {
+		if (edge == 0 || edge == 1 || vertex == 1) {
 			System.out.println("No edges");
 			return;
 		}
