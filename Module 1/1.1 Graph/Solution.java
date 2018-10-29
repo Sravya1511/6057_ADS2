@@ -37,7 +37,10 @@ class GraphClass implements Graph {
     	if(v == w) {
     		return;
     	}
-        E++;
+    	if (!hasEdge(v, w)) {
+    		E++;
+    	}
+
         adj[v].add(w);
         adj[w].add(v);
     }
