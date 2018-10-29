@@ -48,6 +48,26 @@ class GraphClass implements Graph {
     	return false;
     }
 
+    // public String toString() {
+    //     StringBuilder s = new StringBuilder();
+    //     s.append(V + " vertices, " + E + " edges " +"\n");
+    //     if(E == 0) {
+    //         s.append("No edges")
+    //     }
+    //     else {
+    //         for (int v = 0; v < V; v++) {
+    //         s.append(v + ": ");
+    //         for (int w : adj[v]) {
+    //             s.append(w + " ");
+    //         }
+    //         s.append(NEWLINE);
+    //     }
+    //     }
+
+    //     return s.toString();
+    // }
+
+
 }
 
 class Solution {
@@ -60,13 +80,20 @@ class Solution {
 		// System.out.println();
 		String[] cities = input.nextLine().split(",");
 		GraphClass gc = new GraphClass(vertex);
+		// System.out.println(gc);
 		for(int i = 0; i<edge; i++) {
 			String[] tokens = input.nextLine().split(" ");
 			gc.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
+		System.out.println(vertex+" vertices, "+gc.getE()+" edges");
+		if(edge == 0) {
+			System.out.println("No edges");
+			return;
+		}
+
+
 		switch(api) {
 			case "Matrix":
-			System.out.println(vertex+" vertices, "+gc.getE()+" edges");
 			for(int i = 0; i<vertex; i++) {
 				for(int j = 0; j< vertex; j++) {
 					if(gc.hasEdge(i, j)) {
@@ -79,6 +106,8 @@ class Solution {
 				if(i != vertex-1)
 				System.out.println();
 			}
+			break;
+
 		}
 	}
 }
