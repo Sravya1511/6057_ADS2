@@ -66,7 +66,7 @@ class Solution {
 		}
 		switch(api) {
 			case "Matrix":
-			System.out.println(gc.getE()+" vertices, "+edge+" edges");
+			System.out.println(vertex+" vertices, "+gc.getE()+" edges");
 			for(int i = 0; i<vertex; i++) {
 				for(int j = 0; j< vertex; j++) {
 					if(gc.hasEdge(i, j)) {
