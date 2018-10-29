@@ -48,7 +48,9 @@ class Solution {
 		Scanner input = new Scanner(System.in);
 		String api = input.nextLine();
 		int vertex = Integer.parseInt(input.nextLine());
+		// System.out.println(vertex);
 		int edge = Integer.parseInt(input.nextLine());
+		// System.out.println();
 		String[] cities = input.nextLine().split(",");
 		GraphClass gc = new GraphClass(vertex, edge);
 		for(int i = 0; i<edge; i++) {
@@ -59,18 +61,13 @@ class Solution {
 			case "Matrix":
 			System.out.println(vertex+" vertices, "+edge+" edges");
 			for(int i = 0; i<vertex; i++) {
-				for(int j = 0; j<edge; j++) {
+				for(int j = 0; j< vertex; j++) {
 					if(gc.hasEdge(i, j)) {
-						System.out.print("1 ");
-
+					    System.out.print("1 ");
 
 					}
 					else {
-						    System.out.print("0 ");
-
-					    // else {
-					    // 	System.out.print("0");
-					    // }
+						System.out.print("0 ");
 					}
 				}
 				if(i != vertex-1)
