@@ -16,9 +16,9 @@ class GraphClass implements Graph {
         return E;
 	}
 
-	public GraphClass(int V, int E) {
+	public GraphClass(int V) {
 		this.V = V;
-		this.E = E;
+		// this.E = E;
 		adj = (Bag<Integer>[]) new Bag[V];
 		for (int v = 0; v < V; v++) {
             adj[v] = new Bag<Integer>();
@@ -59,7 +59,7 @@ class Solution {
 		int edge = Integer.parseInt(input.nextLine());
 		// System.out.println();
 		String[] cities = input.nextLine().split(",");
-		GraphClass gc = new GraphClass(vertex, edge);
+		GraphClass gc = new GraphClass(vertex);
 		for(int i = 0; i<edge; i++) {
 			String[] tokens = input.nextLine().split(" ");
 			gc.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));

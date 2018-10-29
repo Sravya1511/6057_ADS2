@@ -57,9 +57,6 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:19:27: Parameter V should be final. [FinalParameters]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:19:31: 'V' hides a field. [HiddenField]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:19:31: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:19:34: Parameter E should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:19:38: 'E' hides a field. [HiddenField]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:19:38: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:28:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:28:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:32:5: Missing a Javadoc comment. [JavadocMethod]
@@ -102,4 +99,4 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:79:47: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:79:48: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 69 errors.
+Checkstyle ends with 66 errors.
