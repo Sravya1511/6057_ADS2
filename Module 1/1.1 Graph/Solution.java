@@ -1,10 +1,10 @@
 import java.util.Scanner;
 interface Graph {
-    public int V();
-    public int E();
-    public void addEdge(int v, int w);
+    public int vertex();
+    public int edge();
+    public void addedgedge(int v, int w);
     // public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
+    public boolean hasedgedge(int v, int w);
 }
 /**
  * Class for graph class.
@@ -14,11 +14,11 @@ class GraphClass implements Graph {
 	/**
 	 * number of vertices.
 	 */
-	private int V;
+	private int vertex;
 	/**
 	 * number of edges.
 	 */
-	private int E;
+	private int edge;
 	/**
 	 * adj array of bag class type.
 	 */
@@ -26,58 +26,67 @@ class GraphClass implements Graph {
 
 	/**
 	 * Gets the e.
+	 * The time complexity is O(1).
 	 *
 	 * @return     The e of int type.
 	 */
 
-	public int getE() {
-        return E;
+	public int getedge() {
+        return edge;
 	}
 	/**
 	 * Constructs the object.
+	 * The time complexity is O(N).
 	 *
-	 * @param      V     { number of vertices }
+	 *
+	 * @param      vertex     { number of vertices }
 	 */
 
-	public GraphClass(int V) {
-		this.V = V;
-		adj = (Bag<Integer>[]) new Bag[V];
-		for (int v = 0; v < V; v++) {
+	public GraphClass(int vertex) {
+		this.vertex = vertex;
+		adj = (Bag<Integer>[]) new Bag[vertex];
+		for (int v = 0; v < vertex; v++) {
             adj[v] = new Bag<Integer>();
         }
 	}
 	/**
 	 * number of integers.
+	 * The time complexity is O(1).
+	 *
 	 *
 	 * @return     { int }
 	 */
 
-	public int V() {
-        return V;
+	public int vertex() {
+        return vertex;
     }
 
     /**
      * number of vertices.
+	 * The time complexity is O(1).
+     *
      *
      * @return     { int }
      */
 
-    public int E() {
-        return E;
+    public int edge() {
+        return edge;
     }
     /**
      * Adds an edge.
+	 * The time complexity is O(N).
+     *
      *
      * @param      v     { vertex }
      * @param      w     { edge }
      */
 
-    public void addEdge(int v, int w) {
-    	if(v == w) {
+    public void addedgedge(final int v, final int w) {
+    	if (v == w) {
     		return;
     	}
-    	if (!hasEdge(v, w)) {
-    		E++;
+    	if (!hasedgedge(v, w)) {
+    		edge++;
     	}
 
         adj[v].add(w);
@@ -85,6 +94,8 @@ class GraphClass implements Graph {
     }
     /**
      * determines if vertices are connected or not.
+	 * The time complexity is O(N).
+     *
      *
      * @param      v     { vertex. }
      * @param      w     { edge }
@@ -92,8 +103,8 @@ class GraphClass implements Graph {
      * @return     True if has edge, False otherwise.
      */
 
-    public boolean hasEdge(int v, int w) {
-    	if(adj[v].contains(w)) {
+    public boolean hasedgedge(int v, int w) {
+    	if (adj[v].contains(w)) {
     		return true;
     	} else {
     	    return false;
@@ -101,15 +112,17 @@ class GraphClass implements Graph {
     }
     /**
      * prints the list of cities connected to other cities.
+	 * The time complexity is O(N^2).
+     *
      *
      * @param      cities  The cities
      *
      * @return     { description_of_the_return_value }
      */
 
-    public String printList(String[] cities) {
+    public String printList(final String[] cities) {
         StringBuilder s = new StringBuilder();
-            for (int v = 0; v < V; v++) {
+            for (int v = 0; v < vertex; v++) {
             s.append(cities[v] + ": ");
             for (int w : adj[v]) {
                 s.append(cities[w] + " ");
@@ -121,6 +134,7 @@ class GraphClass implements Graph {
 }
 /**
  * Class for solution.
+ * reads input.
  */
 
 final class Solution {
@@ -131,9 +145,9 @@ final class Solution {
 
 	}
 	/**
-	 * { function_description }
+	 * { creates object for graphclass }.
 	 *
-	 * @param      args  The arguments
+	 * @param      args  The arguments.
 	 */
 	public static void main(final String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -147,26 +161,29 @@ final class Solution {
 		// System.out.println(gc);
 		for (int i = 0; i < edge; i++) {
 			String[] tokens = input.nextLine().split(" ");
-			gc.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			gc.addedgedge(Integer.parseInt(tokens[0]),
+				Integer.parseInt(tokens[1]));
 		}
-		System.out.println(vertex + " vertices, " + gc.getE() + " edges");
+		System.out.println(vertex + " vertices, " + gc.getedge()
+			+ " edges");
 
 		if (edge == 0 || edge == 1 || vertex == 1) {
 			System.out.println("No edges");
 			return;
 		}
-		switch(api) {
+		switch (api) {
 			case "Matrix":
 			for (int i = 0; i < vertex; i++) {
 				for (int j = 0; j < vertex; j++) {
-					if (gc.hasEdge(i, j)) {
+					if (gc.hasedgedge(i, j)) {
 					    System.out.print("1 ");
 					} else {
 						System.out.print("0 ");
 					}
 				}
-				if(i != vertex-1)
-				System.out.println();
+				if(i != vertex - 1) {
+				    System.out.println();
+				}
 			}
 			break;
 			case "List":
