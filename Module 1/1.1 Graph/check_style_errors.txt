@@ -43,9 +43,6 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:14:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:45:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:45:27: Parameter vertex1 should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:106:31: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:106:38: Parameter w should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:107:9: Conditional logic can be removed. [SimplifyBooleanReturn]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:184:35: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:107: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 14 errors.

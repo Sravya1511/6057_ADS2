@@ -103,12 +103,11 @@ class GraphClass implements Graph {
      * @return     True if has edge, False otherwise.
      */
 
-    public boolean hasedgedge(int v, int w) {
-    	if (adj[v].contains(w)) {
+    public boolean hasedgedge(final int v, final int w) {
+    	if (adj[v].contains(w))
     		return true;
-    	} else {
-    	    return false;
-    	}
+    	return false;
+
     }
     /**
      * prints the list of cities connected to other cities.
@@ -181,7 +180,7 @@ final class Solution {
 						System.out.print("0 ");
 					}
 				}
-				if(i != vertex - 1) {
+				if (i != vertex - 1) {
 				    System.out.println();
 				}
 			}
