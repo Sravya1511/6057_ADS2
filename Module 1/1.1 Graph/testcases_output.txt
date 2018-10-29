@@ -19,7 +19,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 13 vertices, 13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0 
@@ -37,7 +37,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-13 vertices, 13 edges
+26 vertices, 13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -138,7 +138,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-36 vertices, 78 edges
+156 vertices, 78 edges
 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
@@ -193,7 +193,7 @@ No edges
 
 Your Output: 
 1 vertices, 1 edges
-1
+0
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########

@@ -12,6 +12,10 @@ class GraphClass implements Graph {
 	private int E;
 	private Bag<Integer>[] adj;
 
+	public int getE() {
+        return E;
+	}
+
 	public GraphClass(int V, int E) {
 		this.V = V;
 		this.E = E;
@@ -30,6 +34,9 @@ class GraphClass implements Graph {
     }
 
     public void addEdge(int v, int w) {
+    	if(v == w) {
+    		return;
+    	}
         E++;
         adj[v].add(w);
         adj[w].add(v);
@@ -59,12 +66,11 @@ class Solution {
 		}
 		switch(api) {
 			case "Matrix":
-			System.out.println(vertex+" vertices, "+edge+" edges");
+			System.out.println(gc.getE()+" vertices, "+edge+" edges");
 			for(int i = 0; i<vertex; i++) {
 				for(int j = 0; j< vertex; j++) {
 					if(gc.hasEdge(i, j)) {
 					    System.out.print("1 ");
-
 					}
 					else {
 						System.out.print("0 ");
@@ -73,10 +79,6 @@ class Solution {
 				if(i != vertex-1)
 				System.out.println();
 			}
-
-
-
 		}
-
 	}
 }
