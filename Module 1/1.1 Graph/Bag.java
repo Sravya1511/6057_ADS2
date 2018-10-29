@@ -106,8 +106,10 @@ public class Bag<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
+    /**
+     * Class for list iterator.
+     */
 
-    // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
         /**
          * Node.
