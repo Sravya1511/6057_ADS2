@@ -31,18 +31,5 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:3:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:4:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:5:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:7:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:7:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:14:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:45:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:45:27: Parameter vertex1 should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:107: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 1 errors.

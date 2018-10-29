@@ -1,69 +1,63 @@
 import java.util.Scanner;
-interface Graph {
-    public int vertex();
-    public int edge();
-    public void addedgedge(int v, int w);
-    // public Iterable<Integer> adj(int v);
-    public boolean hasedgedge(int v, int w);
-}
+
 /**
  * Class for graph class.
  */
 
-class GraphClass implements Graph {
-	/**
-	 * number of vertices.
-	 */
-	private int vertex;
-	/**
-	 * number of edges.
-	 */
-	private int edge;
-	/**
-	 * adj array of bag class type.
-	 */
-	private Bag<Integer>[] adj;
+class GraphClass {
+    /**
+     * number of vertices.
+     */
+    private int vertex;
+    /**
+     * number of edges.
+     */
+    private int edge;
+    /**
+     * adj array of bag class type.
+     */
+    private Bag<Integer>[] adj;
 
-	/**
-	 * Gets the e.
-	 * The time complexity is O(1).
-	 *
-	 * @return     The e of int type.
-	 */
+    /**
+     * Gets the e.
+     * The time complexity is O(1).
+     *
+     * @return     The e of int type.
+     */
 
-	public int getedge() {
+    public int getedge() {
         return edge;
-	}
-	/**
-	 * Constructs the object.
-	 * The time complexity is O(N).
-	 *
-	 *
-	 * @param      vertex1     { number of vertices }
-	 */
+    }
+    /**
+     * Constructs the object.
+     * The time complexity is O(N).
+     *
+     *
+     * @param      vertex1     { number of vertices }
+     */
 
-	public GraphClass(int vertex1) {
-		this.vertex = vertex1;
-		adj = (Bag<Integer>[]) new Bag[vertex1];
-		for (int v = 0; v < vertex1; v++) {
+    GraphClass(final int vertex1) {
+        this.vertex = vertex1;
+        adj = (Bag<Integer>[]) new Bag[vertex1];
+        for (int v = 0; v < vertex1; v++) {
             adj[v] = new Bag<Integer>();
         }
-	}
-	/**
-	 * number of integers.
-	 * The time complexity is O(1).
-	 *
-	 *
-	 * @return     { int }
-	 */
+    }
+    /**
+     * number of integers.
+     * The time complexity is O(1).
+     *
+     *
+     * @return     { int }
+     */
 
-	public int vertex() {
+    public int vertex() {
         return vertex;
     }
 
     /**
      * number of vertices.
-	 * The time complexity is O(1).
+     * The time complexity is O(1).
      *
      *
      * @return     { int }
@@ -74,7 +68,7 @@ class GraphClass implements Graph {
     }
     /**
      * Adds an edge.
-	 * The time complexity is O(N).
+     * The time complexity is O(N).
      *
      *
      * @param      v     { vertex }
@@ -82,19 +76,19 @@ class GraphClass implements Graph {
      */
 
     public void addedgedge(final int v, final int w) {
-    	if (v == w) {
-    		return;
-    	}
-    	if (!hasedgedge(v, w)) {
-    		edge++;
-    	}
+        if (v == w) {
+            return;
+        }
+        if (!hasedgedge(v, w)) {
+            edge++;
+        }
 
         adj[v].add(w);
         adj[w].add(v);
     }
     /**
      * determines if vertices are connected or not.
-	 * The time complexity is O(N).
+     * The time complexity is O(N).
      *
      *
      * @param      v     { vertex. }
@@ -104,14 +98,15 @@ class GraphClass implements Graph {
      */
 
     public boolean hasedgedge(final int v, final int w) {
-    	if (adj[v].contains(w))
-    		return true;
-    	return false;
+        if (adj[v].contains(w)) {
+            return true;
+        }
+        return false;
 
     }
     /**
      * prints the list of cities connected to other cities.
-	 * The time complexity is O(N^2).
+     * The time complexity is O(N^2).
      *
      *
      * @param      cities  The cities
@@ -137,59 +132,59 @@ class GraphClass implements Graph {
  */
 
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * { creates object for graphclass }.
-	 *
-	 * @param      args  The arguments.
-	 */
-	public static void main(final String[] args) {
-		Scanner input = new Scanner(System.in);
-		String api = input.nextLine();
-		int vertex = Integer.parseInt(input.nextLine());
-		// System.out.println(vertex);
-		int edge = Integer.parseInt(input.nextLine());
-		// System.out.println();
-		String[] cities = input.nextLine().split(",");
-		GraphClass gc = new GraphClass(vertex);
-		// System.out.println(gc);
-		for (int i = 0; i < edge; i++) {
-			String[] tokens = input.nextLine().split(" ");
-			gc.addedgedge(Integer.parseInt(tokens[0]),
-				Integer.parseInt(tokens[1]));
-		}
-		System.out.println(vertex + " vertices, " + gc.getedge()
-			+ " edges");
+    }
+    /**
+     * { creates object for graphclass }.
+     *
+     * @param      args  The arguments.
+     */
+    public static void main(final String[] args) {
+        Scanner input = new Scanner(System.in);
+        String api = input.nextLine();
+        int vertex = Integer.parseInt(input.nextLine());
+        // System.out.println(vertex);
+        int edge = Integer.parseInt(input.nextLine());
+        // System.out.println();
+        String[] cities = input.nextLine().split(",");
+        GraphClass gc = new GraphClass(vertex);
+        // System.out.println(gc);
+        for (int i = 0; i < edge; i++) {
+            String[] tokens = input.nextLine().split(" ");
+            gc.addedgedge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]));
+        }
+        System.out.println(vertex + " vertices, " + gc.getedge()
+            + " edges");
 
-		if (edge == 0 || edge == 1 || vertex == 1) {
-			System.out.println("No edges");
-			return;
-		}
-		switch (api) {
-			case "Matrix":
-			for (int i = 0; i < vertex; i++) {
-				for (int j = 0; j < vertex; j++) {
-					if (gc.hasedgedge(i, j)) {
-					    System.out.print("1 ");
-					} else {
-						System.out.print("0 ");
-					}
-				}
-				if (i != vertex - 1) {
-				    System.out.println();
-				}
-			}
-			break;
-			case "List":
-		    System.out.println(gc.printList(cities));
-		    break;
-		    default:
-		    break;
-		}
-	}
+        if (edge == 0 || edge == 1 || vertex == 1) {
+            System.out.println("No edges");
+            return;
+        }
+        switch (api) {
+            case "Matrix":
+            for (int i = 0; i < vertex; i++) {
+                for (int j = 0; j < vertex; j++) {
+                    if (gc.hasedgedge(i, j)) {
+                        System.out.print("1 ");
+                    } else {
+                        System.out.print("0 ");
+                    }
+                }
+                if (i != vertex - 1) {
+                    System.out.println();
+                }
+            }
+            break;
+            case "List":
+            System.out.println(gc.printList(cities));
+            break;
+            default:
+            break;
+        }
+    }
 }
