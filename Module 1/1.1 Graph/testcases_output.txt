@@ -17,9 +17,10 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges
+No edges
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 13 vertices, 13 edges
 0 1 1 0 0 1 1 0 0 0 0 0 0 
@@ -38,19 +39,7 @@ Expected Output:
 
 Your Output: 
 13 vertices, 13 edges
-0 1 1 0 0 1 1 0 0 0 0 0 0 
-1 0 0 0 0 0 0 0 0 0 0 0 0 
-1 0 0 0 0 0 0 0 0 0 0 0 0 
-0 0 0 0 1 1 0 0 0 0 0 0 0 
-0 0 0 1 0 1 1 0 0 0 0 0 0 
-1 0 0 1 1 0 0 0 0 0 0 0 0 
-1 0 0 0 1 0 0 0 0 0 0 0 0 
-0 0 0 0 0 0 0 0 1 0 0 0 0 
-0 0 0 0 0 0 0 1 0 0 0 0 0 
-0 0 0 0 0 0 0 0 0 0 1 1 1 
-0 0 0 0 0 0 0 0 0 1 0 0 0 
-0 0 0 0 0 0 0 0 0 1 0 0 1 
-0 0 0 0 0 0 0 0 0 1 0 1 0
+No edges
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -177,23 +166,24 @@ Your Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
 1 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
 1 vertices, 0 edges
-0
+No edges
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########

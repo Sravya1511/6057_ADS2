@@ -86,7 +86,8 @@ class Solution {
 			gc.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
 		System.out.println(vertex+" vertices, "+gc.getE()+" edges");
-		if(edge == 0) {
+
+		if (edge == 0 || edge == vertex) {
 			System.out.println("No edges");
 			return;
 		}
