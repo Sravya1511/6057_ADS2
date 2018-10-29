@@ -1,5 +1,3 @@
-
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -23,6 +21,7 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Is the BAG empty?
+     * The time complexity is O(1).
      */
     public boolean isEmpty() {
         return first == null;
@@ -30,6 +29,8 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Return the number of items in the bag.
+     * The time complexity is O(1).
+     *
      */
     public int size() {
         return N;
@@ -37,6 +38,8 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Add the item to the bag.
+     * The time complexity is O(1).
+     *
      */
     public void add(Item item) {
         Node oldfirst = first;
@@ -45,11 +48,20 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         N++;
     }
+    /**
+     * determines if there is vertex or not.
+     * The time complexity is O(N).
+     *
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
 
     public boolean contains(Item item) {
     	Node n = first;
-    	while(n!= null) {
-    		if(n.item == item) {
+    	while (n!= null) {
+    		if (n.item == item) {
     			return true;
     		}
     		n = n.next;
