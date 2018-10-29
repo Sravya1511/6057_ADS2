@@ -62,18 +62,18 @@ class Solution {
 				for(int j = 0; j<edge; j++) {
 					if(gc.hasEdge(i, j)) {
 						if(j == edge-1) {
-						    System.out.print("1");
+						    System.out.print("1 ");
 						}
 					    else {
-					    	System.out.print("1 ");
+					    	System.out.print("1");
 					    }
 					}
 					else {
 						if(j == edge-1) {
-						    System.out.print("0");
+						    System.out.print("0 ");
 						}
 					    else {
-					    	System.out.print("0 ");
+					    	System.out.print("0");
 					    }
 					}
 				}
