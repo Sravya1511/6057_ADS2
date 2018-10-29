@@ -77,7 +77,7 @@ class Solution {
 					    }
 					}
 				}
-				if(i != vertex-1)
+				// if(i != vertex-1)
 				System.out.println();
 			}
 
