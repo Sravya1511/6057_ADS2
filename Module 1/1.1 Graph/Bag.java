@@ -2,8 +2,14 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class Bag<Item> implements Iterable<Item> {
-    private int N;         // number of elements in bag
-    private Node first;    // beginning of bag
+	/**
+	 *  number of elements in bag.
+	 */
+    private int N;
+    /**
+     * beginning of bag
+     */
+    private Node first;
 
     // helper linked list class
     private class Node {
@@ -11,35 +17,42 @@ public class Bag<Item> implements Iterable<Item> {
         private Node next;
     }
 
-   /**
-     * Create an empty stack.
+    /**
+     * Constructs the object.
      */
+
     public Bag() {
         first = null;
         N = 0;
     }
 
-   /**
-     * Is the BAG empty?
+    /**
+     * Determines if empty.
      * The time complexity is O(1).
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
 
-   /**
-     * Return the number of items in the bag.
+    /**
+     * returns size of the bag.
      * The time complexity is O(1).
      *
+     *
+     * @return     { int }
      */
     public int size() {
         return N;
     }
 
-   /**
-     * Add the item to the bag.
+    /**
+     * adds element into bag.
      * The time complexity is O(1).
      *
+     *
+     * @param      item  The item
      */
     public void add(Item item) {
         Node oldfirst = first;
@@ -55,7 +68,7 @@ public class Bag<Item> implements Iterable<Item> {
      *
      * @param      item  The item
      *
-     * @return     { description_of_the_return_value }
+     * @return     { true or false }
      */
 
     public boolean contains(Item item) {
@@ -80,12 +93,30 @@ public class Bag<Item> implements Iterable<Item> {
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
         private Node current = first;
-
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext()  {
+        	return current != null;
+        }
+        /**
+         * removes.
+         */
+        public void remove() {
+        	throw new UnsupportedOperationException();
+        }
+        /**
+         * gives next node.
+         *
+         * @return     { item }
+         */
 
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+            	 throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
