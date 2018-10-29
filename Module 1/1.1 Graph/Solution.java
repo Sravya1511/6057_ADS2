@@ -39,13 +39,13 @@ class GraphClass implements Graph {
 	 * The time complexity is O(N).
 	 *
 	 *
-	 * @param      vertex     { number of vertices }
+	 * @param      vertex1     { number of vertices }
 	 */
 
-	public GraphClass(int vertex) {
-		this.vertex = vertex;
-		adj = (Bag<Integer>[]) new Bag[vertex];
-		for (int v = 0; v < vertex; v++) {
+	public GraphClass(int vertex1) {
+		this.vertex = vertex1;
+		adj = (Bag<Integer>[]) new Bag[vertex1];
+		for (int v = 0; v < vertex1; v++) {
             adj[v] = new Bag<Integer>();
         }
 	}
