@@ -1,20 +1,8 @@
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:8:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:15: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:16:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:17:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:57:21: Parameter item should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:74:29: Parameter item should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:76:17: '!=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:89: Expected @return tag. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:94: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:95:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Bag.java:111: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
