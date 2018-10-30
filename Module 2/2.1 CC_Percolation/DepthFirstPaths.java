@@ -20,7 +20,7 @@ public class DepthFirstPaths {
     // depth first search from v
     private void dfs(GraphClass G, int v) {
         marked[v] = true;
-        for (int w : G.adj[v]) {
+        for (int w : G.getAdj(v)) {
             if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(G, w);

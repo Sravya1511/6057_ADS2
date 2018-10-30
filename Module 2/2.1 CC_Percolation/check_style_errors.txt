@@ -26,8 +26,8 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:39:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:169:20: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:182:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:182:32: Parameter i should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...

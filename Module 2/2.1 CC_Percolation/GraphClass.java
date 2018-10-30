@@ -166,7 +166,7 @@ class GraphClass {
     /**
      * adj array of bag class type.
      */
-    Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
 
     /**
      * Gets the e.
@@ -179,8 +179,8 @@ class GraphClass {
         return edge;
     }
 
-    public Bag[] getAdj() {
-        return adj;
+    public Bag<Integer> getAdj(int i) {
+        return adj[i];
     }
     /**
      * Constructs the object.
