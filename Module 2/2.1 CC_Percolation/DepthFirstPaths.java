@@ -13,11 +13,11 @@ public class DepthFirstPaths {
         this.s = s;
         edgeTo = new int[G.vertex()];
         marked = new boolean[G.vertex()];
-        validateVertex(s);
         dfs(G, s);
     }
 
     // depth first search from v
+    //The time complexity is O(N).
     private void dfs(GraphClass G, int v) {
         marked[v] = true;
         for (int w : G.getAdj(v)) {
@@ -30,21 +30,15 @@ public class DepthFirstPaths {
 
     /**
      * Is there a path between the source vertex {@code s} and vertex {@code v}?
+     * The time complexity is O(1).
      * @param v the vertex
      * @return {@code true} if there is a path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public boolean hasPathTo(int v) {
-        validateVertex(v);
         return marked[v];
     }
 
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    }
 
 }

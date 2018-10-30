@@ -12,16 +12,9 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:21:22: Parameter G should be final. [FinalParameters]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:21:33: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:21:36: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:37:30: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:44:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:44:33: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:45:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:46: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:47: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:47:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:47:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\DepthFirstPaths.java:38:30: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\GraphClass.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
@@ -31,6 +24,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
