@@ -47,7 +47,4 @@ public class DepthFirstPaths {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 
-
-
-
 }

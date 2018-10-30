@@ -1,29 +1,59 @@
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
     int size;
     int[][] a;
+    /**
+     * Constructs the object.
+     *
+     * @param      lines  The lines
+     */
 
     Percolation(int lines) {
         this.size = lines;
         a = new int[lines][lines];
     }
+    /**
+     * { if there is a connection, 1 is kept }
+     *
+     * @param      x     { integer - row }
+     * @param      y     { column }
+     */
 
-    public void add(int x, int y) {
-        a[x-1][y-1] = 1;
+    public void add(final int x, final int y) {
+        a[x - 1][y - 1] = 1;
     }
+    /**
+     * prints
+     */
 
     public void print() {
-        for(int i = 0; i<size; i++) {
-            for(int j = 0; j<size; j++) {
-                System.out.print(a[i][j]+" ");
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                System.out.print(a[i][j] + " ");
             }
             System.out.println();
         }
     }
+    /**
+     * calculates the index of element in matrix.
+     *
+     * @param      row   The row
+     * @param      col   The col
+     *
+     * @return     { index - int }
+     */
 
     public int  trans(final int row, final int col) {
         return ((row * size) + col);
     }
+    /**
+     * if there is connection, we add an edge.
+     *
+     * @return     { if there is path, true, else false }
+     */
 
     public boolean percolation() {
         GraphClass graph = new GraphClass(size * size + 2);
@@ -61,19 +91,30 @@ class Percolation {
     return object.hasPathTo(size * size + 1);
     }
 }
+/**
+ * Class for solution.
+ */
 
-class Solution {
-    public static void main(String[] args) {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * reads input.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner input = new Scanner(System.in);
         int lines = Integer.parseInt(input.nextLine());
         Percolation pc = new Percolation(lines);
-        while(input.hasNext()) {
+        while (input.hasNext()) {
             String[] tokens = input.nextLine().split(" ");
             pc.add(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
         }
         System.out.println(pc.percolation());
-
-
     }
-
 }
