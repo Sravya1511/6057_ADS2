@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 
-public class Bag<Item> implements Iterable<Item> {
+class Bag<Item> implements Iterable<Item> {
     /**
      *  number of elements in bag.
      */
@@ -166,7 +166,7 @@ class GraphClass {
     /**
      * adj array of bag class type.
      */
-    private Bag<Integer>[] adj;
+    Bag<Integer>[] adj;
 
     /**
      * Gets the e.
@@ -225,7 +225,7 @@ class GraphClass {
      * @param      w     { edge }
      */
 
-    public void addedgedge(final int v, final int w) {
+    public void addEdge(final int v, final int w) {
         if (v == w) {
             return;
         }
