@@ -30,7 +30,7 @@ class Solution {
         Scanner input = new Scanner(System.in);
         int lines = Integer.parseInt(input.nextLine());
         Percolation pc = new Percolation(lines);
-        for(int i = 0; i< lines; i++) {
+        while(input.hasNext()) {
             String[] tokens = input.nextLine().split(" ");
             pc.add(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
         }

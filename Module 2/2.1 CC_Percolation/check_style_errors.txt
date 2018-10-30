@@ -32,7 +32,6 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:28:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:29:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:29:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:33:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:33:25: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:33:14: 'while' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 29 errors.
