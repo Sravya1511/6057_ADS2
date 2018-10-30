@@ -19,7 +19,6 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:12:13: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:12:17: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:12:18: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:12:23: '8' is a magic number. [MagicNumber]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:15:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:16:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:16:25: '<' is not preceded with whitespace. [WhitespaceAround]
@@ -36,4 +35,4 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:33:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 2\2.1 CC_Percolation\Solution.java:33:25: '<' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 30 errors.

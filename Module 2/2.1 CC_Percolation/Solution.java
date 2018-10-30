@@ -9,7 +9,7 @@ class Percolation {
     }
 
     public void add(int x, int y) {
-        a[x-1][y-1] = 8;
+        a[x-1][y-1] = 1;
     }
 
     public void print() {
