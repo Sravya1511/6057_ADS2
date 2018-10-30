@@ -3,20 +3,26 @@ import java.util.Scanner;
  * Class for percolation.
  */
 class Percolation {
-    int size;
-    int[][] a;
+    /**
+     * size of row and column.
+     */
+    private int size;
+    /**
+     * twoD array.
+     */
+    private int[][] a;
     /**
      * Constructs the object.
      *
      * @param      lines  The lines
      */
 
-    Percolation(int lines) {
+    Percolation(final int lines) {
         this.size = lines;
         a = new int[lines][lines];
     }
     /**
-     * { if there is a connection, 1 is kept }
+     * { if there is a connection, 1 is kept }.
      *
      * @param      x     { integer - row }
      * @param      y     { column }
@@ -26,7 +32,7 @@ class Percolation {
         a[x - 1][y - 1] = 1;
     }
     /**
-     * prints
+     * prints.
      */
 
     public void print() {

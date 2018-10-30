@@ -178,6 +178,10 @@ class GraphClass {
     public int getedge() {
         return edge;
     }
+
+    public Bag[] getAdj() {
+        return adj;
+    }
     /**
      * Constructs the object.
      * The time complexity is O(N).
