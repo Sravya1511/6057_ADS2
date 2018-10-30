@@ -23,6 +23,7 @@ class Percolation {
     }
     /**
      * { if there is a connection, 1 is kept }.
+     * The time complexity is O(1).
      *
      * @param      x     { integer - row }
      * @param      y     { column }
@@ -33,6 +34,8 @@ class Percolation {
     }
     /**
      * prints.
+     * The time complexity is O(N).
+     *
      */
 
     public void print() {
@@ -45,6 +48,8 @@ class Percolation {
     }
     /**
      * calculates the index of element in matrix.
+     * The time complexity is O(1).
+     *
      *
      * @param      row   The row
      * @param      col   The col
@@ -57,6 +62,8 @@ class Percolation {
     }
     /**
      * if there is connection, we add an edge.
+     * The time complexity is O(N^2).
+     *
      *
      * @return     { if there is path, true, else false }
      */
@@ -99,6 +106,8 @@ class Percolation {
 }
 /**
  * Class for solution.
+     * The time complexity is O(N^2).
+ *
  */
 
 final class Solution {
