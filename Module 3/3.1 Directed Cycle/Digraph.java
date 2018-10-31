@@ -8,13 +8,13 @@ public class Digraph {
      */
     private final int vertex;
     /**
-     * Number of edges
+     * Number of edges.
      */
     private int edge;
     /**
      * array of bag class.
      */
-    Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
     /**
      * number of incoming edges.
      */
@@ -22,10 +22,10 @@ public class Digraph {
     /**
      * Constructs the object.
      *
-     * @param      vertex     { vertices of int type }
+     * @param      vertex1     { vertices of int type }
      */
-    public Digraph(final int vertex) {
-        this.vertex = vertex;
+    public Digraph(final int vertex1) {
+        this.vertex = vertex1;
         this.edge = 0;
         indegree = new int[vertex];
         adj = (Bag<Integer>[]) new Bag[vertex];

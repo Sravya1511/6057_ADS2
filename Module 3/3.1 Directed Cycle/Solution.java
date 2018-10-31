@@ -45,7 +45,7 @@ class DirectedCycle {
     private void dfs(final Digraph diaGraph, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : diaGraph.adj[v]) {
+        for (int w : diaGraph.adj(v)) {
             if (cycle != null) {
                 return;
             } else if (!marked[w]) {
