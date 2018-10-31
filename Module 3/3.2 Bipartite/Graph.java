@@ -129,4 +129,8 @@ class GraphClass {
         }
         return s.toString();
     }
+
+     public Iterable<Integer> adj(final int v) {
+        return adj[v];
+    }
 }
