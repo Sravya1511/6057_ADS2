@@ -28,7 +28,7 @@ import java.util.NoSuchElementException;
  *  For additional documentation, see <a href="/algs4/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
-public class Stack<Item> implements Iterable<Item> {
+public class Stack<Item> {
     private int N;          // size of the stack
     private Node first;     // top of stack
 
@@ -84,44 +84,44 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
 
-   /**
-     * Return the item most recently added to the stack.
-     * Throw an exception if no such item exists because the stack is empty.
-     */
-    public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
-        return first.item;
-    }
+   // /**
+   //   * Return the item most recently added to the stack.
+   //   * Throw an exception if no such item exists because the stack is empty.
+   //   */
+   //  public Item peek() {
+   //      if (isEmpty()) throw new RuntimeException("Stack underflow");
+   //      return first.item;
+   //  }
 
-   /**
-     * Return string representation.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        for (Item item : this)
-            s.append(item + " ");
-        return s.toString();
-    }
+   // /**
+   //   * Return string representation.
+   //   */
+   //  public String toString() {
+   //      StringBuilder s = new StringBuilder();
+   //      for (Item item : this)
+   //          s.append(item + " ");
+   //      return s.toString();
+   //  }
 
 
-   /**
-     * Return an iterator to the stack that iterates through the items in LIFO order.
-     */
-    public Iterator<Item> iterator()  { return new ListIterator();  }
+   // /**
+   //   * Return an iterator to the stack that iterates through the items in LIFO order.
+   //   */
+   //  public Iterator<Item> iterator()  { return new ListIterator();  }
 
-    // an iterator, doesn't implement remove() since it's optional
-    private class ListIterator implements Iterator<Item> {
-        private Node current = first;
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
+   //  // an iterator, doesn't implement remove() since it's optional
+   //  private class ListIterator implements Iterator<Item> {
+   //      private Node current = first;
+   //      public boolean hasNext()  { return current != null;                     }
+   //      public void remove()      { throw new UnsupportedOperationException();  }
 
-        public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
-            Item item = current.item;
-            current = current.next;
-            return item;
-        }
-    }
+   //      public Item next() {
+   //          if (!hasNext()) throw new NoSuchElementException();
+   //          Item item = current.item;
+   //          current = current.next;
+   //          return item;
+   //      }
+   //  }
 
 
    /**

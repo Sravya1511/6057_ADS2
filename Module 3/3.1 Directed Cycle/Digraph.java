@@ -58,7 +58,7 @@ public class Digraph {
      * @param      w     { vertex 2 }
      */
 
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
         E++;
@@ -72,7 +72,7 @@ public class Digraph {
      */
 
 
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
 
