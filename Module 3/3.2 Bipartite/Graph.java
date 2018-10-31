@@ -16,7 +16,7 @@ class GraphClass {
     /**
      * adj array of bag class type.
      */
-    Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
 
     /**
      * Gets the e.
