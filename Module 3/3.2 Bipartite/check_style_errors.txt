@@ -14,9 +14,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
