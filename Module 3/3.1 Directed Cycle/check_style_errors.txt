@@ -28,15 +28,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 22 errors.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:25:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:25:40: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:42:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:95: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Solution.java:99:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Stack.java:21: Line is longer than 80 characters (found 90). [LineLength]

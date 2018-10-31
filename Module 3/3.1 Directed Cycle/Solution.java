@@ -1,8 +1,11 @@
 import java.util.Scanner;
+/**
+ * Class for directed cycle.
+ */
 class DirectedCycle {
-	/**
-	 * marked boolean array.
-	 */
+    /**
+     * marked boolean array.
+     */
     private boolean[] marked;
     /**
      * edgeTo array.
@@ -19,16 +22,16 @@ class DirectedCycle {
      /**
       * Constructs the object.
       *
-      * @param      G     { Digraph }
+      * @param      diaGraph     { Digraph }
       */
 
-    public DirectedCycle(final Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
-        	if (!marked[v] && cycle == null) {
-            	dfs(G, v);
+    DirectedCycle(final Digraph diaGraph) {
+        marked  = new boolean[diaGraph.V()];
+        onStack = new boolean[diaGraph.V()];
+        edgeTo  = new int[diaGraph.V()];
+        for (int v = 0; v < diaGraph.V(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(diaGraph, v);
             }
         }
     }
@@ -36,18 +39,18 @@ class DirectedCycle {
     /**
      * creates dfs and fills marked array and edgeto array.
      *
-     * @param      G     { digraph }
+     * @param      diaGraph     { digraph }
      * @param      v     { source vertex }
      */
-    private void dfs(final Digraph G, final int v) {
+    private void dfs(final Digraph diaGraph, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj[v]) {
+        for (int w : diaGraph.adj[v]) {
             if (cycle != null) {
-            	return;
+                return;
             } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(diaGraph, w);
             } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -74,35 +77,36 @@ class DirectedCycle {
  * class Solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * reads input.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner input = new Scanner(System.in);
-		int vertices = Integer.parseInt(input.nextLine());
-		int edges = Integer.parseInt(input.nextLine());
-		Digraph dg = new Digraph(vertices);
-		for (int i = 0; i < edges; i++) {
-			String[] tokens = input.nextLine().split(" ");
-			dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
-		}
+    }
+    /**
+     * reads input.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner input = new Scanner(System.in);
+        int vertices = Integer.parseInt(input.nextLine());
+        int edges = Integer.parseInt(input.nextLine());
+        Digraph dg = new Digraph(vertices);
+        for (int i = 0; i < edges; i++) {
+            String[] tokens = input.nextLine().split(" ");
+            dg.addEdge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]));
+        }
 
-		DirectedCycle dc = new DirectedCycle(dg);
-		if(dc.hasCycle()) {
-			System.out.println("Cycle exists.");
-		} else {
-			System.out.println("Cycle doesn't exists.");
-		}
+        DirectedCycle dc = new DirectedCycle(dg);
+        if (dc.hasCycle()) {
+            System.out.println("Cycle exists.");
+        } else {
+            System.out.println("Cycle doesn't exists.");
+        }
 
-	}
+    }
 }
 
 
