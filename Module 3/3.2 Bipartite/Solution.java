@@ -29,7 +29,7 @@ class Bipartite {
      *
      * @param      G     { Graph class }
      */
-    public Bipartite(GraphClass G) {
+    Bipartite(final GraphClass G) {
         isBipartite = true;
         color  = new boolean[G.vertex()];
         marked = new boolean[G.vertex()];
@@ -48,9 +48,9 @@ class Bipartite {
      * @param      v     { Source  }
      */
 
-    private void dfs(final GraphClass G, final int v) {
+    private void dfs(final GraphClass graph, final int v) {
         marked[v] = true;
-        for (int w : G.adj[v]) {
+        for (int w : graph.adj[v]) {
 
             if (cycle != null) {
                 return;
@@ -59,7 +59,7 @@ class Bipartite {
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
-                dfs(G, w);
+                dfs(graph, w);
             } else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
