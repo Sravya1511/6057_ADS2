@@ -28,8 +28,15 @@ class GraphClass {
     public int getedge() {
         return edge;
     }
+    /**
+     * Gets the adj.
+     *
+     * @param      i     { int }
+     *
+     * @return     The adj.
+     */
 
-    public Bag<Integer> getAdj(int i) {
+    public Bag<Integer> getAdj(final int i) {
         return adj[i];
     }
     /**
@@ -129,6 +136,13 @@ class GraphClass {
         }
         return s.toString();
     }
+    /**
+     * iterable method.
+     *
+     * @param      v     { vertex }
+     *
+     * @return     { iterable }
+     */
 
      public Iterable<Integer> adj(final int v) {
         return adj[v];
