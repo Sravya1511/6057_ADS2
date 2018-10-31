@@ -56,9 +56,9 @@ class Bipartite {
         marked[v] = true;
         for (int w : graph.adj(v)) {
 
-            if (cycle != null) {
-                return;
-            }
+            // if (cycle != null) {
+            //     return;
+            // }
 
             if (!marked[w]) {
                 edgeTo[w] = v;
@@ -66,12 +66,12 @@ class Bipartite {
                 dfs(graph, w);
             } else if (color[w] == color[v]) {
                 isBipartite = false;
-                cycle = new Stack<Integer>();
-                cycle.push(w);
-                for (int x = v; x != w; x = edgeTo[x]) {
-                    cycle.push(x);
-                }
-                cycle.push(w);
+                // cycle = new Stack<Integer>();
+                // cycle.push(w);
+                // for (int x = v; x != w; x = edgeTo[x]) {
+                //     cycle.push(x);
+                // }
+                // cycle.push(w);
             }
         }
     }
