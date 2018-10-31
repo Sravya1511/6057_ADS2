@@ -4,29 +4,19 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:4:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:5:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:6:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:6:20: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:15:20: Parameter V should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:15:24: 'V' hides a field. [HiddenField]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:15:24: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:16: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:16: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:31:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:40:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:49: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:51:25: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:51:32: Parameter w should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:63: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:66:34: Parameter v should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:9:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:10: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:13:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:17:20: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:27:30: 'V' hides a field. [HiddenField]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:27:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:42:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:51:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:61:25: Parameter v should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:61:32: Parameter w should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 3\3.1 Directed Cycle\Digraph.java:75:34: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
 Starting audit...
