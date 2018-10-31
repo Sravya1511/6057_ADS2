@@ -93,7 +93,7 @@ class Solution {
 		Digraph dg = new Digraph(vertices);
 		for(int i = 0; i<edges; i++) {
 			String[] tokens = input.nextLine().split(" ");
-			dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[0]));
+			dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
 
 		DirectedCycle dc = new DirectedCycle(dg);
