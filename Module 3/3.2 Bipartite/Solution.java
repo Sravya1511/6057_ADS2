@@ -1,16 +1,33 @@
 import java.util.Scanner;
+/**
+ * Class for bipartite.
+ */
 class Bipartite {
-    private boolean isBipartite;   // is the graph bipartite?
-    private boolean[] color;       // color[v] gives vertices on one side of bipartition
-    private boolean[] marked;      // marked[v] = true iff v has been visited in DFS
-    private int[] edgeTo;          // edgeTo[v] = last edge on path to v
-    private Stack<Integer> cycle;  // odd-length cycle
+    /**
+     * bipartite array.
+     */
+    private boolean isBipartite;
+    /**
+     * color array.
+     */
+    private boolean[] color;
+    /**
+     * visited or not array.
+     */
+    private boolean[] marked;
+    /**
+     * edges array.
+     */
+    private int[] edgeTo;
+    /**
+     * stack - cycle.
+     */
+    private Stack<Integer> cycle;
 
     /**
-     * Determines whether an undirected graph is bipartite and finds either a
-     * bipartition or an odd-length cycle.
+     * Constructs the object.
      *
-     * @param  G the graph
+     * @param      G     { Graph class }
      */
     public Bipartite(GraphClass G) {
         isBipartite = true;
@@ -23,28 +40,30 @@ class Bipartite {
                 dfs(G, v);
             }
         }
-        // assert check(G);
     }
+    /**
+     * depth first search.
+     *
+     * @param      G     { Graph class}
+     * @param      v     { Source  }
+     */
 
-    private void dfs(GraphClass G, int v) {
+    private void dfs(final GraphClass G, final int v) {
         marked[v] = true;
         for (int w : G.adj[v]) {
 
-            // short circuit if odd-length cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
-            // found uncolored vertex, so recur
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
                 dfs(G, w);
-            }
-
-            // if v-w create an odd-length cycle, find it
-            else if (color[w] == color[v]) {
+            } else if (color[w] == color[v]) {
                 isBipartite = false;
                 cycle = new Stack<Integer>();
-                cycle.push(w);  // don't need this unless you want to include start vertex twice
+                cycle.push(w);
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
@@ -54,17 +73,32 @@ class Bipartite {
     }
 
     /**
-     * Returns true if the graph is bipartite.
+     * Determines if bipartite.
      *
-     * @return {@code true} if the graph is bipartite; {@code false} otherwise
+     * @return     True if bipartite, False otherwise.
      */
     public boolean isBipartite() {
         return isBipartite;
     }
 }
+/**
+ * class for Solution.
+ */
 
-class Solution {
-    public static void main(String[] args) {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+     * reads input.
+     * creates object for graph class.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner input = new Scanner(System.in);
         int vertices = Integer.parseInt(input.nextLine());
         int edges = Integer.parseInt(input.nextLine());
