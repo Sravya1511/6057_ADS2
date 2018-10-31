@@ -51,7 +51,7 @@ class Bipartite {
 
     private void dfs(final GraphClass graph, final int v) {
         marked[v] = true;
-        for (int w : graph.adj[v]) {
+        for (int w : graph.adj(v)) {
 
             if (cycle != null) {
                 return;

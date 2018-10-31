@@ -16,7 +16,7 @@ class GraphClass {
     /**
      * adj array of bag class type.
      */
-    Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
 
     /**
      * Gets the e.
@@ -128,5 +128,9 @@ class GraphClass {
             s.append("\n");
         }
         return s.toString();
+    }
+
+    public Iterable<Integer> adj(final int v) {
+        return adj(v);
     }
 }
