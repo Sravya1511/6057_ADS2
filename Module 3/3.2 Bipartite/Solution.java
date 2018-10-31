@@ -43,6 +43,9 @@ class Bipartite {
     }
     /**
      * depth first search.
+         *The time complexity is O(N).
+     *
+     *
      *
      *
      * @param      graph    { Graph class}
@@ -75,6 +78,8 @@ class Bipartite {
 
     /**
      * Determines if bipartite.
+         *The time complexity is O(1).
+     *
      *
      * @return     True if bipartite, False otherwise.
      */
@@ -89,6 +94,8 @@ class Bipartite {
 final class Solution {
     /**
      * Constructs the object.
+         *The time complexity is O(N).
+     *
      */
     private Solution() {
 

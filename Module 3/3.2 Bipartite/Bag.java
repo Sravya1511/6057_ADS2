@@ -99,6 +99,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Return an iterator that iterates over the items in the bag.
+     * The time complexity is O(N).
      *
      *
      * @return     { iterator }
@@ -117,6 +118,8 @@ public class Bag<Item> implements Iterable<Item> {
         private Node current = first;
         /**
          * Determines if it has next.
+         * The time complexity is O(1).
+         *
          *
          * @return     True if has next, False otherwise.
          */
@@ -125,12 +128,17 @@ public class Bag<Item> implements Iterable<Item> {
         }
         /**
          * removes.
+         *The time complexity is O(1).
+         *
+         *
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
          * gives next node.
+         *The time complexity is O(1).
+         *
          *
          * @return     { item }
          */

@@ -138,6 +138,8 @@ class GraphClass {
     }
     /**
      * iterable method.
+     * Thhe time complexity is O(N).
+     *
      *
      * @param      v     { vertex }
      *

@@ -37,6 +37,8 @@ public class Stack<Item> {
 
     /**
      * Determines if empty.
+     * Thhe time complexity is O(1).
+     *
      *
      * @return     True if empty, False otherwise.
      */
@@ -46,6 +48,8 @@ public class Stack<Item> {
 
     /**
      * size of the stack.
+     * Thhe time complexity is O(1).
+     *
      *
      * @return     { int }
      */
@@ -54,6 +58,8 @@ public class Stack<Item> {
     }
     /**
      * pushes element.
+     * Thhe time complexity is O(1).
+     *
      *
      * @param      item  The item
      */
