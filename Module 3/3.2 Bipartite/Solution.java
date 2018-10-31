@@ -27,17 +27,17 @@ class Bipartite {
     /**
      * Constructs the object.
      *
-     * @param      G     { Graph class }
+     * @param      graph     { Graph class }
      */
-    Bipartite(final GraphClass G) {
+    Bipartite(final GraphClass graph) {
         isBipartite = true;
-        color  = new boolean[G.vertex()];
-        marked = new boolean[G.vertex()];
-        edgeTo = new int[G.vertex()];
+        color  = new boolean[graph.vertex()];
+        marked = new boolean[graph.vertex()];
+        edgeTo = new int[graph.vertex()];
 
-        for (int v = 0; v < G.vertex(); v++) {
+        for (int v = 0; v < graph.vertex(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(graph, v);
             }
         }
     }
