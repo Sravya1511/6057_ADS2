@@ -38,6 +38,8 @@ class DirectedCycle {
 
     /**
      * creates dfs and fills marked array and edgeto array.
+     * Thhe time complexity is O(E).
+     *
      *
      * @param      diaGraph     { digraph }
      * @param      v     { source vertex }
@@ -66,6 +68,8 @@ class DirectedCycle {
 
     /**
      * Determines if it has cycle.
+     * Thhe time complexity is O(1).
+     *
      *
      * @return     True if has cycle, False otherwise.
      */
@@ -79,6 +83,8 @@ class DirectedCycle {
 final class Solution {
     /**
      * Constructs the object.
+     * The time complexity id O(N).
+     *
      */
     private Solution() {
 

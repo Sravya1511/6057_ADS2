@@ -21,6 +21,7 @@ public class Digraph {
     private int[] indegree;
     /**
      * Constructs the object.
+     * Thhe time complexity is O(N).
      *
      * @param      vertex1     { vertices of int type }
      */
@@ -35,6 +36,8 @@ public class Digraph {
     }
     /**
      * Number of vertices.
+     * Thhe time complexity is O(1).
+     *
      *
      * @return     { integer }
      */
@@ -44,6 +47,8 @@ public class Digraph {
     }
     /**
      * Number of edges.
+     * Thhe time complexity is O(1).
+     *
      *
      * @return     { int }
      */
@@ -53,6 +58,8 @@ public class Digraph {
     }
     /**
      * Adds an edge.
+     * Thhe time complexity is O(1).
+     *
      *
      * @param      v     { vertex 1 }
      * @param      w     { vertex 2 }
@@ -65,6 +72,8 @@ public class Digraph {
     }
     /**
      * iterable.
+     * Thhe time complexity is O(E).
+     *
      *
      * @param      v     { vertex }
      *
