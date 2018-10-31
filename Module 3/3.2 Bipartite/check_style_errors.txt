@@ -16,10 +16,8 @@ Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Solution.java:32:32: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Solution.java:47:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Solution.java:51:39: Expected @param tag for 'graph'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 3\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -44,7 +44,7 @@ class Bipartite {
     /**
      * depth first search.
      *
-     * @param      G     { Graph class}
+     * @param      graph    { Graph class}
      * @param      v     { Source  }
      */
 
