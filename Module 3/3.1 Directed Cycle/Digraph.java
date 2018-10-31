@@ -6,11 +6,11 @@ public class Digraph {
     /**
      * number of vertices.
      */
-    private final int V;
+    private final int vertex;
     /**
      * Number of edges
      */
-    private int E;
+    private int edge;
     /**
      * array of bag class.
      */
@@ -22,14 +22,14 @@ public class Digraph {
     /**
      * Constructs the object.
      *
-     * @param      V     { vertices of int type }
+     * @param      vertex     { vertices of int type }
      */
-    public Digraph(final int V) {
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+    public Digraph(final int vertex) {
+        this.vertex = vertex;
+        this.edge = 0;
+        indegree = new int[vertex];
+        adj = (Bag<Integer>[]) new Bag[vertex];
+        for (int v = 0; v < vertex; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -39,8 +39,8 @@ public class Digraph {
      * @return     { integer }
      */
 
-    public int V() {
-        return V;
+    public int vertex() {
+        return vertex;
     }
     /**
      * Number of edges.
@@ -48,8 +48,8 @@ public class Digraph {
      * @return     { int }
      */
 
-    public int E() {
-        return E;
+    public int edge() {
+        return edge;
     }
     /**
      * Adds an edge.
@@ -61,7 +61,7 @@ public class Digraph {
     public void addEdge(final int v, final int w) {
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edge++;
     }
     /**
      * iterable.

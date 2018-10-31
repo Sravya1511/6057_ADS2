@@ -26,10 +26,10 @@ class DirectedCycle {
       */
 
     DirectedCycle(final Digraph diaGraph) {
-        marked  = new boolean[diaGraph.V()];
-        onStack = new boolean[diaGraph.V()];
-        edgeTo  = new int[diaGraph.V()];
-        for (int v = 0; v < diaGraph.V(); v++) {
+        marked  = new boolean[diaGraph.vertex()];
+        onStack = new boolean[diaGraph.vertex()];
+        edgeTo  = new int[diaGraph.vertex()];
+        for (int v = 0; v < diaGraph.vertex(); v++) {
             if (!marked[v] && cycle == null) {
                 dfs(diaGraph, v);
             }

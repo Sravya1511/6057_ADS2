@@ -7,7 +7,7 @@ public class Stack<Item> {
     /**
      * size of the stack.
      */
-    private int N;
+    private int n;
     /**
      * Node type.
      */
@@ -32,7 +32,7 @@ public class Stack<Item> {
      */
     public Stack() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Stack<Item> {
      * @return     { int }
      */
     public int size() {
-        return N;
+        return n;
     }
     /**
      * pushes element.
@@ -58,12 +58,12 @@ public class Stack<Item> {
      * @param      item  The item
      */
 
-    public void push(Item item) {
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 }
 
