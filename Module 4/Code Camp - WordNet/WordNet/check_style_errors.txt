@@ -295,9 +295,9 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:62: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:67: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:71:30: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:73:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:74: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:75: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:74:43: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:75: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:76: Line is longer than 80 characters (found 103). [LineLength]
 Audit done.
 Checkstyle ends with 30 errors.
 Starting audit...

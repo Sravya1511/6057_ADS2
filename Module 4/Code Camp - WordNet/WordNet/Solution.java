@@ -70,10 +70,17 @@ class Solution {
                 	case "Queries":
                 	while(input.hasNext()) {
                 		String[] tokens = input.nextLine().split(" ");
-                		if(tokens[0].equals("null")) {
-                			System.out.println("IllegalArgumentException");
-                			// throw new IllegalArgumentException("IllegalArgumentException");
+                		try {
+                			if(tokens[0].equals("null")) {
+                			// System.out.println("IllegalArgumentException");
+                			throw new IllegalArgumentException("IllegalArgumentException");
                 		}
+                		} catch (IllegalArgumentException e) {
+                			System.out.println(e.getMessage());
+                		}
+
+                		}
+
                 	}
 
 
@@ -84,4 +91,3 @@ class Solution {
 
 
 	}
-}
