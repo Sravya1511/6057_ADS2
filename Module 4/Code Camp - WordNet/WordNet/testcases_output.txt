@@ -186,7 +186,8 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-
+Exception in thread "main" java.lang.IllegalArgumentException: IllegalArgumentException
+	at Solution.main(Solution.java:74)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -194,7 +195,8 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-
+Exception in thread "main" java.lang.IllegalArgumentException: IllegalArgumentException
+	at Solution.main(Solution.java:74)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########

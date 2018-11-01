@@ -63,13 +63,20 @@ class Solution {
                 }
             } catch (FileNotFoundException e) {
 		    }
-
-		    while(input.hasNext()) {
-                String s = input.nextLine();
+            String s = input.nextLine();
                 switch (s) {
                 	case "Graph":
                 	System.out.println(digraph);
-                }
+                	case "Queries":
+                	while(input.hasNext()) {
+                		String[] tokens = input.nextLine().split(" ");
+                		if(tokens[0].equals("null")) {
+                			throw new IllegalArgumentException("IllegalArgumentException");
+                		}
+                	}
+
+
+
 		    }
 
 
