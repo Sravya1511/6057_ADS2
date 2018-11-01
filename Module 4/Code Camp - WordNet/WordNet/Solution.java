@@ -69,9 +69,13 @@ class Solution {
                 	case "Graph":
                 	if(directedCycle.hasCycle()) {
                 			// throw new IllegalArgumentException("IllegalArgumentException");
-                		    	System.out.println("Cycle detected");
+                		System.out.println("Cycle detected");
                 		    	return;
                 		    }
+                    if(digraph.checkMultiple()) {
+                    	System.out.println("Multiple roots");
+                    	return;
+                    }
                 	System.out.println(digraph);
                 	case "Queries":
                 	while(input.hasNext()) {

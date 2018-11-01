@@ -209,6 +209,21 @@ public class Digraph {
         return indegree[v];
     }
 
+    public boolean checkMultiple() {
+         // Digraph  = new Digraph(V);
+        int check = 0;
+        for (int v = 0; v < V; v++) {
+            for (int w : adj(v)) {
+                if(outdegree(w) == 0 || outdegree(w) == V-1) {
+                    check++;
+                }
+                if(check >1) return true;
+            }
+        }
+        return false;
+
+    }
+
     /**
      * Returns the reverse of the digraph.
      *
