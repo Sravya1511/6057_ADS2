@@ -64,6 +64,7 @@ class Solution {
             } catch (FileNotFoundException e) {
 		    }
             String s = input.nextLine();
+            DirectedCycle directedCycle = new DirectedCycle(digraph);
                 switch (s) {
                 	case "Graph":
                 	System.out.println(digraph);
@@ -72,9 +73,13 @@ class Solution {
                 		String[] tokens = input.nextLine().split(" ");
                 		try {
                 			if(tokens[0].equals("null")) {
-                			// System.out.println("IllegalArgumentException");
                 			throw new IllegalArgumentException("IllegalArgumentException");
-                		}
+                		    }
+                		    if(directedCycle.hasCycle()) {
+                			// throw new IllegalArgumentException("IllegalArgumentException");
+                		    	System.out.println("Cycle detected");
+
+                		    }
                 		} catch (IllegalArgumentException e) {
                 			System.out.println(e.getMessage());
                 		}
@@ -86,8 +91,4 @@ class Solution {
 
 
 		    }
-
-
-
-
 	}
