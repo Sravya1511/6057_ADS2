@@ -1,0 +1,79 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+
+
+
+
+class Solution {
+	private Solution() {
+	}
+		public static void main(String[] args) {
+			Scanner input = new Scanner(System.in);
+			String x = input.nextLine();
+			HashMap<Integer, String[]> synset = new HashMap<Integer, String[]>();
+			HashMap<String, ArrayList<Integer>> synsetQueries = new HashMap<String, ArrayList<Integer>>();
+
+			try {
+			    Scanner scanner = new Scanner(new File("Files/" + x));
+                while(scanner.hasNextLine()) {
+            	   //  // System.out.println(scanner.nextLine());
+                   String[] tokens = scanner.nextLine().split(",");
+                   String[] words = tokens[1].split(" ");
+                   synset.put(Integer.parseInt(tokens[0]), words);
+
+                }
+                for(int i: synset.keySet()) {
+                	String[] keys = synset.get(i);
+                	for(int j = 0; j<keys.length; j++) {
+
+                		if(synsetQueries.containsKey(keys[j])) {
+                			ArrayList<Integer> intarr = synsetQueries.get(keys[j]);
+                			intarr.add(i);
+                			synsetQueries.put(keys[j], intarr);
+                		}
+                		else {
+                			ArrayList<Integer> indx = new ArrayList<Integer>();
+                			indx.add(i);
+                			synsetQueries.put(keys[j], indx);
+
+                		}
+
+                	}
+                	// System.out.println(i+"----"+Arrays.toString(synset.get(i)));
+
+                }
+                // System.out.println(synset);
+                // System.out.println(synsetQueries);
+            } catch (FileNotFoundException e) {
+		    }
+			String y = input.nextLine();
+			Digraph digraph = new Digraph(synset.size());
+
+		    try {
+			    Scanner scanner1 = new Scanner(new File("Files/" + y));
+                while(scanner1.hasNextLine()) {
+            	    String[] vertices = scanner1.nextLine().split(",");
+            	    digraph.addEdge(Integer.parseInt(vertices[0]), Integer.parseInt(vertices[1]));
+                }
+            } catch (FileNotFoundException e) {
+		    }
+
+		    while(input.hasNext()) {
+                String s = input.nextLine();
+                switch (s) {
+                	case "Graph":
+                	System.out.println(digraph);
+                }
+		    }
+
+
+
+
+	}
+}
