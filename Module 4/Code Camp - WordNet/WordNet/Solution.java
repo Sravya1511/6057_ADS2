@@ -26,12 +26,12 @@ class Solution {
                    String[] tokens = scanner.nextLine().split(",");
                    String[] words = tokens[1].split(" ");
                    synset.put(Integer.parseInt(tokens[0]), words);
+                   // System.out.println(tokens[0]+"----"+Arrays.toString(words));
 
                 }
                 for(int i: synset.keySet()) {
                 	String[] keys = synset.get(i);
                 	for(int j = 0; j<keys.length; j++) {
-
                 		if(synsetQueries.containsKey(keys[j])) {
                 			ArrayList<Integer> intarr = synsetQueries.get(keys[j]);
                 			intarr.add(i);
@@ -59,7 +59,11 @@ class Solution {
 			    Scanner scanner1 = new Scanner(new File("Files/" + y));
                 while(scanner1.hasNextLine()) {
             	    String[] vertices = scanner1.nextLine().split(",");
-            	    digraph.addEdge(Integer.parseInt(vertices[0]), Integer.parseInt(vertices[1]));
+            	    for(int i = 1; i<vertices.length; i++) {
+                        digraph.addEdge(Integer.parseInt(vertices[0]),
+            	    	Integer.parseInt(vertices[i]));
+            	    }
+
                 }
             } catch (FileNotFoundException e) {
 		    }
@@ -92,8 +96,5 @@ class Solution {
                 		}
 
                 	}
-
-
-
-		    }
+		}
 	}
