@@ -296,9 +296,10 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:67: switch without "default" clause. [MissingSwitchDefault]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:71:30: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:73:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:74: Line is longer than 80 characters (found 103). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:74: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:75: Line is longer than 80 characters (found 106). [LineLength]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

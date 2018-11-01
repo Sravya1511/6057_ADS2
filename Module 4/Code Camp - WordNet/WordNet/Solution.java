@@ -71,7 +71,8 @@ class Solution {
                 	while(input.hasNext()) {
                 		String[] tokens = input.nextLine().split(" ");
                 		if(tokens[0].equals("null")) {
-                			throw new IllegalArgumentException("IllegalArgumentException");
+                			System.out.println("IllegalArgumentException");
+                			// throw new IllegalArgumentException("IllegalArgumentException");
                 		}
                 	}
 
