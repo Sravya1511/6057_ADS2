@@ -67,6 +67,11 @@ class Solution {
             DirectedCycle directedCycle = new DirectedCycle(digraph);
                 switch (s) {
                 	case "Graph":
+                	if(directedCycle.hasCycle()) {
+                			// throw new IllegalArgumentException("IllegalArgumentException");
+                		    	System.out.println("Cycle detected");
+                		    	return;
+                		    }
                 	System.out.println(digraph);
                 	case "Queries":
                 	while(input.hasNext()) {
@@ -75,11 +80,7 @@ class Solution {
                 			if(tokens[0].equals("null")) {
                 			throw new IllegalArgumentException("IllegalArgumentException");
                 		    }
-                		    if(directedCycle.hasCycle()) {
-                			// throw new IllegalArgumentException("IllegalArgumentException");
-                		    	System.out.println("Cycle detected");
 
-                		    }
                 		} catch (IllegalArgumentException e) {
                 			System.out.println(e.getMessage());
                 		}
