@@ -213,10 +213,10 @@ public class Digraph {
          // Digraph  = new Digraph(V);
         int check = 0;
         for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                if(outdegree(w) == 0 || outdegree(w) == V-1) {
+            // for (int w : adj(v)) {
+                if(outdegree(v) == 0 || outdegree(v) == V-1) {
                     check++;
-                }
+                // }
                 if(check >1) return true;
             }
         }
