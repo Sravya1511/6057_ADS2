@@ -349,6 +349,8 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:22: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:30: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:31: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:31: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:32: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:37: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:38: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:39: '+' is not preceded with whitespace. [WhitespaceAround]
@@ -359,7 +361,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:52: Line is longer than 80 characters (found 107). [LineLength]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:55: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 41 errors.
+Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:2:8: Unused import - java.io.IOException. [UnusedImports]
