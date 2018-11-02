@@ -79,14 +79,12 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:212:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'checkMultiple' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'checkMultiple' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:212:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:217:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:217:58: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:217:59: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:220: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:220:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:220:27: '>' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:245: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 54 errors.
+Checkstyle ends with 52 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

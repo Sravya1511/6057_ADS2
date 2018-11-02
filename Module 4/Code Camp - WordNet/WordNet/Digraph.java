@@ -214,7 +214,7 @@ public class Digraph {
         int check = 0;
         for (int v = 0; v < V; v++) {
             // for (int w : adj(v)) {
-                if(outdegree(v) == 0 || outdegree(v) == V-1) {
+                if(outdegree(v) == 0 || indegree(v) == 0) {
                     check++;
                 // }
                 if(check >1) return true;
