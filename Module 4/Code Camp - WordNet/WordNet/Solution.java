@@ -86,7 +86,8 @@ class Solution {
                 		String[] tokens = input.nextLine().split(" ");
                 		try {
                 			if(tokens[0].equals("null")) {
-                			throw new IllegalArgumentException("IllegalArgumentException");
+                			System.out.println("IllegalArgumentException");
+                			return;
                 		    }
                 		} catch (IllegalArgumentException e) {
                 			System.out.println(e.getMessage());

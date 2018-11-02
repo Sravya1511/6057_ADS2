@@ -36,14 +36,14 @@ Your Output:
 14: 13
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-distance = 7, ancestor = nullentity
-distance = 10, ancestor = nullentity
+distance = 7, ancestor = entity
+distance = 10, ancestor = entity
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -56,27 +56,27 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-distance = 7, ancestor = nullmacromoleculesupermolecule
-distance = 7, ancestor = nullmacromoleculesupermolecule
-distance = 9, ancestor = nullmacromoleculesupermolecule
-distance = 8, ancestor = nullmacromoleculesupermolecule
-distance = 7, ancestor = nulllipidlipidelipoid
-distance = 1, ancestor = nullanimal_oil
+distance = 7, ancestor = macromoleculesupermolecule
+distance = 7, ancestor = macromoleculesupermolecule
+distance = 9, ancestor = macromoleculesupermolecule
+distance = 8, ancestor = macromoleculesupermolecule
+distance = 7, ancestor = lipidlipidelipoid
+distance = 1, ancestor = animal_oil
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-distance = 3, ancestor = nullwax
-distance = 13, ancestor = nullthing
-distance = 2, ancestor = nullwax
+distance = 3, ancestor = wax
+distance = 13, ancestor = thing
+distance = 2, ancestor = wax
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 distance = 0, ancestor = b
 distance = 0, ancestor = c
@@ -85,14 +85,14 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-distance = 0, ancestor = nullb
-distance = 0, ancestor = nullc
-distance = 0, ancestor = nulld
-distance = 0, ancestor = nulle
-distance = 0, ancestor = nullf
+distance = 0, ancestor = b
+distance = 0, ancestor = c
+distance = 0, ancestor = d
+distance = 0, ancestor = e
+distance = 0, ancestor = f
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -106,19 +106,19 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-distance = 1, ancestor = nullb
-distance = 2, ancestor = nullc
-distance = 4, ancestor = nullc
-distance = 3, ancestor = nullc
-distance = 4, ancestor = nullc
-distance = 4, ancestor = nullc
-distance = 3, ancestor = nullc
-distance = 3, ancestor = nulli
-distance = 2, ancestor = nullj
-distance = 1, ancestor = nullk
+distance = 1, ancestor = b
+distance = 2, ancestor = c
+distance = 4, ancestor = c
+distance = 3, ancestor = c
+distance = 4, ancestor = c
+distance = 4, ancestor = c
+distance = 3, ancestor = c
+distance = 3, ancestor = i
+distance = 2, ancestor = j
+distance = 1, ancestor = k
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -129,16 +129,16 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-distance = 1, ancestor = nullb
-distance = 2, ancestor = nullc
-distance = 2, ancestor = nullh
-distance = 5, ancestor = nullh
-distance = 4, ancestor = nullh
-distance = 3, ancestor = nullh
-distance = 1, ancestor = nullh
+distance = 1, ancestor = b
+distance = 2, ancestor = c
+distance = 2, ancestor = h
+distance = 5, ancestor = h
+distance = 4, ancestor = h
+distance = 3, ancestor = h
+distance = 1, ancestor = h
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 1, ancestor = c
@@ -152,16 +152,16 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-distance = 1, ancestor = nullb
-distance = 1, ancestor = nullc
-distance = 1, ancestor = nulld
-distance = 1, ancestor = nulle
-distance = 2, ancestor = nullf
-distance = 3, ancestor = nullf
-distance = 3, ancestor = nullf
-distance = 3, ancestor = nullf
-distance = 3, ancestor = nullf
-distance = 4, ancestor = nullf
+distance = 1, ancestor = b
+distance = 1, ancestor = c
+distance = 1, ancestor = d
+distance = 1, ancestor = e
+distance = 2, ancestor = f
+distance = 3, ancestor = f
+distance = 3, ancestor = f
+distance = 3, ancestor = f
+distance = 3, ancestor = f
+distance = 4, ancestor = f
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -204,26 +204,20 @@ Your Output:
 Multiple roots
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
 IllegalArgumentException
-Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:19)
-	at Solution.main(Solution.java:95)
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
 IllegalArgumentException
-Exception in thread "main" java.lang.NullPointerException
-	at SAP.length(SAP.java:19)
-	at Solution.main(Solution.java:95)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -247,23 +241,23 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-distance = 11, ancestor = nullwholeunit
-distance = 8, ancestor = nullorganismbeing
-distance = 14, ancestor = nullentity
-distance = 13, ancestor = nullobjectphysical_object
-distance = 2, ancestor = nulldecadedecennarydecennium
-distance = 8, ancestor = nullsubstance
-distance = 2, ancestor = nullport
-distance = 2, ancestor = nullletterletter_of_the_alphabetalphabetic_character
-distance = 2, ancestor = nullletterletter_of_the_alphabetalphabetic_character
-distance = 12, ancestor = nullpersonindividualsomeonesomebodymortalsoul
-distance = 15, ancestor = nullabstractionabstract_entity
-distance = 0, ancestor = null9/119-11September_11Sept._11Sep_11
-distance = 2, ancestor = nulldigitfigure
-distance = 13, ancestor = nullabstractionabstract_entity
-distance = 12, ancestor = nullabstractionabstract_entity
-distance = 0, ancestor = nulleraepoch
-distance = 8, ancestor = nullabstractionabstract_entity
+distance = 11, ancestor = wholeunit
+distance = 8, ancestor = organismbeing
+distance = 14, ancestor = entity
+distance = 13, ancestor = objectphysical_object
+distance = 2, ancestor = decadedecennarydecennium
+distance = 8, ancestor = substance
+distance = 2, ancestor = port
+distance = 2, ancestor = letterletter_of_the_alphabetalphabetic_character
+distance = 2, ancestor = letterletter_of_the_alphabetalphabetic_character
+distance = 12, ancestor = personindividualsomeonesomebodymortalsoul
+distance = 15, ancestor = abstractionabstract_entity
+distance = 0, ancestor = 9/119-11September_11Sept._11Sep_11
+distance = 2, ancestor = digitfigure
+distance = 13, ancestor = abstractionabstract_entity
+distance = 12, ancestor = abstractionabstract_entity
+distance = 0, ancestor = eraepoch
+distance = 8, ancestor = abstractionabstract_entity
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

@@ -344,18 +344,18 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:23:34: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:24:23: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:27:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:39:8: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:39:21: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:39:22: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:42:37: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:42:38: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:42:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:42:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:42:55: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:42:56: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:45: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:48: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:51: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:8: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:21: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:22: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:37: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:38: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:39: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:40: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:55: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:56: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:49: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:52: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
 Checkstyle ends with 39 errors.
 Starting audit...
@@ -393,8 +393,8 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:79:23: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:85:30: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:88:43: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:89: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:95: Line is longer than 80 characters (found 111). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:89: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Solution.java:96: Line is longer than 80 characters (found 111). [LineLength]
 Audit done.
 Checkstyle ends with 36 errors.
 Starting audit...

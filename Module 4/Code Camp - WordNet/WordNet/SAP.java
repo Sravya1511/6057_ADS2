@@ -35,9 +35,10 @@ public class SAP {
 
         }
     }
-    String ancestor = null;
+    StringBuilder ancestor = new StringBuilder();
+
     for(int i = 0; i<a.length; i++) {
-        ancestor += a[i];
+        ancestor.append(a[i]);
     }
     System.out.println("distance = "+m+", ancestor = "+ancestor);
 
