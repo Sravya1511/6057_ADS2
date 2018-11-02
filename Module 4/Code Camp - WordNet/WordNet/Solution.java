@@ -88,10 +88,12 @@ class Solution {
                 			if(tokens[0].equals("null")) {
                 			throw new IllegalArgumentException("IllegalArgumentException");
                 		    }
-
                 		} catch (IllegalArgumentException e) {
                 			System.out.println(e.getMessage());
                 		}
+                		SAP sap = new SAP(digraph);
+                		sap.length(synsetQueries.get(tokens[0]), synsetQueries.get(tokens[1]), synset);
+
 
                 		}
 
