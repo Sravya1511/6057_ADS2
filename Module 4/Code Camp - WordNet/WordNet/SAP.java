@@ -40,7 +40,7 @@ public class SAP {
     for(int i = 0; i<a.length-1; i++) {
         ancestor.append(a[i]).append(" ");
     }
-    ancestor.append(a[a.length-1]).append(" ");
+    ancestor.append(a[a.length]);
 
 
     System.out.println("distance = "+m+", ancestor = "+ancestor);
