@@ -19,8 +19,9 @@ Your Output:
 3: 2 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.calculatePR(Solution.java:52)
-	at Solution.main(Solution.java:118)
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -43,10 +44,10 @@ Your Output:
 2: 3 0 
 3: 0 
 
-0 - 0.5
-1 - 0.5
-2 - 0.25
-3 - 0.125
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -69,10 +70,10 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-0 - 0.39393939393939387
-1 - 0.4924242424242423
-2 - 0.2954545454545454
-3 - 0.09848484848484847
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -107,14 +108,10 @@ Your Output:
 6: 0 
 7: 0 
 
-0 - 1.5499999999999994
-1 - 0.5166666666666665
-2 - 0.5166666666666665
-3 - 0.5166666666666665
-4 - 0.1033333333333333
-5 - 0.1033333333333333
-6 - 0.1033333333333333
-7 - 0.1033333333333333
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -144,8 +141,9 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.calculatePR(Solution.java:52)
-	at Solution.main(Solution.java:118)
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -180,17 +178,13 @@ Your Output:
 6: 
 7: 
 
-0 - 1.50136872878826E-135
-1 - 5.0045624292941996E-136
-2 - 5.0045624292941996E-136
-3 - 5.0045624292941996E-136
-4 - 1.0009124858588398E-136
-5 - 1.0009124858588398E-136
-6 - 1.0009124858588398E-136
-7 - 1.0009124858588398E-136
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 4 vertices, 4 edges 
 0: 1 
@@ -210,10 +204,10 @@ Your Output:
 2: 3 
 3: 0 
 
-0 - 0.25
-1 - 0.25
-2 - 0.25
-3 - 0.25
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -243,11 +237,12 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.calculatePR(Solution.java:52)
-	at Solution.main(Solution.java:118)
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 4 vertices, 12 edges 
 0: 3 2 1 
@@ -267,10 +262,10 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-0 - 0.25
-1 - 0.25
-2 - 0.25
-3 - 0.25
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -300,8 +295,9 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.calculatePR(Solution.java:52)
-	at Solution.main(Solution.java:118)
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -318,8 +314,10 @@ Your Output:
 0: 1 
 1: 0 
 
-0 - 0.25
-1 - 0.25
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -371,17 +369,9 @@ Your Output:
 10: 0 
 11: 0 
 
-0 - 2.527777777777778
-1 - 0.8425925925925927
-2 - 0.8425925925925927
-3 - 0.8425925925925927
-4 - 0.09362139917695474
-5 - 0.09362139917695474
-6 - 0.09362139917695474
-7 - 0.09362139917695474
-8 - 0.09362139917695474
-9 - 0.09362139917695474
-10 - 0.09362139917695474
-11 - 0.09362139917695474
+Exception in thread "main" java.lang.NullPointerException
+	at Digraph.inLinks(Digraph.java:222)
+	at PageRank.initializePR(Solution.java:30)
+	at Solution.main(Solution.java:119)
 ----------------------------------------
 

@@ -219,6 +219,10 @@ public class Digraph {
                 for (int w : adj(u)) {
                 if(v == w) {
                    count[v] += 1;
+                   if(inlink[v].equals("null")) {
+                   inlink[v] += u;
+                   }
+                   else
                    inlink[v] += " "+u;
                 }
             }

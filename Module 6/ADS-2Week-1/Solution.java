@@ -27,8 +27,9 @@ class PageRank {
 	}
 
 	public void initializePR() {
-	    inlinks = digraph.inLinks(vertices);
+	    digraph.inLinks(vertices);
         for(int i = 0; i<vertices; i++) {
+        	inlinks[i] = digraph.inlink[i];
         	outlinks[i] = digraph.outdegree(i);
             count[i] = digraph.count[i];
         	prValues[i] = 1.0/4;
@@ -51,8 +52,9 @@ class PageRank {
         		// System.out.println(incoming[j]);
                 String[] tokens = inlinks[j].split(" ");
                 double a = 0;
+
                 if(count[j] == 0) {
-                	System.out.println("hi");
+                	// System.out.println("hi");
                 	prValues[j] = 0.0;
                 }
                 else {
