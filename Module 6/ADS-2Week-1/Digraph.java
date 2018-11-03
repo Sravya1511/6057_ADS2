@@ -57,7 +57,9 @@ public class Digraph {
     private final int V;           // number of vertices in this digraph
     private int E;                 // number of edges in this digraph
     Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
-    private int[] indegree;        // indegree[v] = indegree of vertex v
+    private int[] indegree;
+    int[] count;
+    String[] inlink;       // indegree[v] = indegree of vertex v
 
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
@@ -207,6 +209,23 @@ public class Digraph {
     public int indegree(int v) {
         validateVertex(v);
         return indegree[v];
+    }
+
+    public String[] inLinks(int vertex) {
+        inlink = new String[vertex];
+        count = new int[vertex];
+        for (int v = 0; v < vertex; v++) {
+            for(int u = 0; u < vertex; u++) {
+                for (int w : adj(u)) {
+                if(v == w) {
+                   count[v] += 1;
+                   inlink[v] += " "+u;
+                }
+            }
+            }
+
+        }
+        return inlink;
     }
 
     /**

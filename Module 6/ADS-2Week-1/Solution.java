@@ -6,6 +6,8 @@ class PageRank {
 	int vertices;
 	double[] prValues;
 	double[] outlinks;
+	String[] inlinks;
+	int[] count;
     // Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
 
 
@@ -15,32 +17,42 @@ class PageRank {
 		this.vertices = vertices;
 		prValues = new double[vertices];
 	    outlinks = new double[vertices];
+	    inlinks = new String[vertices];
+	    count = new int[vertices];
+
+
         // adj = (Bag<Integer>[]) new Bag[vertices];
 
 
 	}
 
-	public void initializePR(String[] incoming) {
+	public void initializePR() {
+	    inlinks = digraph.inLinks(vertices);
         for(int i = 0; i<vertices; i++) {
         	outlinks[i] = digraph.outdegree(i);
+            count[i] = digraph.count[i];
         	prValues[i] = 1.0/4;
         }
     // System.out.println(Arrays.toString(outlinks));
-    // System.out.println(Arrays.toString(incoming));
+    // // System.out.println(Arrays.toString(incoming));
     // System.out.println(Arrays.toString(prValues));
+    // System.out.println(Arrays.toString(inlinks));
+    // System.out.println(Arrays.toString(count));
+
 
 
 
 
 	}
 
-	public void calculatePR(String[] incoming) {
+	public void calculatePR() {
         for(int i = 0; i<1000; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// System.out.println(incoming[j]);
-                String[] tokens = incoming[j].split(" ");
+                String[] tokens = inlinks[j].split(" ");
                 double a = 0;
-                if(tokens.length == 1) {
+                if(count[j] == 0) {
+                	System.out.println("hi");
                 	prValues[j] = 0.0;
                 }
                 else {
@@ -87,12 +99,12 @@ public class Solution {
         Scanner input  = new Scanner(System.in);
         int vertices = Integer.parseInt(input.nextLine());
         Digraph digraph = new Digraph(vertices);
-        String[] incoming = new String[vertices];
+
 
         for(int j = 0; j<vertices; j++) {
         	// System.out.println(vertices);
         	String a = input.nextLine();
-        	incoming[j] = a;
+
         	String [] tokens = a.split(" ");
         	for(int i = 1; i<tokens.length; i++) {
                 digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
@@ -102,8 +114,8 @@ public class Solution {
         System.out.println(digraph);
         // System.out.println();
         PageRank page = new PageRank(digraph, vertices);
-        page.initializePR(incoming);
-        page.calculatePR(incoming);
+        page.initializePR();
+        page.calculatePR();
 
         System.out.println(page);
 
