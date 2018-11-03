@@ -44,7 +44,7 @@ class PageRank {
 		StringBuilder s = new StringBuilder();
 
 		for(int i = 0; i<vertices; i++) {
-			s.append(i+": "+prValues[i]+"\n");
+			s.append(i+" - "+prValues[i]+"\n");
 		}
 		return s.toString();
 	}
