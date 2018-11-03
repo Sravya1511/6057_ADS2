@@ -1,4 +1,9 @@
 import java.util.Arrays;
+/**
+ * Class for page rank.
+     * The time complexity is O(V*1000).
+ *
+ */
 
 class PageRank {
 	Digraph digraph;
@@ -18,6 +23,12 @@ class PageRank {
 
 
 	}
+    /**
+     * initilalizes initial pr values.
+     * The time complexity is O(V).
+     *
+     * @param      incoming  The incoming
+     */
 
 	public void initializePR(String[] incoming) {
         for(int i = 0; i<vertices; i++) {
@@ -32,6 +43,13 @@ class PageRank {
 
 
 	}
+    /**
+     * Calculates the pr.
+     * The time complexity is O(1000*V).
+     *
+     *
+     * @param      incoming  The incoming
+     */
 
 	public void calculatePR(String[] incoming) {
         for(int i = 0; i<1000; i++) {
@@ -54,6 +72,13 @@ class PageRank {
         	}
         }
 	}
+    /**
+     * Returns a string representation of the object.
+     * The time complexity is O(V).
+     *
+     *
+     * @return     String representation of the object.
+     */
 
 	public String toString()  {
 		StringBuilder s = new StringBuilder();

@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
 	/**
 	 * Constructs the object.
 	 */
@@ -15,14 +15,16 @@ public class Solution {
 	 * @param      args  The arguments
 	 */
 	public static void main(final String[] args) {
-		// read the first line of the input to get the number of vertices
+		// read the first line of the input to.
+		// get the number of vertices.
 
-		// iterate count of vertices times
-		// to read the adjacency list from std input
-		// and build the graph
+		// iterate count of vertices times.
+		// to read the adjacency list from std input.
+		// and build the graph.
 
 
-		// Create page rank object and pass the graph object to the constructor
+		// Create page rank object and pass the graph.
+		 //object to the constructor.
 
         Scanner input  = new Scanner(System.in);
         int vertices = Integer.parseInt(input.nextLine());
@@ -33,9 +35,10 @@ public class Solution {
         	// System.out.println(vertices);
         	String a = input.nextLine();
         	incoming[j] = a;
-        	String [] tokens = a.split(" ");
+        	String[] tokens = a.split(" ");
         	for (int i = 1; i < tokens.length; i++) {
-                digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+                digraph.addEdge(Integer.parseInt(tokens[0]),
+                	Integer.parseInt(tokens[i]));
         	}
         }
 
@@ -56,7 +59,8 @@ public class Solution {
 		String file = "WebContent.txt";
 
 		// instantiate web search object
-		// and pass the page rank object and the file path to the constructor
+		// and pass the page rank object and the.
+		//  file path to the constructor.
 
 		// read the search queries from std in
 		// remove the q= prefix and extract the search word
