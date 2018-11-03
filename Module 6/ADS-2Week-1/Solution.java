@@ -5,7 +5,7 @@ class PageRank {
 	Digraph digraph;
 	int vertices;
 	double[] prValues;
-	int[] outlinks;
+	double[] outlinks;
     // Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
 
 
@@ -14,7 +14,7 @@ class PageRank {
 		this.digraph = digraph;
 		this.vertices = vertices;
 		prValues = new double[vertices];
-	    outlinks = new int[vertices];
+	    outlinks = new double[vertices];
         // adj = (Bag<Integer>[]) new Bag[vertices];
 
 
@@ -37,8 +37,9 @@ class PageRank {
 	public void calculatePR(String[] incoming) {
         for(int i = 0; i<999; i++) {
         	for(int j = 0; j<vertices; j++) {
-                String[] tokens = incoming[i].split(" ");
-                int a = 0;
+        		// System.out.println(incoming[j]);
+                String[] tokens = incoming[j].split(" ");
+                double a = 0;
                 for(int k = 1; k<tokens.length; k++) {
                 	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
                 }
