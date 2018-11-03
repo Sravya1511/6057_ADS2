@@ -34,9 +34,16 @@ class PageRank {
 
 	}
 
-	public void calculatePR() {
-         for(int i = 0; i<1000; i++) {
-
+	public void calculatePR(String[] incoming) {
+        for(int i = 0; i<999; i++) {
+        	for(int j = 0; j<vertices; j++) {
+                String[] tokens = incoming[i].split(" ");
+                int a = 0;
+                for(int k = 1; k<tokens.length; k++) {
+                	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
+                }
+                prValues[j] = a;
+        	}
         }
 	}
 
@@ -88,6 +95,8 @@ public class Solution {
         // System.out.println();
         PageRank page = new PageRank(digraph, vertices);
         page.initializePR(incoming);
+        page.calculatePR(incoming);
+
         System.out.println(page);
 
 
