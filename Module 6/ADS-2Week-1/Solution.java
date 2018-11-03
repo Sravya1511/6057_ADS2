@@ -40,10 +40,17 @@ class PageRank {
         		// System.out.println(incoming[j]);
                 String[] tokens = incoming[j].split(" ");
                 double a = 0;
-                for(int k = 1; k<tokens.length; k++) {
-                	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
+                if(tokens.length == 1) {
+                	prValues[j] = 0.0;
                 }
+                else {
+                	for(int k = 1; k<tokens.length; k++) {
+                	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
+                    }
                 prValues[j] = a;
+
+                }
+
         	}
         }
 	}
