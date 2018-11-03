@@ -1,81 +1,20 @@
 import java.util.Scanner;
-import java.util.Arrays;
-
-class PageRank {
-	Digraph digraph;
-	int vertices;
-	double[] prValues;
-	double[] outlinks;
-    // Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
-
-
-
-	PageRank(Digraph digraph, int vertices) {
-		this.digraph = digraph;
-		this.vertices = vertices;
-		prValues = new double[vertices];
-	    outlinks = new double[vertices];
-        // adj = (Bag<Integer>[]) new Bag[vertices];
-
-
-	}
-
-	public void initializePR(String[] incoming) {
-        for(int i = 0; i<vertices; i++) {
-        	outlinks[i] = digraph.outdegree(i);
-        	prValues[i] = 1.0/4;
-        }
-    // System.out.println(Arrays.toString(outlinks));
-    // System.out.println(Arrays.toString(incoming));
-    // System.out.println(Arrays.toString(prValues));
-
-
-
-
-	}
-
-	public void calculatePR(String[] incoming) {
-        for(int i = 0; i<1000; i++) {
-        	for(int j = 0; j<vertices; j++) {
-        		// System.out.println(incoming[j]);
-                String[] tokens = incoming[j].split(" ");
-                double a = 0;
-                if(outlinks[j] == 0) {
-                	System.out.println("hi");
-                	prValues[j] = 0.0;
-                }
-                else {
-                	for(int k = 1; k<tokens.length; k++) {
-                	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
-                    }
-                prValues[j] = a;
-
-                }
-
-        	}
-        }
-	}
-
-	public String toString()  {
-		StringBuilder s = new StringBuilder();
-
-		for(int i = 0; i<vertices; i++) {
-			s.append(i+" - "+prValues[i]+"\n");
-		}
-		return s.toString();
-	}
-
-
-
-}
-
-class WebSearch {
-
-}
-
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+
+	}
+	/**
+	 * reads input.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		// read the first line of the input to get the number of vertices
 
 		// iterate count of vertices times
@@ -90,12 +29,12 @@ public class Solution {
         Digraph digraph = new Digraph(vertices);
         String[] incoming = new String[vertices];
 
-        for(int j = 0; j<vertices; j++) {
+        for (int j = 0; j < vertices; j++) {
         	// System.out.println(vertices);
         	String a = input.nextLine();
         	incoming[j] = a;
         	String [] tokens = a.split(" ");
-        	for(int i = 1; i<tokens.length; i++) {
+        	for (int i = 1; i < tokens.length; i++) {
                 digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
         	}
         }
