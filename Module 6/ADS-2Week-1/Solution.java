@@ -26,10 +26,9 @@ class PageRank {
 
 	}
 
-	public void initializePR() {
-	    digraph.inLinks(vertices);
+	public void initializePR(String[] incoming) {
+	    inlinks = digraph.inLinks(vertices);
         for(int i = 0; i<vertices; i++) {
-        	inlinks[i] = digraph.inlink[i];
         	outlinks[i] = digraph.outdegree(i);
             count[i] = digraph.count[i];
         	prValues[i] = 1.0/4;
@@ -38,7 +37,7 @@ class PageRank {
     // // System.out.println(Arrays.toString(incoming));
     // System.out.println(Arrays.toString(prValues));
     // System.out.println(Arrays.toString(inlinks));
-    // System.out.println(Arrays.toString(count));
+    // System.out.println();
 
 
 
@@ -46,14 +45,13 @@ class PageRank {
 
 	}
 
-	public void calculatePR() {
+	public void calculatePR(String[] incoming) {
         for(int i = 0; i<1000; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// System.out.println(incoming[j]);
-                String[] tokens = inlinks[j].split(" ");
+                String[] tokens = incoming[j].split(" ");
                 double a = 0;
-
-                if(count[j] == 0) {
+                if(outlinks[j] == 0) {
                 	// System.out.println("hi");
                 	prValues[j] = 0.0;
                 }
@@ -101,12 +99,12 @@ public class Solution {
         Scanner input  = new Scanner(System.in);
         int vertices = Integer.parseInt(input.nextLine());
         Digraph digraph = new Digraph(vertices);
-
+        String[] incoming = new String[vertices];
 
         for(int j = 0; j<vertices; j++) {
         	// System.out.println(vertices);
         	String a = input.nextLine();
-
+        	incoming[j] = a;
         	String [] tokens = a.split(" ");
         	for(int i = 1; i<tokens.length; i++) {
                 digraph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
@@ -116,8 +114,8 @@ public class Solution {
         System.out.println(digraph);
         // System.out.println();
         PageRank page = new PageRank(digraph, vertices);
-        page.initializePR();
-        page.calculatePR();
+        page.initializePR(incoming);
+        page.calculatePR(incoming);
 
         System.out.println(page);
 
