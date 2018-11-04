@@ -68,7 +68,7 @@ class PageRank {
                 String[] tokens = incomingWebPages[j].split("");
                 // System.out.println(Arrays.toString(tokens));
 
-                double a = 0;
+                double a = 0.0;
                 if(indegreeCount[j] == 0) {
                 	// System.out.println("hi");
                 	prValues[j] = 0.0;
