@@ -34,7 +34,7 @@ class PageRank {
      * @param      incoming  The incoming
      */
 
-	public void initializePR(String[] incoming) {
+	public void initializePR() {
         for(int i = 0; i<vertices; i++) {
         	outlinks[i] = digraph.outdegree(i);
         	prValues[i] = 1.0/vertices;
@@ -44,10 +44,10 @@ class PageRank {
         }
     // System.out.println(Arrays.toString(outlinks));
     // System.out.println(Arrays.toString(indegreeCount));
-    // System.out.println(Arrays.toString(incomingWebPages));
-
-
+    System.out.println(Arrays.toString(incomingWebPages));
     // System.out.println(Arrays.toString(prValues));
+      String[] tokens = incomingWebPages[2].split("");
+      System.out.println(Arrays.toString(tokens));
 
 
 
@@ -61,18 +61,20 @@ class PageRank {
      * @param      incoming  The incoming
      */
 
-	public void calculatePR(String[] incoming) {
+	public void calculatePR() {
         for(int i = 0; i<1000; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// System.out.println(incoming[j]);
-                String[] tokens = incoming[j].split(" ");
+                String[] tokens = incomingWebPages[j].split("");
+                // System.out.println(Arrays.toString(tokens));
+
                 double a = 0;
                 if(indegreeCount[j] == 0) {
                 	// System.out.println("hi");
                 	prValues[j] = 0.0;
                 }
                 else {
-                	for(int k = 1; k<tokens.length; k++) {
+                	for(int k = 0; k<tokens.length; k++) {
                 	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
                     }
                 prValues[j] = a;

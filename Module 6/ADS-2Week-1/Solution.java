@@ -31,12 +31,10 @@ final class Solution {
         Scanner input  = new Scanner(System.in);
         int vertices = Integer.parseInt(input.nextLine());
         Digraph digraph = new Digraph(vertices);
-        String[] incoming = new String[vertices];
 
         for (int j = 0; j < vertices; j++) {
             // System.out.println(vertices);
             String a = input.nextLine();
-            incoming[j] = a;
             String[] tokens = a.split(" ");
             for (int i = 1; i < tokens.length; i++) {
                 digraph.addEdge(Integer.parseInt(tokens[0]),
@@ -47,8 +45,8 @@ final class Solution {
         System.out.println(digraph);
         // System.out.println();
         PageRank page = new PageRank(digraph, vertices);
-        page.initializePR(incoming);
-        page.calculatePR(incoming);
+        page.initializePR();
+        page.calculatePR();
 
         System.out.println(page);
 
