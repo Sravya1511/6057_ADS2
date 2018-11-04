@@ -10,6 +10,8 @@ class PageRank {
 	int vertices;
 	double[] prValues;
 	double[] outlinks;
+    int[] indegreeCount;
+    String[] incomingWebPages;
     // Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
 
 
@@ -19,6 +21,8 @@ class PageRank {
 		this.vertices = vertices;
 		prValues = new double[vertices];
 	    outlinks = new double[vertices];
+        indegreeCount = new int[vertices];
+        incomingWebPages = new String[vertices];
         // adj = (Bag<Integer>[]) new Bag[vertices];
 
 
@@ -34,9 +38,15 @@ class PageRank {
         for(int i = 0; i<vertices; i++) {
         	outlinks[i] = digraph.outdegree(i);
         	prValues[i] = 1.0/vertices;
+            indegreeCount[i] = digraph.indegree(i);
+            incomingWebPages[i] = digraph.incomingPages(i);
+
         }
     // System.out.println(Arrays.toString(outlinks));
-    // System.out.println(Arrays.toString(incoming));
+    // System.out.println(Arrays.toString(indegreeCount));
+    // System.out.println(Arrays.toString(incomingWebPages));
+
+
     // System.out.println(Arrays.toString(prValues));
 
 
@@ -57,8 +67,8 @@ class PageRank {
         		// System.out.println(incoming[j]);
                 String[] tokens = incoming[j].split(" ");
                 double a = 0;
-                if(outlinks[j] == 0) {
-                	System.out.println("hi");
+                if(indegreeCount[j] == 0) {
+                	// System.out.println("hi");
                 	prValues[j] = 0.0;
                 }
                 else {

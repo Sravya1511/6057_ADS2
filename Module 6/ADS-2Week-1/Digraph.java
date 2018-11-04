@@ -209,6 +209,20 @@ public class Digraph {
         return indegree[v];
     }
 
+    public String incomingPages(int v) {
+        StringBuilder s = new StringBuilder();
+
+         // for (int v = 0; v < V; v++) {
+            for(int j = 0; j<V; j++) {
+                for (int w : adj(j)) {
+                    if(w == v)
+                        s.append(j);
+                }
+            }
+        // }
+        return s.toString();
+    }
+
     /**
      * Returns the reverse of the digraph.
      *
