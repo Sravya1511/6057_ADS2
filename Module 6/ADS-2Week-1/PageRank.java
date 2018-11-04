@@ -33,7 +33,7 @@ class PageRank {
 	public void initializePR(String[] incoming) {
         for(int i = 0; i<vertices; i++) {
         	outlinks[i] = digraph.outdegree(i);
-        	prValues[i] = 1.0/4;
+        	prValues[i] = 1.0/vertices;
         }
     // System.out.println(Arrays.toString(outlinks));
     // System.out.println(Arrays.toString(incoming));
