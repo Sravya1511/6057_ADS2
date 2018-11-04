@@ -227,6 +227,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:9:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:9:17: Variable 'digraph' must be private and have accessor methods. [VisibilityModifier]
@@ -276,7 +277,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:99:54: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:108: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 48 errors.
+Checkstyle ends with 49 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]

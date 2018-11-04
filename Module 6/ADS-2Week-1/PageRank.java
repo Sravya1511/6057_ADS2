@@ -44,10 +44,10 @@ class PageRank {
         }
     // System.out.println(Arrays.toString(outlinks));
     // System.out.println(Arrays.toString(indegreeCount));
-    System.out.println(Arrays.toString(incomingWebPages));
+    // System.out.println(Arrays.toString(incomingWebPages));
     // System.out.println(Arrays.toString(prValues));
-      String[] tokens = incomingWebPages[2].split("");
-      System.out.println(Arrays.toString(tokens));
+      // String[] tokens = incomingWebPages[2].split("");
+      // System.out.println(Arrays.toString(tokens));
 
 
 
