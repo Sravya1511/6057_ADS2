@@ -255,7 +255,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:61:8: Unused @param tag for 'incoming'. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:65:12: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:65:25: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:65:26: '1000' is a magic number. [MagicNumber]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:65:26: '999' is a magic number. [MagicNumber]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:65:26: '<' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:66:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:66:33: '<' is not preceded with whitespace. [WhitespaceAround]

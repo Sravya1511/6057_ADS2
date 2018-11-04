@@ -62,7 +62,7 @@ class PageRank {
      */
 
 	public void calculatePR() {
-        for(int i = 0; i<1000; i++) {
+        for(int i = 0; i<999; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// System.out.println(incoming[j]);
                 String[] tokens = incomingWebPages[j].split("");
