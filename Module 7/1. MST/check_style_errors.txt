@@ -189,7 +189,29 @@ Checkstyle ends with 8 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:37:8: Unused @param tag for 'p'. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:41:31: Expected @param tag for 'temp'. [JavadocMethod]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:4: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:15:15: Parameter n should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:16: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:27: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:30: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:33:21: Parameter p should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:56: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:61:30: Parameter p should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:61:37: Parameter q should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:74:23: Parameter p should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:74:30: Parameter q should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:77: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:80: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:81: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:90:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:90:27: Parameter p should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:93: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:93:92: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:93:93: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 7\1. MST\UF.java:99: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 24 errors.
