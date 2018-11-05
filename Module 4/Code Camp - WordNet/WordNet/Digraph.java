@@ -30,7 +30,7 @@ public class Digraph {
      *
      * @param      V     { Vertices }
      */
-    public Digraph(int V) {
+    public Digraph(final int V) {
 
         this.V = V;
         this.E = 0;
@@ -45,13 +45,14 @@ public class Digraph {
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      G     { Digraph }
      */
-    public Digraph(Digraph G) {
+    public Digraph(final Digraph G) {
         this(G.V());
         this.E = G.E();
-        for (int v = 0; v < V; v++)
+        for (int v = 0; v < V; v++) {
             this.indegree[v] = G.indegree(v);
+        }
         for (int v = 0; v < G.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
@@ -65,82 +66,80 @@ public class Digraph {
     }
 
     /**
-     * Returns the number of vertices in this digraph.
+     * number of vertices.
      *
-     * @return the number of vertices in this digraph
+     * @return     { int }
      */
     public int V() {
         return V;
     }
 
     /**
-     * Returns the number of edges in this digraph.
+     * Number of edges.
      *
-     * @return the number of edges in this digraph
+     * @return     { int }
      */
     public int E() {
         return E;
     }
 
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
-    }
 
     /**
-     * Adds the directed edge v→w to this digraph.
+     * Adds an edge.
      *
-     * @param  v the tail vertex
-     * @param  w the head vertex
-     * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
+     * @param      v     { node 1 }
+     * @param      w     { node 2 }
      */
-    public void addEdge(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
+    public void addEdge(final int v, final int w) {
+        // validateVertex(v);
+        // validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
         E++;
     }
 
     /**
-     * Returns the vertices adjacent from vertex {@code v} in this digraph.
+     * iterable
      *
-     * @param  v the vertex
-     * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { vertex  }
+     *
+     * @return     { bag of vertex v }
      */
-    public Iterable<Integer> adj(int v) {
-        validateVertex(v);
+    public Iterable<Integer> adj(final int v) {
+        // validateVertex(v);
         return adj[v];
     }
 
     /**
-     * Returns the number of directed edges incident from vertex {@code v}.
-     * This is known as the <em>outdegree</em> of vertex {@code v}.
+     * outdegree of the vertex.
      *
-     * @param  v the vertex
-     * @return the outdegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { vertex v }
+     *
+     * @return     { int }
      */
-    public int outdegree(int v) {
-        validateVertex(v);
+    public int outdegree(final int v) {
+        // validateVertex(v);
         return adj[v].size();
     }
 
     /**
-     * Returns the number of directed edges incident to vertex {@code v}.
-     * This is known as the <em>indegree</em> of vertex {@code v}.
+     * indegree of the vertex.
      *
-     * @param  v the vertex
-     * @return the indegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { vertex }
+     *
+     * @return     { int }
      */
-    public int indegree(int v) {
-        validateVertex(v);
+    public int indegree(final int v) {
+        // validateVertex(v);
         return indegree[v];
     }
+
+    /**
+     * checks if the node is root or not.
+     *
+     * @return     { true or false }
+     */
 
     public boolean checkMultiple() {
          // Digraph  = new Digraph(V);
@@ -150,7 +149,9 @@ public class Digraph {
                 if(outdegree(v) == 0) {
                     check++;
                 // }
-                if(check >1) return true;
+                if(check >1) {
+                    return true;
+                }
             }
         }
         return false;
@@ -158,9 +159,9 @@ public class Digraph {
     }
 
     /**
-     * Returns the reverse of the digraph.
+     * reverses the graph
      *
-     * @return the reverse of the digraph
+     * @return     { digraph }
      */
     public Digraph reverse() {
         Digraph reverse = new Digraph(V);
@@ -173,10 +174,9 @@ public class Digraph {
     }
 
     /**
-     * Returns a string representation of the graph.
+     * Returns a string representation of the object.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
-     *         followed by the <em>V</em> adjacency lists
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
