@@ -9,11 +9,10 @@ class PageRank {
 	Digraph digraph;
 	int vertices;
 	double[] prValues;
+    double[] previousPR;
 	double[] outlinks;
     int[] indegreeCount;
     String[] incomingWebPages;
-    double[] prevpr;
-
     // Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
 
 
@@ -23,6 +22,7 @@ class PageRank {
 		this.vertices = vertices;
 
 		prValues = new double[vertices];
+        previousPR = new double[vertices];
 	    outlinks = new double[vertices];
         indegreeCount = new int[vertices];
         incomingWebPages = new String[vertices];
@@ -38,7 +38,6 @@ class PageRank {
      */
 
 	public void initializePR() {
-
         for(int i = 0; i<vertices; i++) {
         	outlinks[i] = digraph.outdegree(i);
         	prValues[i] = 1.0/vertices;
@@ -66,43 +65,38 @@ class PageRank {
      */
 
 	public void calculatePR() {
-        Digraph d = digraph;
-
-        Digraph diaRev = new Digraph(digraph.V());
-
-        diaRev = digraph.reverse();
-        prevpr = new double[digraph.V()];
-        System.arraycopy(prValues, 0, prevpr, 0, digraph.V());
-        for(int i = 0; i<1000; i++) {
+        Digraph diagraphReverse = new Digraph(digraph.V());
+        diagraphReverse = digraph.reverse();
+        System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
+        for(int i = 0; i<999; i++) {
         	for(int j = 0; j<vertices; j++) {
-                prValues[j] = 0;
-        		// System.out.println(incoming[j]);
-                String[] tokens = incomingWebPages[j].split("");
-                // System.out.println(Arrays.toString(tokens));
+        		// // System.out.println(incoming[j]);
+          //       String[] tokens = incomingWebPages[j].split("");
+          //       // System.out.println(Arrays.toString(tokens));
+          //       double a = 0.0;
+          //       if(indegreeCount[j] == 0) {
+          //       	// System.out.println("hi");
+          //       	prValues[j] = 0.0;
+          //       }
+          //       else {
+          //       	for(int k = 0; k<tokens.length; k++) {
+          //       	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
+          //           }
+          //       prValues[j] = a;
 
-                // double a = 0.0;
-                // if(indegreeCount[j] == 0) {
-                // 	// System.out.println("hi");
-                // 	prValues[j] = 0.0;
-                // }
-                // else {
-                	// for(int k = 0; k<tokens.length; k++) {
-                	// a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
-                 //    }
-                    for (Integer w :  diaRev.adj(j)) {
-                    prValues[j] += prevpr[w] / d.outdegree(w);
+          //       }
+                prValues[j] = 0.0;
+                 for (Integer w :  diagraphReverse.adj(j)) {
+                    prValues[j] += previousPR[w] / digraph.outdegree(w);
 
                 }
-                // prValues[j] = a;
-
-                // }
-
-                if (Arrays.equals(prValues, prevpr)) {
-                break;
-            }
-            System.arraycopy(prValues, 0, prevpr, 0, digraph.V());
 
         	}
+              if (Arrays.equals(prValues, previousPR)) {
+                break;
+            }
+            System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
+
         }
 	}
     /**
