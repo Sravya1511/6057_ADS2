@@ -67,7 +67,7 @@ class PageRank {
 	public void calculatePR() {
         Digraph diagraphReverse = new Digraph(digraph.V());
         diagraphReverse = digraph.reverse();
-        System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
+        // System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
         for(int i = 0; i<999; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// // System.out.println(incoming[j]);
@@ -87,7 +87,7 @@ class PageRank {
           //       }
                 prValues[j] = 0.0;
                  for (Integer w :  diagraphReverse.adj(j)) {
-                    prValues[j] += previousPR[w] / digraph.outdegree(w);
+                    prValues[j] += previousPR[w] / outlinks[w];
 
                 }
 
@@ -95,7 +95,7 @@ class PageRank {
               if (Arrays.equals(prValues, previousPR)) {
                 break;
             }
-            System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
+            // System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
 
         }
 	}
