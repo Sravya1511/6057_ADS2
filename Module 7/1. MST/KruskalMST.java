@@ -21,6 +21,7 @@ public class KruskalMST {
      * Compute a minimum spanning tree (or forest).
      *  of an edge-weighted graph.
      * @param gra the edge-weighted graph.
+     * The time complexity is O(ElogE).
      */
     public KruskalMST(final EdgeWeightedGraph gra) {
         // more efficient to build heap by passing array of edges
@@ -49,7 +50,10 @@ public class KruskalMST {
     /**
      * Returns the edges in a minimum spanning tree (or forest).
      * @return the edges in a minimum spanning tree (or forest) as
-     *    an iterable of edges
+     *    an iterable of edges.
+     * The time complexity is O(E).
+     *
+     *
      */
     public Iterable<Edge> edges() {
         return mst;
@@ -60,6 +64,8 @@ public class KruskalMST {
      *  in a minimum spanning tree (or forest).
      * @return the sum of the edge.
      *  weights in a minimum spanning tree (or forest).
+     * The time complexity is O(1).
+     *
      */
     public double weight() {
         return weight;

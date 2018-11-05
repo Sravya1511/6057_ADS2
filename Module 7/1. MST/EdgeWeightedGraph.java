@@ -44,6 +44,8 @@ public class EdgeWeightedGraph {
     /**
      * Returns the number of vertices.
      *  in this edge-weighted graph.
+     * The time complexity is O(1).
+     *
      *
      * @return the number of vertices.
      *  in this edge-weighted graph
@@ -55,6 +57,8 @@ public class EdgeWeightedGraph {
     /**
      * Returns the number of edges.
      *  in this edge-weighted graph.
+     * The time complexity is O(1).
+     *
      *
      * @return the number of edges.
      *  in this edge-weighted graph
@@ -67,6 +71,8 @@ public class EdgeWeightedGraph {
 
     /**
      * Adds an edge.
+     * The time complexity is O(1).
+     *
      *
      * @param      e     { Edge }
      */
@@ -82,6 +88,8 @@ public class EdgeWeightedGraph {
 
     /**
      * iterable.
+     * The time complexity is O(degree(V)).
+     *
      *
      * @param      v     { vertex }
      *
@@ -94,6 +102,8 @@ public class EdgeWeightedGraph {
 
     /**
      * degree.
+     * The time complexity is O(1).
+     *
      *
      * @param      v     { v }
      *
@@ -106,6 +116,8 @@ public class EdgeWeightedGraph {
 
     /**
      * iterable.
+     * The time complexity is O(V+E).
+     *
      *
      * @return     { edges }
      */
@@ -129,6 +141,8 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns a string representation of the object.
+     * The time complexity is O(V+E).
+     *
      *
      * @return     String representation of the object.
      */
