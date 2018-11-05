@@ -44,6 +44,16 @@ final class Solution {
 
         System.out.println(digraph);
         // System.out.println();
+        for (int v = 0; v < vertices; v++) {
+            if (digraph.outdegree(v) == 0) {
+                for (int w = 0; w < vertices; w++) {
+                    if (v != w)  {
+                        digraph.addEdge(v, w);
+                    }
+                }
+            }
+        }
+
         PageRank page = new PageRank(digraph, vertices);
         page.initializePR();
         page.calculatePR();
