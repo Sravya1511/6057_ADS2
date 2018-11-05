@@ -265,7 +265,10 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:75:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:75:33: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:75:34: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:86: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:85:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:85:41: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:85:42: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:86: Line is longer than 80 characters (found 109). [LineLength]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:100:17: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:100:30: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:100:31: '<' is not followed by whitespace. [WhitespaceAround]
@@ -280,7 +283,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:54: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:127: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 52 errors.
+Checkstyle ends with 55 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
