@@ -1,23 +1,34 @@
 public class KruskalMST {
-    private static final double FLOATING_POINT_EPSILON = 1E-12;
-
-    private double weight;                        // weight of MST
-    private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
+    /**
+     * float.
+     */
+    private static final double FLOATING_POINT_EPSILON
+    = 1E-12;
+     /**
+      * weight.
+      */
+    private double weight;
+    /**
+     * queue.
+     */// weight of MST
+    private Queue<Edge> mst = new Queue<Edge>();
+    // edges in MST
 
     /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * Compute a minimum spanning tree (or forest).
+     *  of an edge-weighted graph.
+     * @param G the edge-weighted graph.
      */
-    public KruskalMST(EdgeWeightedGraph G) {
+    public KruskalMST(final EdgeWeightedGraph gra) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : G.edges()) {
+        for (Edge e : gra.edges()) {
             pq.insert(e);
         }
 
         // run greedy algorithm
-        UF uf = new UF(G.V());
-        while (!pq.isEmpty() && mst.size() < G.V() - 1) {
+        UF uf = new UF(gra.V());
+        while (!pq.isEmpty() && mst.size() < gra.V() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
@@ -29,7 +40,7 @@ public class KruskalMST {
         }
 
         // check optimality conditions
-        assert check(G);
+        assert check(gra);
     }
 
     /**
@@ -42,14 +53,23 @@ public class KruskalMST {
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights.
+     *  in a minimum spanning tree (or forest).
+     * @return the sum of the edge.
+     *  weights in a minimum spanning tree (or forest).
      */
     public double weight() {
         return weight;
     }
 
-    // check optimality conditions (takes time proportional to E V lg* V)
+
+    /**
+     * check.
+     *
+     * @param      gra   The gra
+     *
+     * @return     { true or false }
+     */
     private boolean check(EdgeWeightedGraph gra) {
 
         // check total weight
@@ -57,7 +77,8 @@ public class KruskalMST {
         for (Edge e : edges()) {
             total += e.weight();
         }
-        if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
+        if (Math.abs(total - weight()) >
+            FLOATING_POINT_EPSILON) {
 
             return false;
         }
