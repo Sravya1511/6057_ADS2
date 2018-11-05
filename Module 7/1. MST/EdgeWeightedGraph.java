@@ -21,7 +21,7 @@ public class EdgeWeightedGraph {
     /**
      * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
      *
-     * @param  V the number of vertices
+     * @param  vertex the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(int vertex) {
@@ -44,7 +44,7 @@ public class EdgeWeightedGraph {
      * @return the number of vertices.
      *  in this edge-weighted graph
      */
-    public int V() {
+    public int vertex() {
         return V;
     }
 
@@ -55,7 +55,7 @@ public class EdgeWeightedGraph {
      * @return the number of edges.
      *  in this edge-weighted graph
      */
-    public int E() {
+    public int edge() {
         return E;
     }
 
@@ -66,7 +66,7 @@ public class EdgeWeightedGraph {
      *
      * @param      e     { Edge }
      */
-    public void addEdge(Edge e) {
+    public void addEdge(final Edge e) {
         int v = e.either();
         int w = e.other(v);
         // validateVertex(v);
@@ -83,7 +83,7 @@ public class EdgeWeightedGraph {
      *
      * @return     { iterable }
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         // validateVertex(v);
         return adj[v];
     }
@@ -95,7 +95,7 @@ public class EdgeWeightedGraph {
      *
      * @return     { int }
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         // validateVertex(v);
         return adj[v].size();
     }

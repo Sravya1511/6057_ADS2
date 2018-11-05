@@ -30,8 +30,8 @@ public class KruskalMST {
         }
 
         // run greedy algorithm
-        UF uf = new UF(gra.V());
-        while (!pq.isEmpty() && mst.size() < gra.V() - 1) {
+        UF uf = new UF(gra.vertex());
+        while (!pq.isEmpty() && mst.size() < gra.vertex() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
