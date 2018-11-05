@@ -67,6 +67,9 @@ class PageRank {
 	public void calculatePR() {
         Digraph diagraphReverse = new Digraph(digraph.V());
         diagraphReverse = digraph.reverse();
+        for(int i = 0; i<vertices; i++) {
+            previousPR[i] = prValues[i];
+        }
         // System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
         for(int i = 0; i<999; i++) {
         	for(int j = 0; j<vertices; j++) {
@@ -96,6 +99,9 @@ class PageRank {
                 break;
             }
             // System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
+             for(int a = 0; a<vertices; a++) {
+            previousPR[a] = prValues[a];
+        }
 
         }
 	}
