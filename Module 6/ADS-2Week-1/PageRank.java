@@ -65,8 +65,8 @@ class PageRank {
      */
 
 	public void calculatePR() {
-        // Digraph diagraphReverse = new Digraph(digraph.V());
-        // diagraphReverse = digraph.reverse();
+        Digraph diagraphReverse = new Digraph(digraph.V());
+        diagraphReverse = digraph.reverse();
         for(int i = 0; i<vertices; i++) {
             previousPR[i] = prValues[i];
         }
@@ -74,25 +74,25 @@ class PageRank {
         for(int i = 0; i<999; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// // System.out.println(incoming[j]);
-                 String[] tokens = incomingWebPages[j].split("");
+          //       String[] tokens = incomingWebPages[j].split("");
           //       // System.out.println(Arrays.toString(tokens));
-                 double a = 0.0;
+          //       double a = 0.0;
           //       if(indegreeCount[j] == 0) {
           //       	// System.out.println("hi");
           //       	prValues[j] = 0.0;
           //       }
           //       else {
-                	for(int k = 0; k<tokens.length; k++) {
-                	a += previousPR[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
-                    }
-                    prValues[j] = a;
+          //       	for(int k = 0; k<tokens.length; k++) {
+          //       	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
+          //           }
+          //       prValues[j] = a;
 
           //       }
-                // prValues[j] = 0.0;
-                //  for (Integer w :  diagraphReverse.adj(j)) {
-                //     prValues[j] += previousPR[w] / outlinks[w];
+                prValues[j] = 0.0;
+                 for (Integer w :  diagraphReverse.adj(j)) {
+                    prValues[j] += previousPR[w] / outlinks[w];
 
-                // }
+                }
 
         	}
 
