@@ -1,14 +1,31 @@
 import java.util.Scanner;
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+
+	}
+	/**
+	 * reads input.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner input = new Scanner(System.in);
 		int vertices = Integer.parseInt(input.nextLine());
 		int edges = Integer.parseInt(input.nextLine());
-		EdgeWeightedGraph edgeW = new EdgeWeightedGraph(vertices);
+		EdgeWeightedGraph edgeW = new
+		EdgeWeightedGraph(vertices);
 
 		for(int i = 0; i < edges; i++) {
 		String[] tokens = input.nextLine().split(" ");
-		Edge edge = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+		Edge edge = new Edge(Integer.parseInt(tokens[0]),
+			Integer.parseInt(tokens[1]),
+			Double.parseDouble(tokens[2]));
 		edgeW.addEdge(edge);
 
 		}
