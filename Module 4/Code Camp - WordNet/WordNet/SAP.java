@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Arrays;
+// import java.util.Arrays;
 /**
  * Class for sap.
  */
@@ -9,22 +9,28 @@ public class SAP {
      * digraph.
      */
 
-    Digraph graph;
+    private Digraph graph;
 
     /**
      * Constructs the object.
      *
-     * @param      graph  The graph
+     * @param      graph1  The graph
      */
-    public SAP(Digraph graph) {
-        this.graph = graph;
+    public SAP(final Digraph graph1) {
+        this.graph = graph1;
 
     }
+    /**
+     * distance.
+     *
+     * @param      vertex1  The vertex 1
+     * @param      vertex2  The vertex 2
+     * @param      synset   The synset
+     */
 
-    // length of shortest ancestral path between v and w; -1 if no such path
-    public void length(ArrayList<Integer> vertex1,
-        ArrayList<Integer> vertex2,
-        HashMap<Integer, String[]> synset) {
+    public void length(final ArrayList<Integer> vertex1,
+        final ArrayList<Integer> vertex2,
+        final HashMap<Integer, String[]> synset) {
         int distance = 0;
         int m = Integer.MAX_VALUE;
         String[] a = null;

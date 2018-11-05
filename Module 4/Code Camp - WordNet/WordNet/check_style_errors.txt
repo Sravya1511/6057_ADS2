@@ -21,17 +21,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:12:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:19:16: Parameter graph should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:19:24: 'graph' hides a field. [HiddenField]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:25:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:25:24: Parameter vertex1 should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:26:9: Parameter vertex2 should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:27:9: Parameter synset should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
