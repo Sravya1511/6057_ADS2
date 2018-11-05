@@ -77,10 +77,10 @@ class PageRank {
           //       String[] tokens = incomingWebPages[j].split("");
           //       // System.out.println(Arrays.toString(tokens));
           //       double a = 0.0;
-          //       if(indegreeCount[j] == 0) {
+                 if(indegreeCount[j] == 0) {
           //       	// System.out.println("hi");
-          //       	prValues[j] = 0.0;
-          //       }
+                 	prValues[j] = 0.0;
+                 }
           //       else {
           //       	for(int k = 0; k<tokens.length; k++) {
           //       	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
@@ -88,11 +88,15 @@ class PageRank {
           //       prValues[j] = a;
 
           //       }
-                 prValues[j] = 0.0;
+                 else {
+                    prValues[j] = 0.0;
                  for (Integer w :  diagraphReverse.adj(j)) {
                     prValues[j] += previousPR[w] / outlinks[w];
 
                 }
+
+                 }
+
 
         	}
 
