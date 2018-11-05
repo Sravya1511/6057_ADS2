@@ -19,7 +19,7 @@ Your Output:
 3: 2 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -44,7 +44,7 @@ Your Output:
 3: 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -69,7 +69,7 @@ Your Output:
 3: 2 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -106,7 +106,7 @@ Your Output:
 7: 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -137,7 +137,7 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -174,7 +174,7 @@ Your Output:
 7: 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -199,7 +199,7 @@ Your Output:
 3: 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -230,7 +230,7 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -255,7 +255,7 @@ Your Output:
 3: 2 1 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -286,7 +286,7 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -305,7 +305,7 @@ Your Output:
 1: 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 
@@ -359,7 +359,7 @@ Your Output:
 11: 0 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 12
-	at PageRank.calculatePR(PageRank.java:76)
+	at PageRank.calculatePR(PageRank.java:91)
 	at Solution.main(Solution.java:49)
 ----------------------------------------
 

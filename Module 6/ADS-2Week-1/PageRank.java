@@ -73,7 +73,7 @@ class PageRank {
         System.arraycopy(prValues, 0, prevpr, 0, digraph.V());
         for(int i = 0; i<1000; i++) {
         	for(int j = 0; j<vertices; j++) {
-                prValues[i] = 0;
+                prValues[j] = 0;
         		// System.out.println(incoming[j]);
                 String[] tokens = incomingWebPages[j].split("");
                 // System.out.println(Arrays.toString(tokens));
