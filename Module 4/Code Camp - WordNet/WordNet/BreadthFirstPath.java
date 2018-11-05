@@ -27,7 +27,7 @@ class BreadthFirstPaths {
      * @param      dig     { Digraph }
      * @param      s     { souce vertex }
      */
-    public BreadthFirstPaths(final Digraph dig, final int s) {
+    BreadthFirstPaths(final Digraph dig, final int s) {
         marked = new boolean[dig.vertex()];
         distTo = new int[dig.vertex()];
         edgeTo = new int[dig.vertex()];
