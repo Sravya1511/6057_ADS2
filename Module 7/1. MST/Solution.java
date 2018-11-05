@@ -16,7 +16,7 @@ class Solution {
 
 
 		KruskalMST kmst = new KruskalMST(edgeW);
-		System.out.println(kmst.weight());
+		System.out.format("%.5f", kmst.weight());
 
 	}
 }
