@@ -1,3 +1,6 @@
+/**
+ * Class for kruskal mst.
+ */
 public class KruskalMST {
     /**
      * float.
@@ -17,7 +20,7 @@ public class KruskalMST {
     /**
      * Compute a minimum spanning tree (or forest).
      *  of an edge-weighted graph.
-     * @param G the edge-weighted graph.
+     * @param gra the edge-weighted graph.
      */
     public KruskalMST(final EdgeWeightedGraph gra) {
         // more efficient to build heap by passing array of edges
