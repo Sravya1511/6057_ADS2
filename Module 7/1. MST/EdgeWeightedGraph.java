@@ -24,12 +24,12 @@ public class EdgeWeightedGraph {
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(int V) {
+    public EdgeWeightedGraph(int vertex) {
 
-        this.V = V;
+        this.V = vertex;
         this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        adj = (Bag<Edge>[]) new Bag[vertex];
+        for (int v = 0; v < vertex; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
@@ -38,18 +38,22 @@ public class EdgeWeightedGraph {
 
 
     /**
-     * Returns the number of vertices in this edge-weighted graph.
+     * Returns the number of vertices.
+     *  in this edge-weighted graph.
      *
-     * @return the number of vertices in this edge-weighted graph
+     * @return the number of vertices.
+     *  in this edge-weighted graph
      */
     public int V() {
         return V;
     }
 
     /**
-     * Returns the number of edges in this edge-weighted graph.
+     * Returns the number of edges.
+     *  in this edge-weighted graph.
      *
-     * @return the number of edges in this edge-weighted graph
+     * @return the number of edges.
+     *  in this edge-weighted graph
      */
     public int E() {
         return E;
@@ -73,11 +77,11 @@ public class EdgeWeightedGraph {
     }
 
     /**
-     * Returns the edges incident on vertex {@code v}.
+     * iterable.
      *
-     * @param  v the vertex
-     * @return the edges incident on vertex {@code v} as an Iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { vertex }
+     *
+     * @return     { iterable }
      */
     public Iterable<Edge> adj(int v) {
         // validateVertex(v);
@@ -85,11 +89,11 @@ public class EdgeWeightedGraph {
     }
 
     /**
-     * Returns the degree of vertex {@code v}.
+     * degree.
      *
-     * @param  v the vertex
-     * @return the degree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { v }
+     *
+     * @return     { int }
      */
     public int degree(int v) {
         // validateVertex(v);
@@ -97,11 +101,9 @@ public class EdgeWeightedGraph {
     }
 
     /**
-     * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph, use foreach notation:
-     * {@code for (Edge e : G.edges())}.
+     * iterable.
      *
-     * @return all edges in this edge-weighted graph, as an iterable
+     * @return     { edges }
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
@@ -110,10 +112,10 @@ public class EdgeWeightedGraph {
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-                // add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
