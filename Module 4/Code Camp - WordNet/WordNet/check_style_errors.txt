@@ -8,22 +8,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:14:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:18:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:33:30: 'V' hides a field. [HiddenField]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:33:30: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:50:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:73:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:82:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:102: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:149:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:152:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:152:27: '>' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:161: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

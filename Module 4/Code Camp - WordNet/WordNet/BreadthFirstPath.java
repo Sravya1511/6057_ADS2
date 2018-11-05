@@ -28,9 +28,9 @@ class BreadthFirstPaths {
      * @param      s     { souce vertex }
      */
     public BreadthFirstPaths(final Digraph digraph, final int s) {
-        marked = new boolean[digraph.V()];
-        distTo = new int[digraph.V()];
-        edgeTo = new int[digraph.V()];
+        marked = new boolean[digraph.vertex()];
+        distTo = new int[digraph.vertex()];
+        edgeTo = new int[digraph.vertex()];
         // validateVertex(s);
         bfs(digraph, s);
     }
@@ -43,7 +43,7 @@ class BreadthFirstPaths {
 
     private void bfs(final Digraph gra, final int s) {
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < gra.V(); v++) {
+        for (int v = 0; v < gra.vertex(); v++) {
             distTo[v] = INFINITY;
         }
         distTo[s] = 0;

@@ -1,189 +1,130 @@
-
-import java.util.NoSuchElementException;
 /**
  * Class for digraph.
  */
-
-
 public class Digraph {
+    /**
+     *  number of vertices in this digraph.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * number of vertices in this digraph.
+     * vertex.
      */
-
-    private final int V;
+    private final int v;
     /**
      * number of edges in this digraph.
      */
-    private int E;
+    private int e;
     /**
      * adj[v] = adjacency list for vertex v.
      */
     private Bag<Integer>[] adj;
     /**
-     * indegree[v] = indegree of vertex v.
-     */
-    private int[] indegree;
-
-    /**
      * Constructs the object.
      *
-     * @param      V     { Vertices }
+     * @param      v1     { vertex }
      */
-    public Digraph(final int V) {
+    public Digraph(final int v1) {
 
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Integer>();
-        }
-    }
-
-
-    /**
-     * Constructs the object.
-     *
-     * @param      G     { Digraph }
-     */
-    public Digraph(final Digraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < V; v++) {
-            this.indegree[v] = G.indegree(v);
-        }
-        for (int v = 0; v < G.V(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
-                reverse.push(w);
-            }
-            for (int w : reverse) {
-                adj[v].add(w);
-            }
+        this.v = v1;
+        this.e = 0;
+        adj = (Bag<Integer>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Integer>();
         }
     }
 
     /**
-     * number of vertices.
+     * returns no. of vertexes.
+     * Time complexity is O(1).
      *
-     * @return     { int }
+     * @return     { vertexes }
      */
-    public int V() {
-        return V;
+    public int vertex() {
+        return v;
     }
 
     /**
-     * Number of edges.
+     * no. of edges.
+     * Time complexity is O(1).
      *
-     * @return     { int }
+     * @return     { edges }
      */
-    public int E() {
-        return E;
+    public int edges() {
+        return e;
     }
-
-
 
     /**
      * Adds an edge.
+     * Time complexity is O(1).
      *
-     * @param      v     { node 1 }
-     * @param      w     { node 2 }
+     * @param      v1    { vertex1 }
+     * @param      w1     { vertex2 }
      */
-    public void addEdge(final int v, final int w) {
-        // validateVertex(v);
-        // validateVertex(w);
-        adj[v].add(w);
-        indegree[w]++;
-        E++;
+    public void addEdge(final int v1, final int w1) {
+
+        adj[v1].add(w1);
+        e++;
     }
 
     /**
-     * iterable
+     * returns every value using iterator.
+     * Time complexity is O(v).
      *
-     * @param      v     { vertex  }
+     * @param      v1     { vertex }
      *
-     * @return     { bag of vertex v }
+     * @return     { a value }
      */
-    public Iterable<Integer> adj(final int v) {
-        // validateVertex(v);
-        return adj[v];
+    public Iterable<Integer> adj(final int v1) {
+
+        return adj[v1];
+    }
+
+     /**
+      * Returns the number of directed edges incident from vertex {@code v}.
+      * This is known as the <em>outdegree</em> of vertex {@code v}.
+      *ime complexity is O(1).
+      * @param  v1 the vertex
+      * @return the outdegree of vertex {@code v}
+      * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     */
+     public int outdegree(final int v1) {
+        //validateVertex(v);
+        return adj[v1].size();
     }
 
     /**
-     * outdegree of the vertex.
+     * finds if multiple roots are present.
+     * ime complexity is O(V).
      *
-     * @param      v     { vertex v }
-     *
-     * @return     { int }
+     * @return     { true or false }.
      */
-    public int outdegree(final int v) {
-        // validateVertex(v);
-        return adj[v].size();
-    }
-
-    /**
-     * indegree of the vertex.
-     *
-     * @param      v     { vertex }
-     *
-     * @return     { int }
-     */
-    public int indegree(final int v) {
-        // validateVertex(v);
-        return indegree[v];
-    }
-
-    /**
-     * checks if the node is root or not.
-     *
-     * @return     { true or false }
-     */
-
     public boolean checkMultiple() {
-         // Digraph  = new Digraph(V);
-        int check = 0;
-        for (int v = 0; v < V; v++) {
-            // for (int w : adj(v)) {
-                if(outdegree(v) == 0) {
-                    check++;
-                // }
-                if(check >1) {
-                    return true;
-                }
+        int num = 0;
+        for (int i = 0; i < vertex(); i++) {
+            if (outdegree(i) == 0) {
+                num++;
+
             }
+        }
+        if (num > 1) {
+            return true;
         }
         return false;
 
     }
 
     /**
-     * reverses the graph
-     *
-     * @return     { digraph }
-     */
-    public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
-            }
-        }
-        return reverse;
-    }
-
-    /**
      * Returns a string representation of the object.
+     *ime complexity is O(V+E).
      *
      * @return     String representation of the object.
      */
-    public String toString() {
+     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(String.format("%d: ", v));
-            for (int w : adj[v]) {
+        s.append(v + " vertices, " + e + " edges " + NEWLINE);
+        for (int i = 0; i < v; i++) {
+            s.append(String.format("%d: ", i));
+            for (int w : adj[i]) {
                 s.append(String.format("%d ", w));
             }
             s.append(NEWLINE);
