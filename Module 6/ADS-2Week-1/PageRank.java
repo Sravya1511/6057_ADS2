@@ -66,23 +66,24 @@ class PageRank {
      */
 
 	public void calculatePR() {
-           Digraph diaRev = new Digraph(digraph.V());
+        Digraph diaRev = new Digraph(digraph.V());
 
         diaRev = digraph.reverse();
         prevpr = new double[digraph.V()];
         System.arraycopy(prValues, 0, prevpr, 0, digraph.V());
         for(int i = 0; i<1000; i++) {
         	for(int j = 0; j<vertices; j++) {
+                prValues[i] = 0;
         		// System.out.println(incoming[j]);
                 String[] tokens = incomingWebPages[j].split("");
                 // System.out.println(Arrays.toString(tokens));
 
-                double a = 0.0;
-                if(indegreeCount[j] == 0) {
-                	// System.out.println("hi");
-                	prValues[j] = 0.0;
-                }
-                else {
+                // double a = 0.0;
+                // if(indegreeCount[j] == 0) {
+                // 	// System.out.println("hi");
+                // 	prValues[j] = 0.0;
+                // }
+                // else {
                 	// for(int k = 0; k<tokens.length; k++) {
                 	// a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
                  //    }
@@ -92,7 +93,12 @@ class PageRank {
                 }
                 // prValues[j] = a;
 
-                }
+                // }
+
+                if (Arrays.equals(prValues, prevpr)) {
+                break;
+            }
+            System.arraycopy(prValues, 0, prevpr, 0, digraph.V());
 
         	}
         }

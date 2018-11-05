@@ -227,7 +227,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 141 errors.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:9:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:9:17: Variable 'digraph' must be private and have accessor methods. [VisibilityModifier]
@@ -262,21 +261,19 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:75:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:75:33: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:75:34: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:81:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:84:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:87: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:111:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:111:33: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:111:34: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:112:35: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:112:36: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:112:41: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:112:42: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:112:53: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:112:54: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:121: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:88: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:117:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:117:33: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:117:34: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:35: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:36: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:41: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:42: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:53: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:118:54: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\PageRank.java:127: Missing a Javadoc comment. [JavadocType]
 Audit done.
-Checkstyle ends with 48 errors.
+Checkstyle ends with 45 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 6\ADS-2Week-1\Queue.java:29: Line is longer than 80 characters (found 95). [LineLength]
