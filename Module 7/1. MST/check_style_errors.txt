@@ -6,13 +6,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\EdgeWeightedGraph.java:11:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\EdgeWeightedGraph.java:15:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\EdgeWeightedGraph.java:22: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\EdgeWeightedGraph.java:27:30: Parameter vertex should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

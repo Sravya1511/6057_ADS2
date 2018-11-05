@@ -1,3 +1,6 @@
+/**
+ * Class for edge weighted graph.
+ */
 public class EdgeWeightedGraph {
     /**
      * line separator.
@@ -8,26 +11,27 @@ public class EdgeWeightedGraph {
      *
      */
 
-    private final int V;
+    private final int vertex;
     /**
      * edges.
      */
-    private int E;
+    private int edge;
     /**
      * bags class of edge type.
      */
     private Bag<Edge>[] adj;
 
     /**
-     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
+     * Initializes an empty edge-weighted.
+     *  graph with {@code V} vertices and 0 edges.
      *
-     * @param  vertex the number of vertices
+     * @param  vertex1 the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(int vertex) {
+    public EdgeWeightedGraph(final int vertex1) {
 
-        this.V = vertex;
-        this.E = 0;
+        this.vertex = vertex1;
+        this.edge = 0;
         adj = (Bag<Edge>[]) new Bag[vertex];
         for (int v = 0; v < vertex; v++) {
             adj[v] = new Bag<Edge>();
@@ -45,7 +49,7 @@ public class EdgeWeightedGraph {
      *  in this edge-weighted graph
      */
     public int vertex() {
-        return V;
+        return vertex;
     }
 
     /**
@@ -56,7 +60,7 @@ public class EdgeWeightedGraph {
      *  in this edge-weighted graph
      */
     public int edge() {
-        return E;
+        return edge;
     }
 
 
@@ -73,7 +77,7 @@ public class EdgeWeightedGraph {
         // validateVertex(w);
         adj[v].add(e);
         adj[w].add(e);
-        E++;
+        edge++;
     }
 
     /**
@@ -107,7 +111,7 @@ public class EdgeWeightedGraph {
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
+        for (int v = 0; v < vertex; v++) {
             int selfLoops = 0;
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
@@ -130,8 +134,8 @@ public class EdgeWeightedGraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(V + " " + E + NEWLINE);
-        for (int v = 0; v < V; v++) {
+        s.append(vertex + " " + edge + NEWLINE);
+        for (int v = 0; v < vertex; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 s.append(e + "  ");
