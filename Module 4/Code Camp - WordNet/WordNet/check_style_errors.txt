@@ -4,13 +4,8 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:30:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:30:44: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:37: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:44:36: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:73:30: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\BreadthFirstPath.java:85:23: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\Digraph.java:2:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
@@ -40,49 +35,12 @@ Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:6:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:9:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:9:16: Parameter graph should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:9:24: 'graph' hides a field. [HiddenField]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:15: Line is longer than 80 characters (found 115). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:15:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:15:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:15:24: Parameter vertex1 should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:15:52: Parameter vertex2 should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:15:80: Parameter synset should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:19:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:19:25: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:19:26: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:20:16: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:20:29: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:20:30: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:21: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:22: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:23:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:23:33: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:23:34: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:24:23: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:27:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:8: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:21: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:22: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:30: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:40:31: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:31: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:43:32: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:37: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:38: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:55: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:46:56: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:49: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:52: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:55: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:12:13: Variable 'graph' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:19:30: 'graph' hides a field. [HiddenField]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:25:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\6057_ADS2\Module 4\Code Camp - WordNet\WordNet\SAP.java:25:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 43 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...

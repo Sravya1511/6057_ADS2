@@ -24,26 +24,26 @@ class BreadthFirstPaths {
     /**
      * computes shortest path.
      *
-     * @param      G     { Digraph }
+     * @param      digraph    { Digraph }
      * @param      s     { souce vertex }
      */
-    public BreadthFirstPaths(final Digraph G, final int s) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
+    public BreadthFirstPaths(final Digraph digraph, final int s) {
+        marked = new boolean[digraph.V()];
+        distTo = new int[digraph.V()];
+        edgeTo = new int[digraph.V()];
         // validateVertex(s);
-        bfs(G, s);
+        bfs(digraph, s);
     }
     /**
-     * bfs traversal
+     * bfs traversal.
      *
-     * @param      G     { digraph}
+     * @param      gra    { digraph}
      * @param      s     { source }
      */
 
-    private void bfs(final Digraph G, final int s) {
+    private void bfs(final Digraph gra, final int s) {
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < gra.V(); v++) {
             distTo[v] = INFINITY;
         }
         distTo[s] = 0;
@@ -52,7 +52,7 @@ class BreadthFirstPaths {
 
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            for (int w : G.adj(v)) {
+            for (int w : gra.adj(v)) {
                 if (!marked[w]) {
                     edgeTo[w] = v;
                     distTo[w] = distTo[v] + 1;
@@ -70,7 +70,7 @@ class BreadthFirstPaths {
      *
      * @return     True if has path to, False otherwise.
      */
-    public boolean hasPathTo(int v) {
+    public boolean hasPathTo(final int v) {
         // validateVertex(v);
         return marked[v];
     }
@@ -82,7 +82,7 @@ class BreadthFirstPaths {
      *
      * @return     { returns distance }
      */
-    public int distTo(int v) {
+    public int distTo(final int v) {
         // validateVertex(v);
         return distTo[v];
     }
