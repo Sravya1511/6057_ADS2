@@ -12,6 +12,8 @@ class PageRank {
 	double[] outlinks;
     int[] indegreeCount;
     String[] incomingWebPages;
+    double[] prevpr;
+
     // Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
 
 
@@ -19,6 +21,7 @@ class PageRank {
 	PageRank(Digraph digraph, int vertices) {
 		this.digraph = digraph;
 		this.vertices = vertices;
+
 		prValues = new double[vertices];
 	    outlinks = new double[vertices];
         indegreeCount = new int[vertices];
@@ -35,6 +38,7 @@ class PageRank {
      */
 
 	public void initializePR() {
+
         for(int i = 0; i<vertices; i++) {
         	outlinks[i] = digraph.outdegree(i);
         	prValues[i] = 1.0/vertices;
@@ -62,7 +66,12 @@ class PageRank {
      */
 
 	public void calculatePR() {
-        for(int i = 0; i<999; i++) {
+           Digraph diaRev = new Digraph(digraph.V());
+
+        diaRev = digraph.reverse();
+        prevpr = new double[digraph.V()];
+        System.arraycopy(prValues, 0, prevpr, 0, digraph.V());
+        for(int i = 0; i<1000; i++) {
         	for(int j = 0; j<vertices; j++) {
         		// System.out.println(incoming[j]);
                 String[] tokens = incomingWebPages[j].split("");
@@ -74,10 +83,14 @@ class PageRank {
                 	prValues[j] = 0.0;
                 }
                 else {
-                	for(int k = 0; k<tokens.length; k++) {
-                	a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
-                    }
-                prValues[j] = a;
+                	// for(int k = 0; k<tokens.length; k++) {
+                	// a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
+                 //    }
+                    for (Integer w :  diaRev.adj(j)) {
+                    prValues[i] += prevpr[w] / digraph.outdegree(w);
+
+                }
+                // prValues[j] = a;
 
                 }
 
