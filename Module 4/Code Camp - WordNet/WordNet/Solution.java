@@ -70,8 +70,8 @@ final class Solution {
             Digraph digraph = new Digraph(synset.size());
 
             try {
-                Scanner scanner1 = new Scanner
-                (new File("Files/" + y));
+Scanner scanner1 =
+new Scanner(new File("Files/" + y));
                 while (scanner1.hasNextLine()) {
                     String[] vertices = scanner1.nextLine().split(",");
                     for (int i = 1; i < vertices.length; i++) {
