@@ -66,6 +66,8 @@ class PageRank {
      */
 
 	public void calculatePR() {
+        Digraph d = digraph;
+
         Digraph diaRev = new Digraph(digraph.V());
 
         diaRev = digraph.reverse();
@@ -88,7 +90,7 @@ class PageRank {
                 	// a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
                  //    }
                     for (Integer w :  diaRev.adj(j)) {
-                    prValues[j] += prevpr[w] / digraph.outdegree(w);
+                    prValues[j] += prevpr[w] / d.outdegree(w);
 
                 }
                 // prValues[j] = a;
