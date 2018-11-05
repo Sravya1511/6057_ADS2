@@ -88,7 +88,7 @@ class PageRank {
                 	// a += prValues[Integer.parseInt(tokens[k])] / outlinks[Integer.parseInt(tokens[k])];
                  //    }
                     for (Integer w :  diaRev.adj(j)) {
-                    prValues[i] += prevpr[w] / digraph.outdegree(w);
+                    prValues[j] += prevpr[w] / digraph.outdegree(w);
 
                 }
                 // prValues[j] = a;
