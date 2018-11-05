@@ -24,7 +24,7 @@ class BreadthFirstPaths {
     /**
      * computes shortest path.
      *
-     * @param      G     { Digraph }
+     * @param      dig     { Digraph }
      * @param      s     { souce vertex }
      */
     public BreadthFirstPaths(final Digraph dig, final int s) {
