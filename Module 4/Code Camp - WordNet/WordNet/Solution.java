@@ -6,13 +6,23 @@ import java.util.HashMap;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+/**
+ * Class for solution.
+ * reads input.
+ */
 
-
-
-
-class Solution {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
 	private Solution() {
+
 	}
+    /**
+     * creates object for digraph, SAP.
+     *
+     * @param      args  The arguments
+     */
 		public static void main(String[] args) {
 			Scanner input = new Scanner(System.in);
 			String x = input.nextLine();
@@ -21,7 +31,7 @@ class Solution {
 
 			try {
 			    Scanner scanner = new Scanner(new File("Files/" + x));
-                while(scanner.hasNextLine()) {
+                while (scanner.hasNextLine()) {
             	   //  // System.out.println(scanner.nextLine());
                    String[] tokens = scanner.nextLine().split(",");
                    String[] words = tokens[1].split(" ");
@@ -29,15 +39,14 @@ class Solution {
                    // System.out.println(tokens[0]+"----"+Arrays.toString(words));
 
                 }
-                for(int i: synset.keySet()) {
+                for (int i: synset.keySet()) {
                 	String[] keys = synset.get(i);
-                	for(int j = 0; j<keys.length; j++) {
+                	for (int j = 0; j < keys.length; j++) {
                 		if(synsetQueries.containsKey(keys[j])) {
                 			ArrayList<Integer> intarr = synsetQueries.get(keys[j]);
                 			intarr.add(i);
                 			synsetQueries.put(keys[j], intarr);
-                		}
-                		else {
+                		} else {
                 			ArrayList<Integer> indx = new ArrayList<Integer>();
                 			indx.add(i);
                 			synsetQueries.put(keys[j], indx);
@@ -57,9 +66,9 @@ class Solution {
 
 		    try {
 			    Scanner scanner1 = new Scanner(new File("Files/" + y));
-                while(scanner1.hasNextLine()) {
+                while (scanner1.hasNextLine()) {
             	    String[] vertices = scanner1.nextLine().split(",");
-            	    for(int i = 1; i<vertices.length; i++) {
+            	    for (int i = 1; i < vertices.length; i++) {
                         digraph.addEdge(Integer.parseInt(vertices[0]),
             	    	Integer.parseInt(vertices[i]));
             	    }
@@ -71,21 +80,21 @@ class Solution {
             DirectedCycle directedCycle = new DirectedCycle(digraph);
                 switch (s) {
                 	case "Graph":
-                	if(directedCycle.hasCycle()) {
+                	if (directedCycle.hasCycle()) {
                 			// throw new IllegalArgumentException("IllegalArgumentException");
                 		System.out.println("Cycle detected");
                 		    	return;
                 		    }
-                    if(digraph.checkMultiple()) {
+                    if (digraph.checkMultiple()) {
                     	System.out.println("Multiple roots");
                     	return;
                     }
                 	System.out.println(digraph);
                 	case "Queries":
-                	while(input.hasNext()) {
+                	while (input.hasNext()) {
                 		String[] tokens = input.nextLine().split(" ");
                 		try {
-                			if(tokens[0].equals("null")) {
+                			if (tokens[0].equals("null")) {
                 			System.out.println("IllegalArgumentException");
                 			return;
                 		    }
@@ -94,7 +103,6 @@ class Solution {
                 		}
                 		SAP sap = new SAP(digraph);
                 		sap.length(synsetQueries.get(tokens[0]), synsetQueries.get(tokens[1]), synset);
-
 
                 		}
 
