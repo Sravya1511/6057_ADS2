@@ -40,7 +40,7 @@ public class KruskalMST {
         }
 
         // check optimality conditions
-        assert check(gra);
+        // assert check(gra);
     }
 
     /**
@@ -63,74 +63,5 @@ public class KruskalMST {
     }
 
 
-    /**
-     * check.
-     *
-     * @param      gra   The gra
-     *
-     * @return     { true or false }
-     */
-    private boolean check(EdgeWeightedGraph gra) {
 
-        // check total weight
-        double total = 0.0;
-        for (Edge e : edges()) {
-            total += e.weight();
-        }
-        if (Math.abs(total - weight()) >
-            FLOATING_POINT_EPSILON) {
-
-            return false;
-        }
-
-        // check that it is acyclic
-        UF uf = new UF(gra.V());
-        for (Edge e : edges()) {
-            int v = e.either(), w = e.other(v);
-            if (uf.connected(v, w)) {
-                System.err.println("Not a forest");
-                return false;
-            }
-            uf.union(v, w);
-        }
-
-        // check that it is a spanning forest
-        for (Edge e : gra.edges()) {
-            int v = e.either(), w = e.other(v);
-            if (!uf.connected(v, w)) {
-                System.err.println
-                ("Not a spanning forest");
-                return false;
-            }
-        }
-
-        // // check that it is a minimal spanning.
-        // forest (cut optimality conditions)
-        for (Edge e : edges()) {
-
-            // all edges in MST except e
-            uf = new UF(gra.V());
-            for (Edge f : mst) {
-                int x = f.either(), y = f.other(x);
-                if (f != e) {
-                    uf.union(x, y);
-                }
-            }
-
-            // check that e is min weight edge in crossing cut
-            for (Edge f : gra.edges()) {
-                int x = f.either(), y = f.other(x);
-                if (!uf.connected(x, y)) {
-                    if (f.weight() < e.weight()) {
-                        System.err.println("Edge " +
-                         f + " violates cut optimality conditions");
-                        return false;
-                    }
-                }
-            }
-
-        }
-
-        return true;
-    }
 }

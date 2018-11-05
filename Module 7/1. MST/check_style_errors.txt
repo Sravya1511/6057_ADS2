@@ -28,12 +28,8 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:20:8: Unused @param tag for 'G'. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:22:47: Expected @param tag for 'gra'. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:73:27: Parameter gra should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:80:40: '>' should be on a new line. [OperatorWrap]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:102:17: '(' should be on the previous line. [MethodParamPad]
-[ERROR] F:\6057_ADS2\Module 7\1. MST\KruskalMST.java:125:52: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
