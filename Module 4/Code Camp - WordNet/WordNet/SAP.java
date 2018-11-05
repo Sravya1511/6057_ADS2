@@ -22,6 +22,7 @@ public class SAP {
     }
     /**
      * distance.
+     * The time complexity is O(V).
      *
      * @param      vertex1  The vertex 1
      * @param      vertex2  The vertex 2

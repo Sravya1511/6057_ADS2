@@ -27,12 +27,12 @@ class BreadthFirstPaths {
      * @param      G     { Digraph }
      * @param      s     { souce vertex }
      */
-    public BreadthFirstPaths(final Digraph G, final int s) {
-        marked = new boolean[G.vertex()];
-        distTo = new int[G.vertex()];
-        edgeTo = new int[G.vertex()];
+    public BreadthFirstPaths(final Digraph dig, final int s) {
+        marked = new boolean[dig.vertex()];
+        distTo = new int[dig.vertex()];
+        edgeTo = new int[dig.vertex()];
         // validateVertex(s);
-        bfs(G, s);
+        bfs(dig, s);
     }
     /**
      * bfs traversal.
