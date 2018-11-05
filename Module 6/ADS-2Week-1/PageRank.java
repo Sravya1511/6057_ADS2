@@ -88,20 +88,20 @@ class PageRank {
           //       prValues[j] = a;
 
           //       }
-                // prValues[j] = 0.0;
-                //  for (Integer w :  diagraphReverse.adj(j)) {
-                //     prValues[j] += previousPR[w] / outlinks[w];
+                prValues[j] = 0.0;
+                 for (Integer w :  diagraphReverse.adj(j)) {
+                    prValues[j] += previousPR[w] / outlinks[w];
 
-                // }
+                }
 
         	}
-        //       if (Arrays.equals(prValues, previousPR)) {
-        //         break;
-        //     }
-        //     // System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
-        //      for(int a = 0; a<vertices; a++) {
-        //     previousPR[a] = prValues[a];
-        // }
+              if (Arrays.equals(prValues, previousPR)) {
+                break;
+            }
+            // System.arraycopy(prValues, 0, previousPR, 0, digraph.V());
+             for(int a = 0; a<vertices; a++) {
+            previousPR[a] = prValues[a];
+        }
 
         }
 	}
