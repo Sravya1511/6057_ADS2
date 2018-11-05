@@ -24,15 +24,15 @@ class BreadthFirstPaths {
     /**
      * computes shortest path.
      *
-     * @param      digraph    { Digraph }
+     * @param      G     { Digraph }
      * @param      s     { souce vertex }
      */
-    public BreadthFirstPaths(final Digraph digraph, final int s) {
-        marked = new boolean[digraph.vertex()];
-        distTo = new int[digraph.vertex()];
-        edgeTo = new int[digraph.vertex()];
+    public BreadthFirstPaths(final Digraph G, final int s) {
+        marked = new boolean[G.V()];
+        distTo = new int[G.V()];
+        edgeTo = new int[G.V()];
         // validateVertex(s);
-        bfs(digraph, s);
+        bfs(G, s);
     }
     /**
      * bfs traversal.
@@ -43,7 +43,7 @@ class BreadthFirstPaths {
 
     private void bfs(final Digraph gra, final int s) {
         Queue<Integer> q = new Queue<Integer>();
-        for (int v = 0; v < gra.vertex(); v++) {
+        for (int v = 0; v < gra.V(); v++) {
             distTo[v] = INFINITY;
         }
         distTo[s] = 0;

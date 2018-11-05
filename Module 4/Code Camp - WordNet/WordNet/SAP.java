@@ -16,15 +16,15 @@ public class SAP {
      *
      * @param      graph  The graph
      */
-    public SAP(final Digraph graph) {
+    public SAP(Digraph graph) {
         this.graph = graph;
 
     }
 
     // length of shortest ancestral path between v and w; -1 if no such path
-    public void length(final ArrayList<Integer> vertex1,
-        final ArrayList<Integer> vertex2,
-        final HashMap<Integer, String[]> synset) {
+    public void length(ArrayList<Integer> vertex1,
+        ArrayList<Integer> vertex2,
+        HashMap<Integer, String[]> synset) {
         int distance = 0;
         int m = Integer.MAX_VALUE;
         String[] a = null;
@@ -34,7 +34,7 @@ public class SAP {
                 new BreadthFirstPaths(graph, vertex1.get(i));
                 BreadthFirstPaths bfsVer2 =
                 new BreadthFirstPaths(graph, vertex2.get(j));
-                for (int k = 0; k < graph.vertex(); k++) {
+                for (int k = 0; k < graph.V(); k++) {
                     if (bfsVer1.hasPathTo(k) && bfsVer2.hasPathTo(k)) {
                         distance = bfsVer1.distTo(k) + bfsVer2.distTo(k);
                         // System.out.println(distance);
