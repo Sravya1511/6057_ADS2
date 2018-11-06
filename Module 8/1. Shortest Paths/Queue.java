@@ -1,10 +1,6 @@
-/**.
- * { item_description }
- */
+
 import java.util.Iterator;
-/**.
- * { item_description }
- */
+
 import java.util.NoSuchElementException;
 /**.
  * List of .
@@ -13,15 +9,15 @@ import java.util.NoSuchElementException;
  */
 public class Queue<Item> implements Iterable<Item> {
     /**.
-     * { var_description }
+     * Node first.
      */
     private Node<Item> first;
     /**.
-     * { var_description }
+     * node last.
      */
     private Node<Item> last;
     /**.
-     * { var_description }
+     * size.
      */
     private int n;
     /**.
@@ -31,11 +27,11 @@ public class Queue<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**.
-         * { var_description }
+         * Item of item type.
          */
         private Item item;
         /**.
-         * { var_description }
+         * next of node type.
          */
         private Node<Item> next;
     }

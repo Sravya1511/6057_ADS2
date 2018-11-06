@@ -23,6 +23,8 @@ public class EdgeWeightedGraph {
 
     /**
      * Initializes an empty edge-weighted.
+     * The time complexity is O(V).
+     *
      *  graph with {@code V} vertices and 0 edges.
      *
      * @param  vertex1 the number of vertices
@@ -88,7 +90,7 @@ public class EdgeWeightedGraph {
 
     /**
      * iterable.
-     * The time complexity is O(degree(V)).
+     * The time complexity is O(1).
      *
      *
      * @param      v     { vertex }

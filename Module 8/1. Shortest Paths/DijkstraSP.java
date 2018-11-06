@@ -47,6 +47,7 @@ class DijkstrasSP {
     }
     /**
      * vertex is connected to edges.
+     * The time complexity is O(logE).
      *
      * @param      edge    The edge
      * @param      vertex  The vertex
@@ -66,6 +67,8 @@ class DijkstrasSP {
     }
     /**
      * distace array.
+     * The time complexity is O(1).
+     *
      *
      * @param      v     { vertex }
      *
@@ -76,6 +79,8 @@ class DijkstrasSP {
     }
     /**
      * Determines if it has path to.
+     * The time complexity is O(1).
+     *
      *
      * @param      v     { vertex }
      *
@@ -86,6 +91,8 @@ class DijkstrasSP {
     }
     /**
      * path to the edge.
+     * The time complexity is O(ElogV).
+     *
      *
      * @param      v     { vertex }
      *
@@ -105,6 +112,8 @@ class DijkstrasSP {
     }
     /**
      * minimum path distance.
+     * The time complexity is O(E).
+     *
      *
      * @param      vertex  The vertex
      *
