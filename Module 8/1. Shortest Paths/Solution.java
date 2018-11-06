@@ -20,7 +20,7 @@ class Solution {
 		int queries = Integer.parseInt(input.nextLine());
 		for(int i = 0; i<queries; i++) {
 			String[] connections = input.nextLine().split(" ");
-	        DijkstraSP dik = new DijkstraSP(edgeW, hashmap.get(connections[0]));
+	        DijkstrasSP dik = new DijkstrasSP(edgeW, hashmap.get(connections[0]));
             System.out.println((int)dik.distance(hashmap.get(connections[1])));
 
 		}
