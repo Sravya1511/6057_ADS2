@@ -86,15 +86,14 @@ public class DijkstraSP {
      *         as an iterable of edges, and {@code null} if no such path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    // public Iterable<Edge> pathTo(int v) {
-    //     validateVertex(v);
-    //     if (!hasPathTo(v)) return null;
-    //     Stack<Edge> path = new Stack<Edge>();
-    //     for (Edge e = edgeTo[v]; e != null; e = edgeTo[e.from()]) {
-    //         path.push(e);
-    //     }
-    //     return path;
-    // }
+    public Iterable<Edge> pathTo(int v) {
+        if (!hasPathTo(v)) return null;
+        Stack<Edge> path = new Stack<Edge>();
+        for (Edge e = edgeTo[v]; e != null; e = edgeTo[e.either()]) {
+            path.push(e);
+        }
+        return path;
+    }
 
 
     // check optimality conditions:
