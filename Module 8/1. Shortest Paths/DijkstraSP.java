@@ -94,7 +94,13 @@ public class DijkstraSP {
         }
         return path;
     }
-
+    public double distance(int vertex) {
+        double sum = 0.0;
+        for(Edge each: pathTo(vertex)) {
+            sum += each.weight();
+        }
+        return sum;
+    }
 
     // check optimality conditions:
     // (i) for all edges e:            distTo[e.to()] <= distTo[e.from()] + e.weight()
