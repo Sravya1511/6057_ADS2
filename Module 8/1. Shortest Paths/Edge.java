@@ -1,63 +1,128 @@
+/******************************************************************************
+ *  Compilation:  javac Edge.java
+ *  Execution:    java Edge
+ *  Dependencies: StdOut.java
+ *
+ *  Immutable weighted edge.
+ *
+ ******************************************************************************/
+
 /**
- *class for edge.
+ *  The {@code Edge} class represents a weighted edge in an
+ *  {@link EdgeWeightedGraph}. Each edge consists of two integers
+ *  (naming the two vertices) and a real-value weight. The data type
+ *  provides methods for accessing the two endpoints of the edge and
+ *  the weight. The natural order for this data type is by
+ *  ascending order of weight.
+ *  <p>
+ *  For additional documentation, see <a href="https://
+ *  algs4.cs.princeton.edu/43mst">Section 4.3</a> of
+ *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ *
+ *  @author Robert Sedgewick
+ *  @author Kevin Wayne
  */
-class Edge {
+/**
+ * Class for edge.
+ */
+public class Edge implements Comparable<Edge> {
+   /**
+    * vertex v.
+    */
+    private final int v;
     /**
-     *the variable to store.
-     *vetexOne
+     * vertex w.
      */
-    private int vertexOne;
+    private final int w;
     /**
-     *the variable to store.
-     *other vertex.
+     * weight.
      */
-    private int vertexTwo;
+    private final double weight;
+
     /**
-     *the variable to store the weight of.
-     *each edge.
-     */
-    private double weight;
-    /**
-     *the constructor to initialize the.
-     *vertices and their edge weight
-     * @param      v  vertexOne
-     * @param      w  vertexTwo
-     * @param      cost  weight of edge
-     */
-    Edge(final int v, final int w,
-                 final double cost) {
-        this.vertexOne = v;
-        this.vertexTwo = w;
-        this.weight = cost;
-    }
-    /**
-     *this method returns the weight of edge.
+     * Initializes an edge between vertices {@code v} and {@code w} of
+     * the given {@code weight}.
      *
-     * @return  weight of edge
+     * @param  v1 one vertex
+     * @param  w1 the other vertex
+     * @param  weight1 the weight of this edge
+     * @throws IllegalArgumentException if either {@code v} or {@code w}
+     *         is a negative integer
+     * @throws IllegalArgumentException if {@code weight} is {@code NaN}
+     */
+    public Edge(final int v1, final int w1, final double weight1) {
+        if (v1 < 0) {
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
+        }
+        if (w1 < 0) {
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
+        }
+        if (Double.isNaN(weight1)) {
+            throw new IllegalArgumentException("Weight is NaN");
+        }
+        this.v = v1;
+        this.w = w1;
+        this.weight = weight1;
+    }
+
+    /**
+     * Returns the weight of this edge.
+     * The time complexity is O(1).
+     *
+     * @return the weight of this edge
      */
     public double weight() {
-        return this.weight;
+        return weight;
     }
+
     /**
-     *this method returns one vertex.
+     * Returns either endpoint of this edge.
+     * The time complexity is O(1).
      *
-     * @return  one end of edge.
+     * @return either endpoint of this edge
      */
     public int either() {
-        return vertexOne;
+        return v;
+    }
+
+    /**
+     * Returns the endpoint of this edge that is different.
+     * The time complexity is O(1).
+     *
+     * from the given vertex.
+     *
+     * @param  vertex one endpoint of this edge
+     * @return the other endpoint of this edge
+     * @throws IllegalArgumentException if the vertex is not one of the
+     *         endpoints of this edge
+     */
+    public int other(final int vertex) {
+        if (vertex == v) {
+            return w;
+        } else if (vertex == w) {
+            return v;
+        } else {
+            throw new IllegalArgumentException("Illegal endpoint");
+        }
     }
     /**
-     *returns the other end of vertex.
+     * Compares two edges by weight.
+     * The time complexity is O(1).
      *
-     * @param      v already connected vertex
+     * Note that {@code compareTo()} is not consistent with {@code equals()},
+     * which uses the reference equality implementation
+     * inherited from {@code Object}.
      *
-     * @return another vertex
+     * @param  that the other edge
+     * @return a negative integer, zero, or positive
+     * integer depending on whether
+     *         the weight of this is less than, equal to, or greater than the
+     *         argument edge
      */
-    public int other(final int v) {
-        if (v == vertexOne) {
-            return vertexTwo;
-        } else {
-            return vertexOne;
-        }
+    @Override
+    public int compareTo(final Edge that) {
+        return Double.compare(this.weight, that.weight);
     }
 }
