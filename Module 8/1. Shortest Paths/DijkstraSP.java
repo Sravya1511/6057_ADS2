@@ -57,14 +57,37 @@ class DijkstrasSP {
             }
         }
     }
-    public double distTo(int v) {
+    /**
+     * distace array.
+     *
+     * @param      v     { vertex }
+     *
+     * @return     { distance }
+     */
+    public double distTo(final int v) {
         return distTo[v];
     }
-    public boolean hasPathTo(int v) {
+    /**
+     * Determines if it has path to.
+     *
+     * @param      v     { vertex }
+     *
+     * @return     True if has path to, False otherwise.
+     */
+    public boolean hasPathTo(final int v) {
         return distTo[v] < Double.POSITIVE_INFINITY;
     }
-    public Iterable<Edge> pathTo(int v) {
-        if (!hasPathTo(v)) return null;
+    /**
+     * path to the edge.
+     *
+     * @param      v     { vertex }
+     *
+     * @return     { iterable edge }
+     */
+    public Iterable<Edge> pathTo(final int v) {
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
@@ -73,7 +96,14 @@ class DijkstrasSP {
         }
         return path;
     }
-    public double distance(int vertex) {
+    /**
+     * minimum path distance.
+     *
+     * @param      vertex  The vertex
+     *
+     * @return     { double }
+     */
+    public double distance(final int vertex) {
         double sum = 0;
         for (Edge each : pathTo(vertex)) {
             sum += each.weight();
