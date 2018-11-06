@@ -21,7 +21,7 @@ class Solution {
 		for(int i = 0; i<queries; i++) {
 			String[] connections = input.nextLine().split(" ");
 	        DijkstraSP dik = new DijkstraSP(edgeW, hashmap.get(connections[0]));
-            System.out.format("%.0f", dik.distTo(hashmap.get(connections[1])));
+            System.out.format("%.0f", dik.pathTo(hashmap.get(connections[1])));
             System.out.println();
 
 		}
