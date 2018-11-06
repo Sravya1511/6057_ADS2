@@ -1,161 +1,52 @@
-/**
- * Class for edge weighted graph.
- */
-public class EdgeWeightedGraph {
+class EdgeWeightedGraph {
     /**
-     * line separator.
-     */
-    private static final String NEWLINE = System.getProperty("line.separator");
+      *the variable to store vertices.
+      */
+    private int vertices;
     /**
-     * vertices.
-     *
-     */
-
-    private final int vertex;
-    /**
-     * edges.
-     */
-    private int edge;
-    /**
-     * bags class of edge type.
+     *the array of bags to store.
+     *complete adjacency list.
      */
     private Bag<Edge>[] adj;
-
     /**
-     * Initializes an empty edge-weighted.
-     *  graph with {@code V} vertices and 0 edges.
+     *the constructor to initialize.
      *
-     * @param  vertex1 the number of vertices
-     * @throws IllegalArgumentException if {@code V < 0}
+     * @param      v vertices count
      */
-    public EdgeWeightedGraph(final int vertex1) {
-
-        this.vertex = vertex1;
-        this.edge = 0;
-        adj = (Bag<Edge>[]) new Bag[vertex];
-        for (int v = 0; v < vertex; v++) {
-            adj[v] = new Bag<Edge>();
+    EdgeWeightedGraph(final int v) {
+        this.vertices = v;
+        adj = (Bag<Edge>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
-
-
-
-
     /**
-     * Returns the number of vertices.
-     *  in this edge-weighted graph.
-     * The time complexity is O(1).
+     *this method returns the vertices count.
      *
-     *
-     * @return the number of vertices.
-     *  in this edge-weighted graph
+     * @return  number of vertices.
      */
-    public int vertex() {
-        return vertex;
+    public int vertices() {
+        return this.vertices;
     }
-
     /**
-     * Returns the number of edges.
-     *  in this edge-weighted graph.
-     * The time complexity is O(1).
+     *this method is to build the graph.
      *
-     *
-     * @return the number of edges.
-     *  in this edge-weighted graph
+     * @param      edge  The edge
      */
-    public int edge() {
-        return edge;
+    public void addEdge(final Edge edge) {
+        int vertexOne = edge.either();
+        int vertexTwo = edge.other(vertexOne);
+        adj[vertexOne].add(edge);
+        adj[vertexTwo].add(edge);
     }
-
-
-
     /**
-     * Adds an edge.
-     * The time complexity is O(1).
-     *
-     *
-     * @param      e     { Edge }
+     *returns the iterator to return the bag at that.
+     *vertex.
+     * @param      vertex  The vertex
+     *time complexity is O(1)
+     * @return iterator at that vertex.
      */
-    public void addEdge(final Edge e) {
-        int v = e.either();
-        int w = e.other(v);
-        // validateVertex(v);
-        // validateVertex(w);
-        adj[v].add(e);
-        adj[w].add(e);
-        edge++;
-    }
-
-    /**
-     * iterable.
-     * The time complexity is O(degree(V)).
-     *
-     *
-     * @param      v     { vertex }
-     *
-     * @return     { iterable }
-     */
-    public Iterable<Edge> adj(final int v) {
-        // validateVertex(v);
-        return adj[v];
-    }
-
-    /**
-     * degree.
-     * The time complexity is O(1).
-     *
-     *
-     * @param      v     { v }
-     *
-     * @return     { int }
-     */
-    public int degree(final int v) {
-        // validateVertex(v);
-        return adj[v].size();
-    }
-
-    /**
-     * iterable.
-     * The time complexity is O(V+E).
-     *
-     *
-     * @return     { edges }
-     */
-    public Iterable<Edge> edges() {
-        Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < vertex; v++) {
-            int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
-                    list.add(e);
-                } else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) {
-                        list.add(e);
-                    }
-                    selfLoops++;
-                }
-            }
-        }
-        return list;
-    }
-
-    /**
-     * Returns a string representation of the object.
-     * The time complexity is O(V+E).
-     *
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(vertex + " " + edge + NEWLINE);
-        for (int v = 0; v < vertex; v++) {
-            s.append(v + ": ");
-            for (Edge e : adj[v]) {
-                s.append(e + "  ");
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
+    public Iterable<Edge> adj(final int vertex) {
+        return adj[vertex];
     }
 }

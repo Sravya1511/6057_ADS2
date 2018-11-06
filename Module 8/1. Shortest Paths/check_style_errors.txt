@@ -68,7 +68,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 18 errors.
 Starting audit...
+[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\EdgeWeightedDigraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\EdgeWeightedDigraph.java:1: Missing a Javadoc comment. [JavadocType]
@@ -110,7 +112,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 37 errors.
 Starting audit...
+[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
 Audit done.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\IndexMinPQ.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\IndexMinPQ.java:3: Line is longer than 80 characters (found 83). [LineLength]
