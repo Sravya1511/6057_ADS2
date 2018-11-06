@@ -39,8 +39,8 @@ final class Solution {
             String[] connections = input.nextLine().split(" ");
             DijkstrasSP dik = new
             DijkstrasSP(edgeW, hashmap.get(connections[0]));
-            System.out.println((int) dik.distance
-                (hashmap.get(connections[1])));
+            System.out.println((int) dik.
+                distance(hashmap.get(connections[1])));
 
         }
 
