@@ -2,12 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\DijkstraSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\DijkstraSP.java:35: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\DijkstraSP.java:48:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\DijkstraSP.java:48:24: Parameter edge should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\DijkstraSP.java:48:35: Parameter vertex should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -20,11 +16,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Solution.java:39: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Solution.java:40:37: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Solution.java:42:17: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

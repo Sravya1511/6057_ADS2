@@ -54,7 +54,7 @@ implements Iterable<Integer> {
      *
      * @return {@code true} if this priority queue is empty;
      *         {@code false} otherwise
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     public boolean isEmpty() {
         return n == 0;
@@ -66,7 +66,7 @@ implements Iterable<Integer> {
      * @return {@code true} if {@code i} is an index on this priority queue;
      *         {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     public boolean contains(final int i) {
         if (i < 0 || i >= maxN) {
@@ -79,7 +79,7 @@ implements Iterable<Integer> {
      * Returns the number of keys on this priority queue.
      *
      * @return the number of keys on this priority queue
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     public int size() {
         return n;
@@ -93,7 +93,7 @@ implements Iterable<Integer> {
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
      * @throws IllegalArgumentException if there already is an item associated
      *         with index {@code i}
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     public void insert(final int i, final Key key) {
         n++;
@@ -108,7 +108,7 @@ implements Iterable<Integer> {
      *
      * @return an index associated with a minimum key
      * @throws NoSuchElementException if this priority queue is empty
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     public int minIndex() {
         if (n == 0) {
@@ -122,7 +122,7 @@ implements Iterable<Integer> {
      *
      * @return a minimum key
      * @throws NoSuchElementException if this priority queue is empty
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     public Key minKey() {
         if (n == 0) {
@@ -135,7 +135,7 @@ implements Iterable<Integer> {
      * Removes a minimum key and returns its associated index.
      * @return an index associated with a minimum key
      * @throws NoSuchElementException if this priority queue is empty
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     public int delMin() {
         if (n == 0) {
@@ -158,7 +158,7 @@ implements Iterable<Integer> {
      * @return the key associated with index {@code i}
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
      * @throws NoSuchElementException no key is associated with index {@code i}
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     public Key keyOf(final int i) {
         return keys[i];
@@ -171,7 +171,7 @@ implements Iterable<Integer> {
      * @param  key change the key associated with index {@code i} to this key
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
      * @throws NoSuchElementException no key is associated with index {@code i}
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     public void changeKey(final int i, final Key key) {
         keys[i] = key;
@@ -186,7 +186,7 @@ implements Iterable<Integer> {
      * @param  key change the key associated with index {@code i} to this key
      * @throws IllegalArgumentException unless {@code 0 <= i < maxN}
      * @deprecated Replaced by {@code changeKey(int, Key)}.
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     @Deprecated
     public void change(final int i, final Key key) {
@@ -198,7 +198,7 @@ implements Iterable<Integer> {
      *
      * @param  i the index of the key to decrease
      * @param  key decrease the key associated with index {@code i} to this key
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     public void decreaseKey(final int i, final Key key) {
         keys[i] = key;
@@ -210,7 +210,7 @@ implements Iterable<Integer> {
      *
      * @param  i the index of the key to increase
      * @param  key increase the key associated with index {@code i} to this key
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     public void increaseKey(final int i, final Key key) {
         keys[i] = key;
@@ -221,7 +221,7 @@ implements Iterable<Integer> {
      * Remove the key associated with index {@code i}.
      *
      * @param  i the index of the key to remove
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     public void delete(final int i) {
         int index = qp[i];
@@ -238,7 +238,7 @@ implements Iterable<Integer> {
      * @param      j     index.
      *
      * @return     true or false.
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     private boolean greater(final int i, final int j) {
         return keys[pq[i]].compareTo(keys[pq[j]]) > 0;
@@ -247,7 +247,7 @@ implements Iterable<Integer> {
      * exch method that swaps the elements.
      * @param      i     index.
      * @param      j     index.
-     * Time complexity is O(1).
+     * The time complexity is O(1).
      */
     private void exch(final int i, final int j) {
         int swap = pq[i];
@@ -260,7 +260,7 @@ implements Iterable<Integer> {
      * swim method.
      *
      * @param      k     value.
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     private void swim(final int k) {
         int temp = k;
@@ -273,7 +273,7 @@ implements Iterable<Integer> {
      * sink method.
      *
      * @param      k     integer.
-     * Time complexity is O(log N).
+     * The time complexity is O(log N).
      */
     private void sink(final int k) {
         int temp = k;
@@ -320,7 +320,7 @@ implements Iterable<Integer> {
         /**
          * Determines if it has next.
          * @return     True if has next, False otherwise.
-         * Time complexity is O(1).
+         * The time complexity is O(1).
          */
         public boolean hasNext() {
             return !copy.isEmpty();
@@ -334,7 +334,7 @@ implements Iterable<Integer> {
         /**
          * next method that returns the next item.
          * @return     Integer.
-         * Time complexity is O(log N).
+         * The time complexity is O(log N).
          */
         public Integer next() {
             if (!hasNext()) {

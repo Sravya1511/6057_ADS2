@@ -32,8 +32,9 @@ class DijkstrasSP {
         graph = g;
         distTo = new Double[graph.vertex()];
         edgeTo = new Edge[graph.vertex()];
-        for (int i = 0; i < graph.vertex(); i++)
+        for (int i = 0; i < graph.vertex(); i++) {
             distTo[i] = Double.POSITIVE_INFINITY;
+        }
         distTo[source] = 0.0;
         pq = new IndexMinPQ<Double>(graph.vertex());
         pq.insert(source, distTo[source]);
@@ -44,8 +45,14 @@ class DijkstrasSP {
             }
         }
     }
+    /**
+     * vertex is connected to edges.
+     *
+     * @param      edge    The edge
+     * @param      vertex  The vertex
+     */
 
-    private void relax(Edge edge, int vertex) {
+    private void relax(final Edge edge, final int vertex) {
         int vertexTwo = edge.other(vertex);
         if (distTo[vertexTwo] > distTo[vertex] + edge.weight()) {
             distTo[vertexTwo] = distTo[vertex] + edge.weight();
