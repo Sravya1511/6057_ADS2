@@ -31,10 +31,10 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		if (x == 0  || x== h) {
+		if (x == 0  || x == w) {
 			return 1000;
 		}
-		if (y == 0 || y == w) {
+		if (y == 0 || y == h) {
 			return 1000;
 		}
 		return 0;
