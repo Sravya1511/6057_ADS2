@@ -34,10 +34,10 @@ public class SeamCarver {
 		if (x == 0  || x == w) {
 			return 1000;
 		}
-		if (y == 0 || y == h) {
+		else if (y == 0 || y == h) {
 			return 1000;
 		}
-		return 0;
+		else return 0;
 	}
 
 	// sequence of indices for horizontal seam
