@@ -8,7 +8,7 @@ public class SeamCarver {
          this.picture = picture;
          if(picture == null) {
          	System.out.println("picture is null");
-         	// return;
+         	return;
          }
          this.w = picture.width();
          this.h = picture.height();
