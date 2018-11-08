@@ -241,8 +241,10 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:33:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:33:30: Parameter x should be final. [FinalParameters]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:33:37: Parameter y should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:34:42: ')' is preceded with whitespace. [ParenPad]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:35:32: '1000' is a magic number. [MagicNumber]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:36:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:37:44: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:38:32: '1000' is a magic number. [MagicNumber]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:39:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:40: 'else' construct must use '{}'s. [NeedBraces]
@@ -255,7 +257,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:59:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\SeamCarver.java:59:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 36 errors.
+Checkstyle ends with 38 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
