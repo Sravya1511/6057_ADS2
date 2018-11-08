@@ -37,7 +37,20 @@ public class SeamCarver {
 		else if (y == 0 || y == h -1) {
 			return 1000;
 		}
-		else return 0;
+		// int r1 = picture.get(x, y-1).getRed();
+		// int r2 = picture.get(x, y+1).getRed();
+		int rx = picture.get(x, y-1).getRed() - picture.get(x, y+1).getRed();
+		int gx = picture.get(x, y-1).getGreen() - picture.get(x, y+1).getGreen();
+		int bx = picture.get(x, y-1).getBlue() - picture.get(x, y+1).getBlue();
+		double xs = (rx*rx) + (gx*gx) + (bx*bx);
+		int ry = picture.get(x-1, y).getRed() - picture.get(x+1, y).getRed();
+		int gy = picture.get(x-1, y).getGreen() - picture.get(x+1, y).getGreen();
+		int by = picture.get(x-1, y).getBlue() - picture.get(x+1, y).getBlue();
+		double ys = (ry*ry) + (gy*gy) + (by*by);
+		double result = Math.sqrt(xs+ys);
+		return result;
+
+
 	}
 
 	// sequence of indices for horizontal seam
