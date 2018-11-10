@@ -105,11 +105,55 @@ class DijkstrasSP {
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+
             path.push(e);
             x = e.other(x);
         }
         return path;
     }
+
+     public Iterable<Edge> pathTo(final int v, int via) {
+        if (!hasPathTo(v)) {
+            return null;
+        }
+        Stack<Edge> path = new Stack<Edge>();
+        int x = v;
+        for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+        boolean bol = false;
+            for(Edge f : graph.adj(x)) {
+                int c = f.either();
+                if(via == f.other(c)) {
+                    path.push(f);
+                    x = f.other(x);
+                    bol = true;
+                }
+            }
+            if(!bol) {
+            path.push(e);
+            x = e.other(x);
+            bol = false;
+            }
+
+        }
+        return path;
+    }
+
+    public double distance(final int vertex, final int via) {
+        double sum = 0;
+        try {
+            for (Edge each : pathTo(vertex, via)) {
+            if(each == null) {
+                return 0;
+            }
+            sum += each.weight();
+            int v = each.either();
+        }
+    } catch (java.lang.NullPointerException e) {
+    }
+        return sum;
+    }
+
+
     /**
      * minimum path distance.
      * The time complexity is O(E).

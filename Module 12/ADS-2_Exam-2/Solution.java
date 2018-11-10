@@ -48,7 +48,7 @@ public class Solution {
 			// Other wise print "No Path Found."
 			String[] svd = input.nextLine().split(" ");
 			DijkstrasSP  dijkstrasVia = new DijkstrasSP(edgeWG, Integer.parseInt(svd[0]));
-			double d = dijkstrasVia.distance(Integer.parseInt(svd[2]));
+			double d = dijkstrasVia.distance(Integer.parseInt(svd[2]), Integer.parseInt(svd[1]));
 			if(d == 0) {
 				System.out.println("No Path Found.");
 			}
