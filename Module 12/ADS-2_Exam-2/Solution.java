@@ -75,8 +75,8 @@ public class Solution {
 				System.out.println("No Path Found.");
 			} else {
 				System.out.println(d);
-				System.out.println(dijkstrasVia.path());
 				System.out.println(dijkstrasVia2.path());
+				System.out.println(dijkstrasVia.path());
 			}
 			break;
 		default:
