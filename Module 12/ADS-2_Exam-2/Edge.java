@@ -1,4 +1,4 @@
-import java.text.DecimalFormat;
+
 
 /******************************************************************************
  *  Compilation:  javac Edge.java
@@ -70,6 +70,11 @@ public class Edge implements Comparable<Edge> {
     String str = String.format("%.5f", weight);
         return str;
     }
+    /**
+     * returns weight of edge.
+     *
+     * @return     { double}
+     */
 
     public double weight() {
         return weight;

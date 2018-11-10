@@ -156,8 +156,8 @@ public class EdgeWeightedGraph {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 int c = e.either();
-                s.append(e.either() + "-" +
-                    e.other(c) + " " + e.printWeight() + "  ");
+                s.append(e.either() + "-"
+                    + e.other(c) + " " + e.printWeight() + "  ");
             }
             s.append(NEWLINE);
         }

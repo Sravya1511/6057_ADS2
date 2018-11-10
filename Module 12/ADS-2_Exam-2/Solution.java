@@ -11,6 +11,7 @@ final public class Solution {
     }
     /**
      * reads input.
+     * The time complxity is O(E+V).
      *
      * @param      args  The arguments
      */
