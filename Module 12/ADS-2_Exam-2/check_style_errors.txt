@@ -34,9 +34,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:73:38: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:73:39: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:74:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:79:32: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:79:33: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.

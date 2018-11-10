@@ -76,9 +76,13 @@ public class Solution {
 			} else {
 				System.out.println(d);
                 StringBuilder s = new StringBuilder();
-                s.append(svd[0]+" ");
                 s.append(dijkstrasVia2.path());
+                // System.out.println(s);
                 s.append(dijkstrasVia.path());
+                // System.out.println(s);
+                s.append(svd[0]);
+                // System.out.println(s);
+
                 s.reverse();
                 System.out.println(s);
 			}
