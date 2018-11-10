@@ -46,6 +46,15 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] svd = input.nextLine().split(" ");
+			DijkstrasSP  dijkstrasVia = new DijkstrasSP(edgeWG, Integer.parseInt(svd[0]));
+			double d = dijkstrasVia.distance(Integer.parseInt(svd[2]));
+			if(d == 0) {
+				System.out.println("No Path Found.");
+			}
+			else {
+				System.out.println(d);
+			}
 			break;
 
 		default:
