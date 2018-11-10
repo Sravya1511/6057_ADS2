@@ -66,12 +66,17 @@ public class Solution {
 			String[] svd = input.nextLine().split(" ");
 			DijkstrasSP  dijkstrasVia = new DijkstrasSP(edgeWG,
 				Integer.parseInt(svd[0]));
-			double d = dijkstrasVia.distance(Integer.parseInt(svd[2]),
+			double d1 = dijkstrasVia.distance(Integer.parseInt(svd[1]));
+			DijkstrasSP  dijkstrasVia2 = new DijkstrasSP(edgeWG,
 				Integer.parseInt(svd[1]));
+			double d2 = dijkstrasVia2.distance(Integer.parseInt(svd[2]));
+			double d = d1+d2;
 			if(d == 0) {
 				System.out.println("No Path Found.");
 			} else {
 				System.out.println(d);
+				System.out.println(dijkstrasVia.path());
+				System.out.println(dijkstrasVia2.path());
 			}
 			break;
 		default:

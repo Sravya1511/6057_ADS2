@@ -20,6 +20,7 @@ public class EdgeWeightedGraph {
      * bags class of edge type.
      */
     private Bag<Edge>[] adj;
+    // private final String p;
 
     /**
      * Initializes an empty edge-weighted.

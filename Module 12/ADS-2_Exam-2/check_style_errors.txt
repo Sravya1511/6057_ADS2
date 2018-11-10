@@ -1,14 +1,14 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:115:6: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:115:48: Parameter via should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:123:16: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:125:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:131:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:141:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:145:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:170:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:24:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:24:19: Variable 's' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:109:19: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:109:20: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:112:23: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:112:24: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:134:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:145:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 8 errors.
 Starting audit...
@@ -18,7 +18,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:43: '+' should be on a new line. [OperatorWrap]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:159:43: '+' should be on a new line. [OperatorWrap]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
@@ -31,9 +31,12 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:51: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:69: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:71:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:69: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:72: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:73:38: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:73:39: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:74:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 10 errors.
 Starting audit...
 Audit done.

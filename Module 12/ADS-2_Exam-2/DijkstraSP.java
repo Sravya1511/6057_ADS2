@@ -21,6 +21,8 @@ class DijkstrasSP {
      *the graph object.
      */
     private EdgeWeightedGraph graph;
+    StringBuilder s = new StringBuilder();
+
     /**
      *the constructor to initialize the objects.
      *the time complexity is O(E + V).
@@ -104,54 +106,16 @@ class DijkstrasSP {
         }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
+        s.append(v+" ");
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
-
+            // System.out.print(x);
+            s.append(x+" ");
             path.push(e);
             x = e.other(x);
         }
         return path;
     }
 
-     public Iterable<Edge> pathTo(final int v, int via) {
-        if (!hasPathTo(v)) {
-            return null;
-        }
-        Stack<Edge> path = new Stack<Edge>();
-        int x = v;
-        for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
-        boolean bol = false;
-            for(Edge f : graph.adj(x)) {
-                int c = f.either();
-                if(via == f.other(c)) {
-                    path.push(f);
-                    x = f.other(x);
-                    bol = true;
-                }
-            }
-            if(!bol) {
-            path.push(e);
-            x = e.other(x);
-            bol = false;
-            }
-
-        }
-        return path;
-    }
-
-    public double distance(final int vertex, final int via) {
-        double sum = 0;
-        try {
-            for (Edge each : pathTo(vertex, via)) {
-            if(each == null) {
-                return 0;
-            }
-            sum += each.weight();
-            int v = each.either();
-        }
-    } catch (java.lang.NullPointerException e) {
-    }
-        return sum;
-    }
 
 
     /**
@@ -176,5 +140,9 @@ class DijkstrasSP {
     } catch (java.lang.NullPointerException e) {
     }
         return sum;
+    }
+
+    public String path() {
+        return s.toString();
     }
 }
