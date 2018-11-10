@@ -122,9 +122,11 @@ class DijkstrasSP {
     public double distance(final int vertex) {
         double sum = 0;
         for (Edge each : pathTo(vertex)) {
+            if(each == null) {
+                return 0;
+            }
             sum += each.weight();
             int v = each.either();
-            // System.out.print(each.either()+"--->"+each.other(v));
         }
         return sum;
     }
