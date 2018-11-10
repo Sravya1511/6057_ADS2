@@ -121,13 +121,23 @@ class DijkstrasSP {
      */
     public double distance(final int vertex) {
         double sum = 0;
-        for (Edge each : pathTo(vertex)) {
+
+        try {
+            for (Edge each : pathTo(vertex)) {
             if(each == null) {
+                 System.out.println("IllegalArgumentException");
                 return 0;
             }
+
             sum += each.weight();
             int v = each.either();
         }
+            }
+            catch (IllegalArgumentException e) {
+             System.out.println(e.getMessage());
+
+        }
         return sum;
-    }
+
+        }
 }

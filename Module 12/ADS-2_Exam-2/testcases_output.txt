@@ -52,7 +52,7 @@ No Path Found.
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at DijkstrasSP.distance(DijkstraSP.java:124)
+	at DijkstrasSP.distance(DijkstraSP.java:126)
 	at Solution.main(Solution.java:34)
 ----------------------------------------
 

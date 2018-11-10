@@ -1,9 +1,10 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:125:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:127:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:135:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Edge.java:1:8: Unused import - java.text.DecimalFormat. [UnusedImports]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Edge.java:74:5: Class 'Edge' looks like designed for extension (can be subclassed), but the method 'weight' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Edge' final or making the method 'weight' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -45,11 +46,9 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:28: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:35:27: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:37:25: '}' at column 4 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Solution.java:45: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 Audit done.
