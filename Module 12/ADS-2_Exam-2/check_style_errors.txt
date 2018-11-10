@@ -18,21 +18,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 3 errors.
 Starting audit...
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:153:48: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:153:56: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:153:57: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:36: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:37: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:40: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:41: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:51: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:52: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:55: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:56: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:71: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:72: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\EdgeWeightedGraph.java:158:43: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

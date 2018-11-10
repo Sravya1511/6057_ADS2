@@ -150,12 +150,13 @@ public class EdgeWeightedGraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertex + " vertices " + edge +" edges"+NEWLINE);
+        s.append(vertex + " vertices " + edge + " edges" + NEWLINE);
         for (int v = 0; v < vertex; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 int c = e.either();
-                s.append(e.either()+"-"+e.other(c)+" "+e.printWeight()+"  ");
+                s.append(e.either() + "-" +
+                    e.other(c) + " " + e.printWeight() + "  ");
             }
             s.append(NEWLINE);
         }
