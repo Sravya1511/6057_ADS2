@@ -75,8 +75,12 @@ public class Solution {
 				System.out.println("No Path Found.");
 			} else {
 				System.out.println(d);
-				System.out.print(dijkstrasVia2.path());
-				System.out.print(dijkstrasVia.path());
+                StringBuilder s = new StringBuilder();
+                s.append(svd[0]+" ");
+                s.append(dijkstrasVia2.path());
+                s.append(dijkstrasVia.path());
+                s.reverse();
+                System.out.println(s);
 			}
 			break;
 		default:
