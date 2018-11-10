@@ -21,7 +21,10 @@ class DijkstrasSP {
      *the graph object.
      */
     private EdgeWeightedGraph graph;
-    StringBuilder s = new StringBuilder();
+    /**
+     * string builder for path.
+     */
+    private StringBuilder s = new StringBuilder();
 
     /**
      *the constructor to initialize the objects.
@@ -106,10 +109,10 @@ class DijkstrasSP {
         }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
-        // s.append(v+" ");
+
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             // System.out.print(x);
-            s.append(x+" ");
+            s.append(x + " ");
             path.push(e);
             x = e.other(x);
         }
@@ -131,7 +134,7 @@ class DijkstrasSP {
         double sum = 0;
         try {
             for (Edge each : pathTo(vertex)) {
-            if(each == null) {
+            if (each == null) {
                 return 0;
             }
             sum += each.weight();
@@ -141,6 +144,13 @@ class DijkstrasSP {
     }
         return sum;
     }
+
+    /**
+     * to print path.
+     * The time complexity is O(1).
+     *
+     * @return     { description_of_the_return_value }
+     */
 
     public String path() {
         return s.toString();
