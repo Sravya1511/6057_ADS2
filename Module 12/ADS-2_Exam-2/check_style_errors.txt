@@ -3,14 +3,12 @@ Audit done.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:24:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:24:19: Variable 's' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:109:19: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:109:20: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:112:23: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:112:24: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:134:15: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\DijkstraSP.java:145:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Edge.java:1:8: Unused import - java.text.DecimalFormat. [UnusedImports]
 [ERROR] F:\6057_ADS2\Module 12\ADS-2_Exam-2\Edge.java:74:5: Class 'Edge' looks like designed for extension (can be subclassed), but the method 'weight' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Edge' final or making the method 'weight' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]

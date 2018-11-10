@@ -106,7 +106,7 @@ class DijkstrasSP {
         }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
-        s.append(v+" ");
+        // s.append(v+" ");
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             // System.out.print(x);
             s.append(x+" ");
