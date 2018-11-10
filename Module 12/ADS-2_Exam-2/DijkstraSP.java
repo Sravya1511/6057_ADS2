@@ -125,7 +125,7 @@ class DijkstrasSP {
         try {
             for (Edge each : pathTo(vertex)) {
             if(each == null) {
-                 System.out.println("IllegalArgumentException");
+                 // System.out.println("IllegalArgumentException");
                 return 0;
             }
 
@@ -133,8 +133,8 @@ class DijkstrasSP {
             int v = each.either();
         }
             }
-            catch (IllegalArgumentException e) {
-             System.out.println(e.getMessage());
+            catch (java.lang.NullPointerException e) {
+             // System.out.println();
 
         }
         return sum;
