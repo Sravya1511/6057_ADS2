@@ -71,7 +71,7 @@ public class Solution {
 				Integer.parseInt(svd[1]));
 			double d2 = dijkstrasVia2.distance(Integer.parseInt(svd[2]));
 			double d = d1+d2;
-			if(d == 0) {
+			if(d == 0 || d1 == 0 || d2 == 0) {
 				System.out.println("No Path Found.");
 			} else {
 				System.out.println(d);
