@@ -124,7 +124,7 @@ class DijkstrasSP {
         for (Edge each : pathTo(vertex)) {
             sum += each.weight();
             int v = each.either();
-            System.out.print(each.either()+"--->"+each.other(v));
+            // System.out.print(each.either()+"--->"+each.other(v));
         }
         return sum;
     }

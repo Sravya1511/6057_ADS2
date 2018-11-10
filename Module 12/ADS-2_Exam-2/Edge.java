@@ -66,14 +66,8 @@ public class Edge implements Comparable<Edge> {
      * @return the weight of this edge
      */
     public String printWeight() {
-    // DecimalFormat decim = new DecimalFormat("0.00000");
-    // Double r = Double.parseDouble(decim.format(weight));
 
-    // System.out.println(r);
     String str = String.format("%.5f", weight);
-    // System.out.format("%.5f", weight);
-    // double res = Double.parseDouble(str);
-        // double  = (double)Math.round(weight * 100000d) / 100000d;
         return str;
     }
 
