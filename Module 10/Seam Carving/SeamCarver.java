@@ -57,27 +57,27 @@ public class SeamCarver {
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		double[][] energy = new double[h][w];
-		double[][] distTo = new double[h][w];
-		int[][] edgeto = new int[h][w];
-		int[] vertexTo = new int[h];
-		if(w == 0 || h == 0) {
-			return vertexTo;
-		}
-		for(int i = 0; i<w; i++) {
-			for(int j = 0; j<h; j++) {
-				energy[i][j] = energy(i, j);
-				distTo[i][j] = Double.POSITIVE_INFINITY;
-				if(i == 0) {
-					distTo[0][j] = 1000;
-				}
-			}
-		}
-		for(int i = 0; i<w; i++) {
-			for(int j = 0; j<h-1; j++) {
-				relax(i, j, edgeto, distTo);
-			}
-		}
+		// double[][] energy = new double[h][w];
+		// double[][] distTo = new double[h][w];
+		// int[][] edgeto = new int[h][w];
+		// int[] vertexTo = new int[h];
+		// if(w == 0 || h == 0) {
+		// 	return vertexTo;
+		// }
+		// for(int i = 0; i<w; i++) {
+		// 	for(int j = 0; j<h; j++) {
+		// 		energy[i][j] = energy(i, j);
+		// 		distTo[i][j] = Double.POSITIVE_INFINITY;
+		// 		if(i == 0) {
+		// 			distTo[0][j] = 1000;
+		// 		}
+		// 	}
+		// }
+		// for(int i = 0; i<w; i++) {
+		// 	for(int j = 0; j<h-1; j++) {
+		// 		relax(i, j, edgeto, distTo);
+		// 	}
+		// }
 		return new int[0];
 	}
 
@@ -87,22 +87,22 @@ public class SeamCarver {
 
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-        for(int col = 0; col < w; col++) {
-		    for(int row = seam[col]; row < h - 1; row++) {
-			    this.picture.set(col, row, this.picture.get(col, row + 1));
-		    }
-	    }
-	    h--;
+     //    for(int col = 0; col < w; col++) {
+		   //  for(int row = seam[col]; row < h - 1; row++) {
+			  //   this.picture.set(col, row, this.picture.get(col, row + 1));
+		   //  }
+	    // }
+	    // h--;
 	}
 
 
 	// remove vertical seam from current picture
 	public void removeVerticalSeam(int[] seam) {
-        for(int row = 0; row < h; row++) {
-		    for(int col = seam[row]; col < w - 1; col++) {
-		        this.picture.set(col, row, this.picture.get(col + 1, row));
-		    }
-	    }
-	    w--;
+     //    for(int row = 0; row < h; row++) {
+		   //  for(int col = seam[row]; col < w - 1; col++) {
+		   //      this.picture.set(col, row, this.picture.get(col + 1, row));
+		   //  }
+	    // }
+	    // w--;
 	}
 }
