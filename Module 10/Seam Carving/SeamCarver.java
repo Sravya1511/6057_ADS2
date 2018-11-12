@@ -51,6 +51,7 @@ public class SeamCarver {
 	}
 
 	// sequence of indices for horizontal seam
+	// The Time complexity is O(w*h).
 	public int[] findHorizontalSeam() {
 		int[][] edgeTo = new int[h][w];
         double[][] distTo = new double[h][w];
@@ -82,6 +83,8 @@ public class SeamCarver {
 	}
 
 	// sequence of indices for vertical seam
+	// The Time complexity is O(w*h).
+	//
 	public int[] findVerticalSeam() {
 		double[][] energy = new double[h][w];
         int[][] edgeTo = new int[h][w];
@@ -152,7 +155,8 @@ public class SeamCarver {
             }
         }
     }
-
+	// The Time complexity is O(w*h).
+    //
     private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {

@@ -12,6 +12,7 @@ final class Solution {
     }
     /**
      * reads input.
+     * The time complexity is O(W * H).
      *
      * @param      fileName  The file name
      */
@@ -34,7 +35,9 @@ final class Solution {
         }
     }
     /**
-     * { function_description }.
+     * { prints seams }.
+     * The time complexity is O(W * H).
+     *
      *
      * @param      carver     The carver
      * @param      seam       The seam
