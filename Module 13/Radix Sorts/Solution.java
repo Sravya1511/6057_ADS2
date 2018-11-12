@@ -21,8 +21,9 @@ final class Solution {
 		for (int i = 0; i < n; i++) {
 			array[i] = input.nextLine();
 		}
-		Quick3string q3s = new Quick3string();
-		q3s.sort(array);
+		int w = array[0].length();
+		LSD q3s = new LSD();
+		q3s.sort(array, w);
 		System.out.println(Arrays.toString(array));
 	}
 }

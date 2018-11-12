@@ -1,7 +1,7 @@
 /**
  * Class for quick 3 string.
  */
-public class Quick3string {
+class Quick3string {
     /**
      * cutoff to insertion sort.
      */
@@ -19,7 +19,7 @@ public class Quick3string {
     }
 
     /**
-     * return the dth character of s, -1 if d = length of s
+     * return the dth character of s, -1 if d = length of s.
      *
      * @param      s     { String }
      * @param      d     { index }
@@ -28,7 +28,9 @@ public class Quick3string {
      */
     private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
-        if (d == s.length()) return - 1;
+        if (d == s.length()) {
+            return - 1;
+        }
         return s.charAt(d);
     }
 
@@ -60,7 +62,7 @@ public class Quick3string {
                 exch(a, lt++, i++);
             } else if (t > v) {
                 exch(a, i, gt--);
-            }else {
+            } else {
                 i++;
             }
         }
