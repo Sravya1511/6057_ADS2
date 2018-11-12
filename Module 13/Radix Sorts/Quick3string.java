@@ -49,7 +49,7 @@ class Quick3string {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
-            insertion(a, lo, hi, d);
+            // insertion(a, lo, hi, d);
             return;
         }
 
@@ -75,22 +75,22 @@ class Quick3string {
         sort(a, gt + 1, hi, d);
     }
 
-    /**
-     * sort from a[lo] to a[hi], starting at the dth character.
-     *
-     * @param      a     { String array }
-     * @param      lo    The lower
-     * @param      hi    The higher
-     * @param      d     { index }
-     */
-    private void insertion(final String[] a,
-        final int lo, final int hi, final int d) {
-        for (int i = lo; i <= hi; i++) {
-            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
-                exch(a, j, j - 1);
-            }
-        }
-    }
+    // /**
+    //  * sort from a[lo] to a[hi], starting at the dth character.
+    //  *
+    //  * @param      a     { String array }
+    //  * @param      lo    The lower
+    //  * @param      hi    The higher
+    //  * @param      d     { index }
+    //  */
+    // private void insertion(final String[] a,
+    //     final int lo, final int hi, final int d) {
+    //     for (int i = lo; i <= hi; i++) {
+    //         for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
+    //             exch(a, j, j - 1);
+    //         }
+    //     }
+    // }
 
     /**
      * exchange a[i] and a[j].
