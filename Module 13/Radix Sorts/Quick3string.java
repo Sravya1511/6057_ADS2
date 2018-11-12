@@ -8,6 +8,8 @@ class Quick3string {
     private static final int CUTOFF =  15;
     /**
      * Rearranges the array of strings in ascending order.
+     * The time complexity is O(2NlogN).
+     *
      *
      *
      * @param      a     { String array }
@@ -20,6 +22,8 @@ class Quick3string {
 
     /**
      * return the dth character of s, -1 if d = length of s.
+     * The time complexity is O(1).
+     *
      *
      * @param      s     { String }
      * @param      d     { index }
@@ -38,6 +42,8 @@ class Quick3string {
     /**
      * 3-way string quicksort a[lo..hi].
      *  starting at dth character.
+     * The time complexity is O(2NlogN).
+     *
      *
      * @param      a     { String array }
      * @param      lo    The lower
@@ -77,6 +83,8 @@ class Quick3string {
 
     /**
      * sort from a[lo] to a[hi], starting at the dth character.
+     * The time complexity is O(N*N).
+     *
      *
      * @param      a     { String array }
      * @param      lo    The lower
@@ -94,6 +102,8 @@ class Quick3string {
 
     /**
      * exchange a[i] and a[j].
+     * The time complexity is O(1).
+     *
      *
      * @param      a     { String array }
      * @param      i     { index1 }
@@ -107,6 +117,8 @@ class Quick3string {
 
     /**
      * less function.
+     * The time complexity is O(W).
+     *
      *
      * @param      v     { String a }
      * @param      w     { String b }
