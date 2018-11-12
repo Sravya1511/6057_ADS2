@@ -11,6 +11,8 @@ final class Solution {
     }
     /**
      * reads input.
+     * The time complexity is O(2NlogN).
+     *
      *
      * @param      args  The arguments
      */
