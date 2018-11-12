@@ -1,7 +1,6 @@
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:32:21: '-' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

@@ -29,7 +29,7 @@ class Quick3string {
     private int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
         if (d == s.length()) {
-            return - 1;
+            return -1;
         }
         return s.charAt(d);
     }
