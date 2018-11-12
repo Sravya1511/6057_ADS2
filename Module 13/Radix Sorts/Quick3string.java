@@ -1,17 +1,11 @@
 /**
  * Class for quick 3 string.
  */
-final class Quick3string {
+class Quick3string {
     /**
      * cutoff to insertion sort.
      */
     private static final int CUTOFF =  15;
-
-    /**
-     * Constructs the object.
-     */
-    Quick3string() { }
-
     /**
      * Rearranges the array of strings in ascending order.
      *

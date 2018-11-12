@@ -1,11 +1,11 @@
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:27: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:37: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:37:38: '-' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:69:14: 'else' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:69:14: '}' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:21: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:31: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:31:38: '-' is followed by whitespace. [NoWhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:63:14: 'else' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:63:14: '}' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
