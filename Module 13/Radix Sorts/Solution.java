@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class Solution{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -9,5 +10,6 @@ class Solution{
 		}
 		Quick3string q3s = new Quick3string();
 		q3s.sort(array);
+		System.out.println(Arrays.toString(array));
 	}
 }
