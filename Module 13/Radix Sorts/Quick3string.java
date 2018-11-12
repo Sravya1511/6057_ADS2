@@ -48,7 +48,8 @@ class Quick3string {
      * @param      hi    The higher
      * @param      d     { index }
      */
-    private static void sort(String[] a, int lo, int hi, int d) {
+    private static void sort(final String[] a, final int lo,
+        final int hi, final int d) {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -86,7 +87,8 @@ class Quick3string {
      * @param      hi    The higher
      * @param      d     { index }
      */
-    private static void insertion(String[] a, int lo, int hi, int d) {
+    private static void insertion(final String[] a,
+        final int lo, final int hi, final int d) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
                 exch(a, j, j - 1);
@@ -101,7 +103,7 @@ class Quick3string {
      * @param      i     { index1 }
      * @param      j     { index2 }
      */
-    private static void exch(String[] a, int i, int j) {
+    private static void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;
@@ -116,7 +118,8 @@ class Quick3string {
      *
      * @return     { boolean }
      */
-    private static boolean less(String v, String w, int d) {
+    private static boolean less(final String v,
+        final String w, final int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
             if (v.charAt(i) < w.charAt(i))  {
@@ -136,7 +139,7 @@ class Quick3string {
      *
      * @return     True if sorted, False otherwise.
      */
-    private static boolean isSorted(String[] a) {
+    private static boolean isSorted(final String[] a) {
         for (int i = 1; i < a.length; i++) {
             if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;

@@ -4,25 +4,10 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:27: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:37: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:37:38: '-' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:51:30: Parameter a should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:51:42: Parameter lo should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:51:50: Parameter hi should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:51:58: Parameter d should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:68:14: 'else' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:68:14: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:89:35: Parameter a should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:89:47: Parameter lo should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:89:55: Parameter hi should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:89:63: Parameter d should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:104:30: Parameter a should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:104:42: Parameter i should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:104:49: Parameter j should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:119:33: Parameter v should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:119:43: Parameter w should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:119:53: Parameter d should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:139:37: Parameter a should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:69:14: 'else' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Quick3string.java:69:14: '}' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 13\Radix Sorts\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
