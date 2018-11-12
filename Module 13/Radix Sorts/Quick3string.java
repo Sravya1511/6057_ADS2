@@ -108,9 +108,9 @@ class Quick3string {
     /**
      * less function.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
-     * @param      d     { parameter_description }
+     * @param      v     { String a }
+     * @param      w     { String b }
+     * @param      d     { index }
      *
      * @return     { boolean }
      */
