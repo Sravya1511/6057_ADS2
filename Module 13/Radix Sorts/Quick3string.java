@@ -8,7 +8,6 @@ class Quick3string {
     private static final int CUTOFF =  15;
     /**
      * Rearranges the array of strings in ascending order.
-     * The time complexity is O(2NlogN).
      *
      *
      * @param      a     { String array }
@@ -16,12 +15,11 @@ class Quick3string {
     public void sort(final String[] a) {
         // StdRandom.shuffle(a);
         sort(a, 0, a.length - 1, 0);
-
+        assert isSorted(a);
     }
 
     /**
      * return the dth character of s, -1 if d = length of s.
-     * The time complexity is O(1).
      *
      * @param      s     { String }
      * @param      d     { index }
@@ -40,8 +38,6 @@ class Quick3string {
     /**
      * 3-way string quicksort a[lo..hi].
      *  starting at dth character.
-     * The time complexity is O(2NlogN).
-     *
      *
      * @param      a     { String array }
      * @param      lo    The lower
@@ -53,7 +49,7 @@ class Quick3string {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
-            // insertion(a, lo, hi, d);
+            insertion(a, lo, hi, d);
             return;
         }
 
@@ -79,11 +75,25 @@ class Quick3string {
         sort(a, gt + 1, hi, d);
     }
 
+    /**
+     * sort from a[lo] to a[hi], starting at the dth character.
+     *
+     * @param      a     { String array }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { index }
+     */
+    private void insertion(final String[] a,
+        final int lo, final int hi, final int d) {
+        for (int i = lo; i <= hi; i++) {
+            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
+                exch(a, j, j - 1);
+            }
+        }
+    }
 
     /**
      * exchange a[i] and a[j].
-     * The time complexity is O(1).
-     *
      *
      * @param      a     { String array }
      * @param      i     { index1 }
@@ -95,4 +105,43 @@ class Quick3string {
         a[j] = temp;
     }
 
+    /**
+     * less function.
+     *
+     * @param      v     { String a }
+     * @param      w     { String b }
+     * @param      d     { index }
+     *
+     * @return     { boolean }
+     */
+    private boolean less(final String v,
+        final String w, final int d) {
+        assert v.substring(0, d).equals(w.substring(0, d));
+        for (int i = d; i < Math.min(v.length(), w.length()); i++) {
+            if (v.charAt(i) < w.charAt(i))  {
+                return true;
+            }
+            if (v.charAt(i) > w.charAt(i)) {
+                return false;
+            }
+        }
+        return v.length() < w.length();
+    }
+
+    /**
+     * Determines if sorted.
+     *
+     * @param      a     { String array }
+     *
+     * @return     True if sorted, False otherwise.
+     */
+    private boolean isSorted(final String[] a) {
+        for (int i = 1; i < a.length; i++) {
+            if (a[i].compareTo(a[i - 1]) < 0) {
+                return false;
+            }
+        }
+        return true;
+
+    }
 }
