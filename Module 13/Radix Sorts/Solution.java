@@ -11,7 +11,8 @@ final class Solution {
     }
     /**
      * reads input.
-     * The time complexity is O(2NlogN).
+     * The time complexity is O(1.3WNlogN) -- guarantee.
+     * The time complexity is O(2NlogN) -- random.
      *
      *
      * @param      args  The arguments

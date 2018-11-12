@@ -8,8 +8,8 @@ class Quick3string {
     private static final int CUTOFF =  15;
     /**
      * Rearranges the array of strings in ascending order.
-     * The time complexity is O(1.3WNlogN).
-     *
+     * The time complexity is O(1.3WNlogN) -- guarantee.
+     * The time complexity is O(2NlogN) -- random.
      *
      *
      * @param      a     { String array }
@@ -42,7 +42,8 @@ class Quick3string {
     /**
      * 3-way string quicksort a[lo..hi].
      *  starting at dth character.
-     * The time complexity is O(1.3WNlogN).
+     * The time complexity is O(1.3WNlogN) -- guarantee.
+     * The time complexity is O(2NlogN) -- random.
      *
      *
      * @param      a     { String array }
