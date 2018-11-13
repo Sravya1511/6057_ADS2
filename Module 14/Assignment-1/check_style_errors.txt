@@ -146,21 +146,23 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:10:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:10:33: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:10:34: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:11:28: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:11:41: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:11:42: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:17:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:24:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:2:8: Unused import - java.io.File. [UnusedImports]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:3:8: Unused import - java.io.FileNotFoundException. [UnusedImports]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:5: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:6:33: Parameter args should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:12:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:12:33: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:12:34: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:13:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:13:41: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:13:42: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:19:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:26:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 14\Assignment-1\TST.java:1: Missing a Javadoc comment. [JavadocType]

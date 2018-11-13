@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -25,5 +27,22 @@ public class Solution {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();
 		return words;
+		// String[] words = new String[6013];
+		// int s = 0;
+		// try {
+		// 	Scanner scan = new
+  //               Scanner(new File("/Files/dictionary-algs4.txt"));
+  //           while(scan.hasNextLine()) {
+  //               words[s++] = scan.nextLine();
+  //       	// }
+  //       }
+		// } catch(FileNotFoundException e) {
+
+		// }
+
+  //       // try{
+
+  //       return words;
+
 	}
 }
