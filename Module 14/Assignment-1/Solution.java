@@ -1,16 +1,33 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
+/**
+ * Class for solution.
+ * The time complexity is O(L*N).
+ * L - length of string.
+ * N - number of strings.
+ */
 
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+
+	}
+	/**
+	 * { creates object for TST }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		String[] words = loadWords();
 		//Your code goes here...
 		Scanner input = new Scanner(System.in);
 		TST<Integer> tst = new TST();
 		int value = 0;
-		for(int i = 0; i<words.length; i++) {
-			for(int j = 0; j<words[i].length(); j++) {
+		for (int i = 0; i < words.length; i++) {
+			for (int j = 0; j < words[i].length(); j++) {
 				tst.put(words[i].substring(j), value);
 				value++;
 			}
