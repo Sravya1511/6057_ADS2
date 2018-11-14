@@ -2,16 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:11: Class Solution should be declared as final. [FinalClass]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:12:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:36:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:43:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:47:45: '6013' is a magic number. [MagicNumber]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:52:18: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\6057_ADS2\Module 14\Assignment-1\Solution.java:56:24: 'catch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
