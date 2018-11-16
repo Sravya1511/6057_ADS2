@@ -117,10 +117,13 @@ class TrieST<Value> {
     }
 
     public boolean hasPrefix(String prefix) {
-        if(keysWithPrefix(prefix) == null) {
-            return false;
-        }
-        return true;
+        Node x = get(root, prefix, 0);
+            if(x!=null) {
+                return true;
+            }
+            else {
+                return false;
+            }
     }
 
     private void collect(Node x, StringBuilder prefix, Queue<String> results) {

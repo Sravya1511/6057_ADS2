@@ -40,10 +40,10 @@ public class BoggleSolver {
 		if(marked[i][j]) {
 			return;
 		}
-		if(word.length() > 3) {
+
 		if(!triesST.hasPrefix(word)) {
 			return;
-		}
+
 	}
 		// if(word == "") {
 		    char a = board.getLetter(i, j);
