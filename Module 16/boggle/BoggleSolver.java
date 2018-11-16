@@ -17,6 +17,10 @@ public class BoggleSolver {
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
+		if(board == null) {
+			System.out.println("board is null");
+			return null;
+		}
 		int count = 0;
 		for(int i = 0; i<board.rows(); i++) {
 			for(int j = 0; j<board.cols(); j++)  {
@@ -57,19 +61,9 @@ public class BoggleSolver {
 			for(int dj = -1; dj<=1; dj++) {
 				int m = i+di;
 				int n = j+dj;
-				// if(di != 0 && dj != 0 ) {
-					// System.out.println(m);
-					// System.out.println(n);
-					if(n >= 0 && n < board.cols() && m >= 0 && m <board.rows()) {
-						// word += board.getLetter(m, n);
-						// System.out.println();
-						validwords(board, m, n, word, marked);
-					}
-				// }
-				// if((di == 0 && dj == 0) || m <0 || n < 0 || m >= board.rows() || n>= board.cols()) {
-				// 	continue;
-				// }
-				// validwords(board, m, n, word, marked);
+				if(n >= 0 && n < board.cols() && m >= 0 && m <board.rows()) {
+					validwords(board, m, n, word, marked);
+				}
 			}
 		}
 		marked[i][j] = false;
