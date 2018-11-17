@@ -116,6 +116,10 @@ class T9 {
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		for(String s : st.keys()) {
+			// System.out.println(s+"  "+st.get(s));
+			if(s.length() == 0) {
+				continue;
+			}
 			tst.put(s, st.get(s));
 		}
 	}
@@ -125,7 +129,7 @@ class T9 {
 		// your code goes here
 		Queue<String> queue = new Queue<String>();
 		for (String str : tst.keysWithPrefix(prefix)) {
-			System.out.println(str);
+			// System.out.println(str);
             queue.enqueue(str);
         }
 		// queue = tst.keysWithPrefix(prefix);
