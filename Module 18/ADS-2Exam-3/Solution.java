@@ -24,7 +24,7 @@ public class Solution {
 
 		case "getAllPrefixes":
 			// input001.txt and output001.txt
-			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
+			T9 t9 = new T9(loadDictionary("Files/t9.csv"));
 			while (scan.hasNextLine()) {
 				String prefix = scan.nextLine();
 				for (String each : t9.getAllWords(prefix)) {
@@ -105,26 +105,32 @@ public class Solution {
 		} catch (FileNotFoundException e) {
 
 		}
-		// for(int i = 0; i<file.length(); i++) {
-		// 	String[] tokens
-		// 	st.put()
-		// }
-
-		return st;
+	    return st;
 	}
 
 }
 
 class T9 {
+	TST<Integer> tst = new TST();
 
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
+		for(String s : st.keys()) {
+			tst.put(s, st.get(s));
+		}
 	}
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		return null;
+		Queue<String> queue = new Queue<String>();
+		for (String str : tst.keysWithPrefix(prefix)) {
+			System.out.println(str);
+            queue.enqueue(str);
+        }
+		// queue = tst.keysWithPrefix(prefix);
+
+		return queue;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
