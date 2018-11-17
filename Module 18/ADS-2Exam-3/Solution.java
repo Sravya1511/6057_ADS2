@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
+
 
 
 /**
@@ -52,8 +52,8 @@ final class Solution {
             int count = 0;
             while (scan.hasNextLine()) {
                 String t9Signature = scan.nextLine();
-                for (String each :
-                    t9.potentialWords(t9Signature)) {
+                for (String each
+                    : t9.potentialWords(t9Signature)) {
                     count++;
                     System.out.println(each);
                 }
@@ -99,7 +99,7 @@ final class Solution {
 
 
     /**
-     * reads file
+     * reads file.
      *
      * @param      file  The file
      *
@@ -118,7 +118,7 @@ final class Solution {
      */
 
     public static BinarySearchST<String, Integer>
-    loadDictionary(String file) {
+    loadDictionary(final String file) {
         BinarySearchST<String, Integer>  st =
         new BinarySearchST<String, Integer>();
 
