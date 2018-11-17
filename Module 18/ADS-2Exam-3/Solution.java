@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.HashMap;
 
 
 
@@ -51,7 +52,7 @@ public class Solution {
 
 		case "topK":
 			// input003.txt and output003.txt
-			t9 = new T9(loadDictionary("/Files/t9.csv"));
+			t9 = new T9(loadDictionary("Files/t9.csv"));
 			Bag<String> bag = new Bag<String>();
 			int k = Integer.parseInt(scan.nextLine());
 			while (scan.hasNextLine()) {
@@ -113,6 +114,7 @@ public class Solution {
 class T9 {
 	TST<Integer> tst = new TST();
 
+
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		for(String s : st.keys()) {
@@ -132,20 +134,45 @@ class T9 {
 			// System.out.println(str);
             queue.enqueue(str);
         }
-		// queue = tst.keysWithPrefix(prefix);
-
 		return queue;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
+
 		return null;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		HashMap<Integer, String> hashmap = new HashMap<Integer, String>();
+		Insertion insert = new Insertion();
+		Queue<String> queue = new Queue<String>();
+        int i = 0;
+        int count = 0;
+        for(String s : words) {
+        	count++;
+        }
+        int[] array = new int[count];
+
+		for(String s : words) {
+			array[i] = tst.get(s);
+			// System.out.println();
+			hashmap.put(tst.get(s), s);
+			i++;
+		}
+
+		insert.insertionSort(array, count);
+		// System.out.println(k);
+		// System.out.println(Arrays.toString(array));
+		for(int j= 0; j<k; j++) {
+			// System.out.println("biiiiii");
+			// System.out.println(hashmap.get(array[j]));
+			queue.enqueue(hashmap.get(array[j]));
+		}
+
+		return queue;
 	}
 
 	// final output
