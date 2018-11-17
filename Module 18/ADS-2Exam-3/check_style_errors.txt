@@ -403,30 +403,15 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:12:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:31: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:55: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:100:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:100:43: Parameter file should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:105: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:105:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:105:70: Parameter file should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:106: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:133:22: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:139:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:139:19: Parameter st should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:151:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:151:45: Parameter prefix should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:161:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:161:48: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:169: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:169:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:171: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:190:27: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:200:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:55:34: ':' should be on a new line. [OperatorWrap]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:101: First sentence should end with a period. [JavadocStyle]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:121:20: Parameter file should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:150:18: Variable 'tst' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:157:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:157:15: Parameter st should be final. [FinalParameters]
+[ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\Solution.java:211: Line is longer than 80 characters (found 87). [LineLength]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] F:\6057_ADS2\Module 18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
