@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 
 
-
+/**
+ * Class for solution.
+ */
 public class Solution {
 
 	// Don't modify this method.
@@ -110,11 +112,20 @@ public class Solution {
 	}
 
 }
+/**
+ * Class for t 9.
+ */
 
 class T9 {
+	/**
+	 * tries.
+	 */
 	TST<Integer> tst = new TST();
-
-
+	/**
+	 * inserts words into tst.
+	 *
+	 * @param      st    { parameter_description }
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		for(String s : st.keys()) {
@@ -164,11 +175,9 @@ class T9 {
 		}
 
 		insert.insertionSort(array, count);
-		// System.out.println(k);
-		// System.out.println(Arrays.toString(array));
+
 		for(int j= 0; j<k; j++) {
-			// System.out.println("biiiiii");
-			// System.out.println(hashmap.get(array[j]));
+
 			queue.enqueue(hashmap.get(array[j]));
 		}
 
