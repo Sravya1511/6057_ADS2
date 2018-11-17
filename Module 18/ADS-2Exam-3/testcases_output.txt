@@ -160,8 +160,8 @@ Your Output:
 Exception in thread "main" java.util.NoSuchElementException: called min() with empty symbol table
 	at BinarySearchST.min(BinarySearchST.java:274)
 	at BinarySearchST.keys(BinarySearchST.java:362)
-	at T9.<init>(Solution.java:131)
-	at Solution.main(Solution.java:41)
+	at T9.<init>(Solution.java:141)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -230,7 +230,7 @@ Your Output:
 Exception in thread "main" java.util.NoSuchElementException: called min() with empty symbol table
 	at BinarySearchST.min(BinarySearchST.java:274)
 	at BinarySearchST.keys(BinarySearchST.java:362)
-	at T9.<init>(Solution.java:131)
-	at Solution.main(Solution.java:72)
+	at T9.<init>(Solution.java:141)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 

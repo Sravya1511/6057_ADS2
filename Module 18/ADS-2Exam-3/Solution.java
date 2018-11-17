@@ -8,10 +8,20 @@ import java.util.HashMap;
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
 
-	// Don't modify this method.
-	public static void main(String[] args) {
+	}
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -80,7 +90,7 @@ public class Solution {
 			}
 			break;
 
-		default:
+		    default:
 			break;
 
 		}
@@ -98,10 +108,10 @@ public class Solution {
 		// your code goes here
 		try {
 			Scanner scan = new Scanner(new File(file));
-			while(scan.hasNextLine()) {
+			while (scan.hasNextLine()) {
 				String a = scan.nextLine();
 				String[] tokens = a.split(" ");
-				for(int i = 0; i<tokens.length; i++) {
+				for (int i = 0; i < tokens.length; i++) {
 					st.put(tokens[i].toLowerCase(), 1);
 				}
 			}
@@ -128,9 +138,9 @@ class T9 {
 	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-		for(String s : st.keys()) {
+		for (String s : st.keys()) {
 			// System.out.println(s+"  "+st.get(s));
-			if(s.length() == 0) {
+			if (s.length() == 0) {
 				continue;
 			}
 			tst.put(s, st.get(s));
@@ -155,19 +165,20 @@ class T9 {
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+
+	public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
 		// your code goes here
 		HashMap<Integer, String> hashmap = new HashMap<Integer, String>();
 		Insertion insert = new Insertion();
 		Queue<String> queue = new Queue<String>();
         int i = 0;
         int count = 0;
-        for(String s : words) {
+        for (String s : words) {
         	count++;
         }
         int[] array = new int[count];
 
-		for(String s : words) {
+		for (String s : words) {
 			array[i] = tst.get(s);
 			// System.out.println();
 			hashmap.put(tst.get(s), s);
@@ -176,7 +187,7 @@ class T9 {
 
 		insert.insertionSort(array, count);
 
-		for(int j= 0; j<k; j++) {
+		for (int j= 0; j < k; j++) {
 
 			queue.enqueue(hashmap.get(array[j]));
 		}
@@ -186,7 +197,7 @@ class T9 {
 
 	// final output
 	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+	public Iterable<String> t9(final String t9Signature, final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
