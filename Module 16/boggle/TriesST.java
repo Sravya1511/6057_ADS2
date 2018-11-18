@@ -29,7 +29,7 @@ class TriesST<Value> {
         if (key == null) throw new IllegalArgumentException("argument to get() is null");
         Node x = get(root, key, 0);
         if (x == null) return null;
-        return x.val;
+        return (Value) x.val;
     }
 
     /**
