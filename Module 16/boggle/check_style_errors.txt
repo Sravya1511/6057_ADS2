@@ -567,7 +567,7 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:7:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:7:25: Variable 'bag' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:8:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:8:16: Variable 'triesST' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:8:26: Variable 'triesST' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:10:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:10:29: Parameter dictionary should be final. [FinalParameters]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:12:20: 'for' is not followed by whitespace. [WhitespaceAfter]

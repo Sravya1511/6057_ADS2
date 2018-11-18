@@ -5,7 +5,7 @@ public class BoggleSolver {
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
 	// Bag<String> bag =  new Bag<String>();
 	HashSet<String> bag = new HashSet<String>();
-	TrieST triesST = new TrieST();
+	TriesST<Integer> triesST = new TriesST<Integer>();
 
 	public BoggleSolver(String[] dictionary) {
 		int j = 0;

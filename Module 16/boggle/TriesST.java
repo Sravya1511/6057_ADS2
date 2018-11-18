@@ -1,4 +1,4 @@
-class TrieST<Value> {
+class TriesST<Value> {
     private static final int R = 256;        // extended ASCII
 
 
@@ -14,7 +14,7 @@ class TrieST<Value> {
    /**
      * Initializes an empty string symbol table.
      */
-    public TrieST() {
+    public TriesST() {
     }
 
 
@@ -29,7 +29,7 @@ class TrieST<Value> {
         if (key == null) throw new IllegalArgumentException("argument to get() is null");
         Node x = get(root, key, 0);
         if (x == null) return null;
-        return (Value) x.val;
+        return x.val;
     }
 
     /**
