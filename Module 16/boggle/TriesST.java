@@ -3,7 +3,7 @@
  *
  * @param      <Value>  The value
  */
-class TrieST<Value> {
+class TriesST<Value> {
     /**
      * // extended ASCII.
      */
@@ -36,7 +36,7 @@ class TrieST<Value> {
     /**
       * Initializes an empty string symbol table.
       */
-    TrieST() {
+    TriesST() {
     }
 
 
