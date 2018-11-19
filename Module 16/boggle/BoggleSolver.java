@@ -11,12 +11,12 @@ public class BoggleSolver {
 	// Bag<String> bag =  new Bag<String>();
 	 */
 	/**
-	 * bag - hashset
+	 * bag - hashset.
 	 */
 
 	private final  HashSet<String> bag;
 	/**
-	 * tries ST
+	 * tries ST.
 	 */
 	private final TriesST<Integer> triesST;
     /**
@@ -27,7 +27,7 @@ public class BoggleSolver {
      *
      * @param      dictionary  The dictionary
      */
-	public BoggleSolver(String[] dictionary) {
+	public BoggleSolver(final String[] dictionary) {
 		bag = new HashSet<String>();
 		triesST = new TriesST<Integer>();
 		int j = 0;
@@ -47,7 +47,7 @@ public class BoggleSolver {
      */
 	public Iterable<String>
 	getAllValidWords(final BoggleBoard board) {
-		if(board == null) {
+		if (board == null) {
 			System.out.println("board is null");
 			return null;
 		}
@@ -77,6 +77,7 @@ public class BoggleSolver {
 		if (marked[i][j]) {
 			return;
 		}
+		String w = word;
 
 		if (!triesST.hasPrefix(word)) {
 			return;
@@ -85,14 +86,14 @@ public class BoggleSolver {
 		    char a = board.getLetter(i, j);
 
 		    if (a == 'Q') {
-		    	word += "QU";
+		    	w += "QU";
 		    } else {
-		    	word += a;
+		    	w += a;
 		    }
 
-		if (word.length() > 2
+		if (w.length() > 2
 			&& triesST.contains(word)) {
-			bag.add(word);
+			bag.add(w);
 		}
 	    marked[i][j] = true;
 		for (int di = -1; di <= 1; di++) {
@@ -101,7 +102,7 @@ public class BoggleSolver {
 				int n = j + dj;
 				if (n >= 0 && n < board.cols()
 					&& m >= 0 && m < board.rows()) {
-					validwords(board, m, n, word, marked);
+					validwords(board, m, n, w, marked);
 				}
 			}
 		}
