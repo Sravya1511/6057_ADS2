@@ -92,7 +92,7 @@ public class BoggleSolver {
             }
 
         if (w.length() > 2
-            && triesST.contains(word)) {
+            && triesST.contains(w)) {
             bag.add(w);
         }
         marked[i][j] = true;
