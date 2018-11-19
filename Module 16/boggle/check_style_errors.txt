@@ -10,16 +10,14 @@ Starting audit...
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:17:25: Variable 'bag' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:21:26: Variable 'triesST' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:27:29: Parameter dictionary should be final. [FinalParameters]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:44:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:59: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:70:30: Parameter word should be final. [FinalParameters]
 [ERROR] F:\6057_ADS2\Module 16\boggle\BoggleSolver.java:105: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...

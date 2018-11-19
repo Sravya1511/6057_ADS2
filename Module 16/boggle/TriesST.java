@@ -54,7 +54,8 @@ class TriesST<Value> {
         if (x == null) {
             return null;
         }
-        return (Value) x.val;
+        Value res = (Value) x.val;
+        return res;
     }
 
     /**

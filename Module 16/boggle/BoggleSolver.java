@@ -14,11 +14,11 @@ public class BoggleSolver {
 	 * bag - hashset
 	 */
 
-	HashSet<String> bag = new HashSet<String>();
+	private HashSet<String> bag = new HashSet<String>();
 	/**
 	 * tries ST
 	 */
-	TriesST<Integer> triesST = new TriesST<Integer>();
+	private TriesST<Integer> triesST = new TriesST<Integer>();
     /**
      * Constructs the object.
      *
@@ -66,7 +66,7 @@ public class BoggleSolver {
 	 * @param      marked  The marked
 	 */
 
-	public void validwords(final BoggleBoard board, final int i,
+	private void validwords(final BoggleBoard board, final int i,
 		final int j, String word, final boolean[][] marked) {
 		if (marked[i][j]) {
 			return;
