@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
  *
  * @param      <Item>  The item
  */
-public class Queue<Item> implements Iterable<Item> {
+public class Queues<Item> implements Iterable<Item> {
     /**.
      * Node first.
      */
@@ -38,7 +38,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**.
      * Initializes an empty queue.
      */
-    public Queue() {
+    public Queues() {
         first = null;
         last  = null;
         n = 0;

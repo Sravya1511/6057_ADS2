@@ -182,7 +182,7 @@ class TriesST<Value> {
      *     as an iterable
      */
     public Iterable<String> keysWithPrefix(final String prefix) {
-        Queue<String> results = new Queue<String>();
+        Queues<String> results = new Queues<String>();
         Node x = get(root, prefix, 0);
         collect(x, new StringBuilder(prefix), results);
         return results;
@@ -209,7 +209,7 @@ class TriesST<Value> {
      * @param      results  The results
      */
     private void collect(final Node x, final StringBuilder prefix,
-                        final Queue<String> results) {
+                        final Queues<String> results) {
         if (x == null) {
             return;
         }
@@ -233,7 +233,7 @@ class TriesST<Value> {
      *     as an iterable, where . is treated as a wildcard character.
      */
     public Iterable<String> keysThatMatch(final String pattern) {
-        Queue<String> results = new Queue<String>();
+        Queues<String> results = new Queues<String>();
         collect(root, new StringBuilder(), pattern, results);
         return results;
     }
@@ -247,7 +247,7 @@ class TriesST<Value> {
      * @param      results  The results
      */
     private void collect(final Node x, final StringBuilder prefix,
-                        final String pattern, final Queue<String> results) {
+                        final String pattern, final Queues<String> results) {
         if (x == null) {
             return;
         }
