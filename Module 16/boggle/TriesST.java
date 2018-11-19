@@ -45,7 +45,8 @@ class TriesST<Value> {
      * @param key the key
      * @return the value associated with the
      *  given key if the key is in the symbol table
-     *     and {@code null} if the key is not in the symbol table
+     *     and {@code null} if the key is not in the symbol table.
+     * The time complexity is O(L).
      *
      */
     public Value get(final String key) {
@@ -73,6 +74,8 @@ class TriesST<Value> {
 
     /**
      * gets the value.
+     * The time complexity is O(L).
+     *
      *
      * @param      x     { node }
      * @param      key   The key
@@ -100,7 +103,9 @@ class TriesST<Value> {
      * If the value is {@code null}, this effectively
      *  deletes the key from the symbol table.
      * @param key the key
-     * @param val the value
+     * @param val the value.
+     * The time complexity is O(L).
+     *
      *
      */
     public void put(final String key, final Value val) {
@@ -114,6 +119,8 @@ class TriesST<Value> {
 
     /**
      * puts in Trist.
+     * The time complexity is O(L).
+     *
      *
      * @param      x     { node }
      * @param      key   The key
@@ -144,7 +151,9 @@ class TriesST<Value> {
      * {Returns the number
      *  of key-value pairs in this symbol table}.
      * @return the number of key-value pairs
-     *  in this symbol table
+     *  in this symbol table.
+     * The time complexity is O(1).
+     *
      */
     public int size() {
         return n;
@@ -152,6 +161,7 @@ class TriesST<Value> {
 
     /**
      * {Is this symbol table empty?}.
+     * The time complexity is O(1).
      * @return {@code true} if this symbol
      *  table is empty and {@code false} otherwise
      */

@@ -14,17 +14,22 @@ public class BoggleSolver {
 	 * bag - hashset
 	 */
 
-	private HashSet<String> bag = new HashSet<String>();
+	private final  HashSet<String> bag;
 	/**
 	 * tries ST
 	 */
-	private TriesST<Integer> triesST = new TriesST<Integer>();
+	private final TriesST<Integer> triesST;
     /**
      * Constructs the object.
+	 * The time complexity is O(N).
+     * N - length of dictionary.
+     *
      *
      * @param      dictionary  The dictionary
      */
 	public BoggleSolver(String[] dictionary) {
+		bag = new HashSet<String>();
+		triesST = new TriesST<Integer>();
 		int j = 0;
 		for (int i = 0; i < dictionary.length; i++) {
 			triesST.put(dictionary[i], j);
@@ -34,6 +39,7 @@ public class BoggleSolver {
 
     /**
      * Gets all valid words.
+	 * The time complexity is O(N^2).
      *
      * @param      board  The board
      *
@@ -45,19 +51,19 @@ public class BoggleSolver {
 			System.out.println("board is null");
 			return null;
 		}
-		int count = 0;
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++)  {
 				boolean[][] marked = new
 				boolean[board.rows()][board.cols()];
 				validwords(board, i, j, "", marked);
-				count++;
+
 			}
 		}
 		return bag;
 	}
 	/**
-	 * valid words - dfs
+	 * valid words - dfs.
+	 * The time complexity is O(N^2).
 	 *
 	 * @param      board   The board
 	 * @param      i       { row }
@@ -103,8 +109,9 @@ public class BoggleSolver {
 	}
 
 	/**
-	 * returns scores of the words
-	 *
+	 * returns scores of the words.
+	 * The time complexity is O(1).
+ 	 *
 	 * @param      word  The word
 	 *
 	 * @return     { scores - int }
