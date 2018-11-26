@@ -12,7 +12,7 @@ final class Solution {
     }
     /**
      * reads input.
-     * The time complexity is O(E+V).
+     * The time complexity is  O(E log V).
      *
      * @param      args  The arguments
      */
